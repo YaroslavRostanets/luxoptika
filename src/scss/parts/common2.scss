@@ -1,0 +1,30 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #171717;
+}
+.lock {
+  overflow: hidden;
+}
+a {
+    color: #000;
+    outline: 0;
+    overflow: hidden;
+    text-decoration: none;
+}
+main {
+    position: relative;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}

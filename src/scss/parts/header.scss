@@ -1,0 +1,150 @@
+header {
+  .top-stripe {
+    background: #F7F8F9;
+    .container.flex {
+      justify-content: space-between;
+    }
+  }
+  .top-menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+  .top-menu {
+    height: 40px;
+    color: #252525;
+    & > li {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin: 0 1px;
+      a {
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 4px 11px;
+      }
+      &.active {
+        a {
+          color: #FFFFFF;
+          background: #0DAC49;
+          border-radius: 11px;
+        }
+      }
+      &.has-dropdown {
+        padding-right: 8px;
+        position: relative;
+        &:after {
+          content: "\f107";
+          font-family: "FontAwesome";
+          position: absolute;
+          right: 7px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 13px;
+          color: #7C7C7C;
+        }
+      }
+    }
+  }
+
+  .right-part {
+    display: flex;
+    font-size: 11px;
+    text-transform: uppercase;
+    .has-dropdown {
+      padding-right: 13px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    .fa {
+      color: #0DAC49;
+    }
+  }
+  .middle-stripe {
+    height: 95px;
+    padding: 25px 0;
+  }
+  .logo {
+    display: block;
+    width: 191px;
+    margin-right: 40px;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .search-input {
+    border: 1px solid #b6b4b6;
+    display: block;
+    width: 380px;
+    height: 44px;
+    border-radius: 22px;
+    padding-left: 17px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    color: #747474;
+    font-size: 13px;
+    &::placeholder {
+      color: #747474;
+      font-size: 13px;
+    }
+  }
+  .search-wrap {
+    position: relative;
+    margin-right: 35px;
+    button {
+      width: 16px;
+      height: 16px;
+      background-color: transparent;
+      background-image: url('../img/icons/search.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border: none;
+      font-size: 0;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .request-call {
+    a {
+      display: block;
+    }
+    .tel {
+      font-size: 18px;
+      color: #252525;
+      font-weight: 700;
+    }
+    .js-req-call {
+      color: #0dac49;
+      font-size: 13px;
+      display: inline-block;
+      border-bottom: 1px dashed #0dac49;
+    }
+  }
+  .wishlist {
+    display: flex;
+    align-items: center;
+    .ico {
+      width: 32px;
+      height: 28px;
+    }
+  }
+  .basket {
+    display: flex;
+    align-items: center;
+    .ico {
+      width: 28px;
+      height: 33px;
+    }
+  }
+}
