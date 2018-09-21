@@ -1,4 +1,5 @@
 header {
+  box-shadow: 0px 3px 18px 0px rgba(64,64,64,0.15);
   .top-stripe {
     background: #F7F8F9;
     .container.flex {
@@ -23,6 +24,8 @@ header {
         font-size: 11px;
         text-transform: uppercase;
         padding: 4px 11px;
+        text-decoration: none;
+        color: #252525;
       }
       &.active {
         a {
@@ -53,9 +56,25 @@ header {
     font-size: 11px;
     text-transform: uppercase;
     .has-dropdown {
-      padding-right: 13px;
+      padding-right: 22px;
       display: flex;
       align-items: center;
+      position: relative;
+      margin-right: 10px;
+      a {
+        text-decoration: none;
+        color: #252525;
+      }
+      &:after {
+        content: "\f107";
+        font-family: "FontAwesome";
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 13px;
+        color: #7C7C7C;
+      }
     }
   }
 
@@ -64,6 +83,7 @@ header {
     align-items: center;
     .fa {
       color: #0DAC49;
+      margin-right: 6px;
     }
   }
   .middle-stripe {
@@ -71,9 +91,10 @@ header {
     padding: 25px 0;
   }
   .logo {
-    display: block;
-    width: 191px;
-    margin-right: 40px;
+    align-items: center;
+    display: flex;
+    width: 192px;
+    margin-right: 42px;
     img {
       display: block;
       width: 100%;
@@ -84,9 +105,9 @@ header {
     border: 1px solid #b6b4b6;
     display: block;
     width: 380px;
-    height: 44px;
+    height: 45px;
     border-radius: 22px;
-    padding-left: 17px;
+    padding-left: 19px;
     font-family: 'Open Sans', sans-serif;
     outline: none;
     color: #747474;
@@ -98,7 +119,7 @@ header {
   }
   .search-wrap {
     position: relative;
-    margin-right: 35px;
+    margin-right: 39px;
     button {
       width: 16px;
       height: 16px;
@@ -116,13 +137,16 @@ header {
     }
   }
   .request-call {
+    margin-right: 52px;
     a {
       display: block;
+      text-decoration: none;
     }
     .tel {
       font-size: 18px;
       color: #252525;
       font-weight: 700;
+      margin-bottom: -3px;
     }
     .js-req-call {
       color: #0dac49;
@@ -134,17 +158,80 @@ header {
   .wishlist {
     display: flex;
     align-items: center;
+    color: #252525;
+    font-size: 13px;
+    margin-right: 31px;
     .ico {
       width: 32px;
       height: 28px;
+      margin-right: 4px;
     }
   }
   .basket {
     display: flex;
     align-items: center;
+    color: #252525;
+    font-size: 13px;
+    margin-right: 30px;
     .ico {
       width: 28px;
       height: 33px;
+      margin-right: 4px;
+    }
+  }
+
+  .dressing-room {
+    display: flex;
+    align-items: center;
+    .ico {
+      height: 38px;
+      width: 24px;
+      margin-right: 9px;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .count-wrap {
+      color: #252525;
+    }
+    .tit {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .foc {
+      font-size: 12px;
+      position: relative;
+      top: -2px;
+      span {
+        color: #0dac49;
+      }
+    }
+  }
+  .bot-stripe {
+    background: #FFFFFF;
+    border-top: 1px solid #EBEEF0;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      & > li {
+        height: 54px;
+        display: flex;
+        align-items: center;
+        & > a {
+          color: #252525;
+          font-size: 13px;
+          letter-spacing: 0.7px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

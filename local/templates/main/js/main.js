@@ -71,5 +71,13 @@ $(document).ready(function(){
 
     $(window).getDevice(768,1170);
 
+    $('.js-std-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        infinite: false,
+        dots: true
+    });
+
 
 });

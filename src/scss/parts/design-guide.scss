@@ -1,0 +1,33 @@
+a {
+  font-size: 13px;
+  color: #0dac49;
+  text-decoration: underline;
+
+  &.disabled {
+    color: #c7c8c8;
+    text-decoration: underline !important;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+.one-prod {
+  width: 290px;
+  display: block;
+  .one-prod-in {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 58px;
+    border: 1px solid red;
+  }
+  .img-cont {
+    width: 250px;
+    height: 165px;
+    display: flex;
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

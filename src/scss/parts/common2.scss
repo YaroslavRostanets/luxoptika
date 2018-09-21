@@ -28,3 +28,43 @@ main {
 .flex {
   display: flex;
 }
+.std-slider  {
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 19px 0 19px;
+    list-style: none;
+    background: rgba(255,255,255,.74);
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  li {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #7B7B78;
+    margin-right: 17px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    &.slick-active {
+      background: #0DAC49;
+      border: 1px solid #0DAC49
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    button {
+      border: transparent;
+      background: transparent;
+      font-size: 0;
+      outline: none;
+    }
+  }
+}
