@@ -79,5 +79,13 @@ $(document).ready(function(){
         dots: true
     });
 
+    $('.js-product-slider').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        arrows: false
+    });
 
 });
