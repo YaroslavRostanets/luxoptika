@@ -1,5 +1,8 @@
 footer {
   background: #F7F8F9;
+  .col-3 {
+    width: 33.333%;
+  }
   .subscribe {
     height: 122px;
     border-top: 1px solid #DADBDC;
@@ -12,6 +15,16 @@ footer {
   }
   .foot-links {
     border-top: 1px solid #DADBDC;
+    h4 {
+      margin: 0 0 7px 0;
+      color: #747474;
+      font-size: 15px;
+    }
+    .container {
+      padding-top: 37px;
+      padding-bottom: 35px;
+      border-bottom:1px solid #DEDFE0;
+    }
   }
   .subscribe-text {
     color: #252525;
@@ -46,6 +59,84 @@ footer {
       outline: none;
       padding: 0 58px;
       width: auto;
+    }
+  }
+  .fot-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 29px;
+    a {
+      font-size: 13px;
+      color: #252525;
+      text-decoration: none;
+    }
+  }
+  .social {
+    a {
+      text-decoration: none;
+      color: #747474;
+      font-size: 18px;
+      margin-right: 22px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .copyright {
+    height: 70px;
+    .container {
+      height: 100%;
+      justify-content: space-between;
+    }
+    .left-side {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 12px;
+        margin-right: 55px;
+      }
+    }
+    .right-side {
+      display: flex;
+      align-items: center;
+    }
+    .img-cont {
+      text-decoration: none;
+      height: 10px;
+      margin-right: 18px;
+      display: block;
+      opacity: 0.6;
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        height: 100%;
+        display: block;
+      }
+    }
+    .g-play {
+      margin-left: 55px;
+    }
+    .market {
+      display: block;
+      width: 84px;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .sense {
+      display: block;
+      width: 219px;
+      img {
+        width: 100%;
+        display: block;
+      }
     }
   }
 }
