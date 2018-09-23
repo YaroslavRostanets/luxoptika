@@ -24,6 +24,7 @@ a {
   font-size: 14px;
   overflow: hidden;
   text-decoration: none;
+  border: none;
   transition: all 0.15s ease-out;
   &.disabled {
     background: #DADBDC;
@@ -301,4 +302,99 @@ a {
       opacity: 0;
     }
   }
+}
+.jq-selectbox {
+  &.opened {
+    .jq-selectbox__select {
+      border: 1px solid #727272;
+    }
+    .jq-selectbox__trigger-arrow {
+      &:before {
+        transform: rotateX(-180deg);
+
+      }
+    }
+  }
+}
+.jq-selectbox__select {
+  border: 1px solid #DADBDC;
+  height: 44px;
+  min-width: 270px;
+  border-radius: 22px;
+  transition: all 0.15s ease-out;
+}
+.jq-selectbox__select-text {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  color: #252525;
+  font-size: 14px;
+  line-height: 42px;
+  padding-left: 23px;
+  padding-right: 35px;
+}
+.jq-selectbox__trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 35px;
+}
+.jq-selectbox__trigger-arrow {
+  &:before {
+    content: "\f107";
+    color: #7E7E7E;
+    font-family: "FontAwesome";
+    font-size: 15px;
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    top: 50%;
+    right: 13px;
+    margin-top: -6px;
+    transition: all 0.2s ease-out;
+    transform-origin: 0 60%;
+    transform: rotateX(0deg);
+  }
+}
+.jq-selectbox__dropdown {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 0px 0px 18px 3px rgba(64,64,64,0.15);
+  ul {
+    padding: 0 0 0 25px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #252525
+  }
+  li {
+    transition: all 0.15s ease-out;
+    cursor: pointer;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: #0dac49;
+    }
+  }
+}
+.mCSB_scrollTools {
+  right: 5px;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  background: transparent;
+  width: 6px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  background-color: rgba(13,172,73,.75);
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: rgba(13,172,73,1);
+}
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: rgba(13,172,73,1);
 }

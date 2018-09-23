@@ -88,4 +88,17 @@ $(document).ready(function(){
         arrows: false
     });
 
+    $('.js-news-slider').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        arrows: false
+    });
+
+    $('[data-styler]').styler();
+
+    $('.js-custom-scroll').mCustomScrollbar();
+
 });
