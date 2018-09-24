@@ -101,4 +101,27 @@ $(document).ready(function(){
 
     $('.js-custom-scroll').mCustomScrollbar();
 
+    $('.js-has-dropdown > a').on('click', function(){
+        var parent = $(this).parent();
+        if (parent.hasClass('open')){
+            parent.removeClass('open');
+            parent.find('.dropdown-list').fadeOut(100);
+        } else {
+            $(".js-has-dropdown").removeClass('open');
+            $(".dropdown-list").fadeOut(100);
+            parent.addClass('open');
+            parent.find('.dropdown-list').fadeIn(100);
+        }
+    });
+
+    $(document).mouseup(function (e) {
+        var container = $(".js-has-dropdown");
+        if (container.has(e.target).length === 0){
+            container.removeClass('open');
+            $('.dropdown-list').fadeOut(100);
+        }
+    });
+
+    $('.city-selector .dropdown-list').mCustomScrollbar();
+
 });

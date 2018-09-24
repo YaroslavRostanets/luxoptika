@@ -2,6 +2,8 @@ header {
   box-shadow: 0px 3px 18px 0px rgba(64,64,64,0.15);
   .top-stripe {
     background: #F7F8F9;
+    position: relative;
+    z-index: 1;
     .container.flex {
       justify-content: space-between;
     }
@@ -26,6 +28,10 @@ header {
         padding: 4px 11px;
         text-decoration: none;
         color: #252525;
+        transition: all 0.15s ease;
+        &:hover {
+          color: #0dac49;
+        }
       }
       &.active {
         a {
@@ -37,6 +43,11 @@ header {
       &.has-dropdown {
         padding-right: 8px;
         position: relative;
+        &.open {
+          &:after {
+            transform: rotateX(-180deg) translateY(-50%);
+          }
+        }
         &:after {
           content: "\f107";
           font-family: "FontAwesome";
@@ -46,6 +57,42 @@ header {
           transform: translateY(-50%);
           font-size: 13px;
           color: #7C7C7C;
+          transform-origin: 0 0;
+          transition: all 0.15s ease;
+        }
+        &:hover {
+          &:after {
+            color: #0dac49;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 0 3px 18px 0 rgba(64,64,64,.15);
+    display: none;
+    border-radius: 4px;
+    ul {
+      margin: 0;
+      padding: 5px 0 10px 0;
+      list-style: none;
+      width: 180px;
+      li {
+        width: 100%;
+      }
+      a {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        color: #252525;
+        transition: all 0.1s ease;
+        &:hover {
+          color: #0dac49;
         }
       }
     }
@@ -61,19 +108,105 @@ header {
       align-items: center;
       position: relative;
       margin-right: 10px;
-      a {
+      & > a {
         text-decoration: none;
         color: #252525;
+        font-size: 11px;
+        &:after {
+          content: "\f107";
+          font-family: "FontAwesome";
+          position: absolute;
+          right: 7px;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: all 0.15s ease;
+          font-size: 13px;
+          color: #7C7C7C;
+        }
       }
-      &:after {
-        content: "\f107";
-        font-family: "FontAwesome";
-        position: absolute;
-        right: 7px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 13px;
-        color: #7C7C7C;
+    }
+  }
+  .city-selector {
+    & > a {
+      transition: all 0.1s ease;
+      &:hover {
+        color: #0dac49;
+        &:after {
+          color: #0dac49;
+        }
+      }
+    }
+    &.open {
+      & > a {
+        &:after {
+          transform: translateY(-50%) rotateX(-180deg);
+        }
+      }
+    }
+    .dropdown-list {
+      top: calc( 100% - 5px );
+      left: -11px;
+      height: 116px;
+      overflow: auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      ul {
+        width: 140px;
+        padding: 3px 0 5px 8px;
+        a {
+          height: 25px;
+          text-decoration: none;
+          text-transform: none;
+        }
+      }
+      .mCSB_inside>.mCSB_container {
+        margin-right: 0;
+      }
+      .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        width: 3px;
+      }
+      .mCSB_scrollTools {
+        right: 0;
+      }
+      .mCSB_scrollTools .mCSB_draggerRail {
+        width: 3px;
+      }
+    }
+  }
+
+  .lang-selector {
+    & > a {
+      transition: all 0.1s ease;
+      &:hover {
+        color: #0dac49;
+        &:after {
+          color: #0dac49;
+        }
+      }
+    }
+    .dropdown-list {
+      top: 9px;
+      left: -8px;
+      ul {
+        width: 50px;
+        padding: 2px 0 4px 0px;
+      }
+      .selected {
+        a {
+          position: relative;
+          &:after {
+            content: "\f106";
+            font-family: FontAwesome;
+            position: absolute;
+            right: 7px;
+            top: 3px;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        height: 18px;
+        padding-left: 8px;
       }
     }
   }
@@ -153,6 +286,10 @@ header {
       font-size: 13px;
       display: inline-block;
       border-bottom: 1px dashed #0dac49;
+      transition: all 0.15s ease-out;
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
     }
   }
   .wishlist {
@@ -204,8 +341,11 @@ header {
       font-size: 12px;
       position: relative;
       top: -2px;
-      span {
+      a {
         color: #0dac49;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 12px;
       }
     }
   }
@@ -230,6 +370,10 @@ header {
           font-weight: 700;
           text-transform: uppercase;
           text-decoration: none;
+          transition: all 0.15s ease-out;
+          &:hover {
+            color: #0dac49;
+          }
         }
       }
     }
