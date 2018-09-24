@@ -118,10 +118,13 @@ a {
   width: 294px;
   display: block;
   text-decoration: none;
-  overflow: visible;
+  overflow: hidden;
   &:hover {
+    position: relative;
     overflow: visible;
+    z-index: 2;
     .one-prod-in {
+      background: #FFFFFF;
       height: auto;
       box-shadow: 0px 0px 16px 4px rgba(73,73,73,0.35);
     }
@@ -244,21 +247,9 @@ a {
     opacity: 0;
   }
 }
-.product-slider {
-  display: block;
-  overflow-x: hidden;
-  overflow-y: visible;
-  .slick-list {
-    overflow: visible;
-    width: calc( 100% + 20px ) !important;
-    padding-left: 10px;
-    margin-bottom: 95px;
-  }
-  .one-prod {
-    width: 288px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-  }
+.product-slider-wrap {
+  width: 100%;
+  position: relative;
   .slick-arrow {
     width: 65px;
     height: 65px;
@@ -268,21 +259,45 @@ a {
     position: absolute;
     top: 50%;
     border: none;
+    z-index: 2;
   }
   .slick-next {
     right: 0;
-    transform: translate(-50%,50%);
+    transform: translate(50%,-50%);
   }
   .slick-prev {
     left: 0;
     transform: translate(-50%,-50%);
   }
+}
+.product-slider {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: visible;
+  .slick-list {
+    overflow: visible;
+    width: calc( 100% + 20px ) !important;
+    padding-left: 10px;
+    margin-bottom: 105px;
+    position: relative;
+    z-index: 2;
+  }
+  .one-prod {
+    width: 288px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
   .slick-dots {
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
     list-style: none;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
     li {
       border: 1px solid #7B7B7B;
       width: 10px;
@@ -290,6 +305,7 @@ a {
       overflow: hidden;
       border-radius: 5px;
       margin-right: 20px;
+      cursor: pointer;
       &.slick-active {
         border: 1px solid #0DAC49;
         background: #0DAC49;

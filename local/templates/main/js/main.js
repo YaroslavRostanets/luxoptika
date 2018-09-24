@@ -85,7 +85,17 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
-        arrows: false
+        arrows: true
+    });
+
+    $('.js-product-slider').on('init', function(){
+        console.log('a2');
+        // left
+    });
+    $('.js-product-slider').wrap('<div class="product-slider-wrap" />');
+
+    $('.js-product-slider .slick-arrow').each(function(i, item){
+        $(item).appendTo($(this).closest('.product-slider-wrap'));
     });
 
     $('.js-news-slider').slick({
@@ -123,5 +133,14 @@ $(document).ready(function(){
     });
 
     $('.city-selector .dropdown-list').mCustomScrollbar();
+
+    $('.tabs-nav > li > a').on('click', function(e){
+        e.preventDefault();
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        var activeTab = $(this).attr('href');
+        $(activeTab).fadeIn(300).siblings().fadeOut(300);
+    });
+
+    $('.tabs-nav > .active > a').click();
 
 });

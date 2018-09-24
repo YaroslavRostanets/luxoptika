@@ -7,13 +7,19 @@
     margin-bottom: 50px;
     .one-ban {
       width: calc( 25% - 4px );
+      transition: all 0.15s ease;
       img {
         display: block;
         width: 100%;
       }
       &:hover {
-        
+        box-shadow: 0px 0px 14px 0px rgba(64,64,64,0.35);
       }
+    }
+  }
+  .top-sales-tabs {
+    .tab {
+      padding-top: 20px;
     }
   }
   .tabs-controll {
@@ -23,7 +29,6 @@
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 28px;
-    margin-bottom: 40px;
     .tabs-nav {
       margin: 0;
       padding: 0;
@@ -73,6 +78,9 @@
           border-bottom: 4px solid #0DAC49;
           a {
             color: #252525;
+            &:hover {
+              color: #0dac49;
+            }
           }
         }
         &:last-child {
@@ -84,6 +92,10 @@
         color: #747474;
         font-size: 12px;
         text-transform: uppercase;
+        transition: all 0.15s ease;
+        &:hover {
+          color: #0dac49;
+        }
       }
     }
   }
