@@ -29,6 +29,11 @@ main {
   display: flex;
 }
 .std-slider  {
+  .item {
+    img {
+      width: 100%;
+    }
+  }
   .slick-dots {
     display: flex;
     align-items: center;

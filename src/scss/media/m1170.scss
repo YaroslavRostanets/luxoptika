@@ -1,0 +1,182 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 950px;
+  }
+  .max1200 {
+    display: block;
+  }
+  header {
+    .top-menu {
+      &>li {
+        margin: 0;
+        a {
+          font-size: 10px;
+          padding: 4px 7px;
+        }
+      }
+    }
+    .right-part {
+      .has-dropdown {
+        padding-right: 19px;
+        margin-right: 7px;
+        &>a {
+          font-size: 10px;
+        }
+      }
+    }
+    .search-input {
+      width: 260px;
+      height: 40px;
+    }
+    .logo {
+      min-width: 150px;
+      margin-right: 25px;
+    }
+    .search-wrap {
+      margin-right: 25px;
+    }
+    .request-call {
+      margin-right: 25px;
+      .tel {
+        font-size: 14px;
+      }
+      .js-req-call {
+        font-size: 11px;
+      }
+    }
+    .wishlist {
+      margin-right: 25px;
+    }
+    .basket {
+      margin-right: 25px;
+    }
+    .middle-stripe {
+      height: 80px;
+      padding: 20px 0;
+    }
+    .bot-stripe {
+      .menu>li {
+        height: 45px;
+        &>a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .product-slider {
+    .one-prod {
+      width: 232px;
+    }
+  }
+  .one-prod {
+    .one-prod-in {
+      padding: 20px 15px 20px;
+    }
+    .prod-name {
+      line-height: 18px;
+      font-size: 14px;
+      height: 30px;
+    }
+    .old-price {
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    .new-price {
+      font-size: 14px;
+    }
+    .img-cont {
+      height: 145px;
+    }
+    .btn {
+      width: 130px;
+      height: 35px;
+    }
+  }
+  .product-slider {
+    .slick-list {
+      margin-bottom: 70px;
+    }
+  }
+  .home-main {
+    .one-news {
+      width: 222px;
+      margin: 0 10px;
+      .title {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    .questions-to-doctors {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    .map-search-cont {
+      .right-city {
+        display: none;
+      }
+      .tabs-controll {
+        .tabs-nav {
+          li {
+            height: 37px;
+          }
+        }
+      }
+      .title {
+        margin-bottom: 15px;
+      }
+      .max1200 {
+        display: inline-block;
+        .jq-selectbox__select {
+          height: auto;
+          border: none;
+          width: auto;
+          min-width: 0;
+        }
+        .jq-selectbox__trigger {
+          position: static;
+          width: auto;
+        }
+        .jq-selectbox__select-text {
+          font-size: inherit;
+          line-height: 15px;
+          padding-left: 5px;
+          color: #0dac49;
+        }
+        .jq-selectbox__trigger-arrow {
+          &:before {
+            right: 17px;
+            margin-top: -10px;
+            font-size: 18px;
+            color: #0dac49;
+          }
+        }
+        .jq-selectbox__dropdown {
+          width: 180px !important;
+        }
+      }
+    }
+    .map-wrap {
+      .marker-list {
+        left: calc(50% - 477px);
+      }
+    }
+  }
+  footer {
+    .subscribe {
+      height: 110px;
+    }
+    .subscribe-text {
+      font-size: 16px;
+      line-height: normal;
+    }
+    .subscribe-form {
+      .btn {
+        padding: 0 25px;
+      }
+    }
+    .subscribe-in {
+      width: 260px;
+      padding-left: 30px;
+    }
+  }
+}
