@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  header {
+    .logo {
+      margin-right: 20px;
+      width: 120px;
+      min-width: 120px
+    }
+    .request-call {
+      margin-right: 20px;
+      .tel {
+        font-size: 16px;
+      }
+    }
+    .wishlist {
+      display: none;
+    }
+    .basket {
+      margin-right: 20px;
+    }
+    .open-search-mobile {
+      margin-right: 20px;
+    }
+    .js-open-menu {
+      font-size: 27px;
+    }
+    .middle-stripe {
+      padding: 15px 0;
+    }
+  }
+  .home-main {
+    .mini-banners-cont {
+      flex-wrap: wrap;
+      .one-ban {
+        width: calc(50% - 4px);
+        margin-bottom: 8px;
+      }
+    }
+    .questions-to-doctors {
+      padding-top: 35px;
+      padding-bottom: 25px;
+      .questions-cont {
+        .date-name {
+          margin-bottom: 5px;
+          .name {
+            font-size: 13px;
+            margin-right: 25px;
+          }
+        }
+        .quest {
+          .text {
+            line-height: 21px;
+          }
+        }
+        .man-info {
+          margin-bottom: 5px;
+        }
+        .answer {
+          .text {
+            line-height: 21px;
+          }
+        }
+      }
+    }
+    .map-wrap {
+      .marker-list {
+        left: 0;
+      }
+    }
+  }
+  footer {
+    .foot-links {
+      .container {
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+    .col-3 {
+      width: 50%;
+      max-width: none;
+      margin-bottom: 17px;
+    }
+    .fot-list {
+      line-height: 27px;
+    }
+    .copyright {
+      height: auto;
+      .left-side {
+        flex-wrap: wrap;
+        span {
+          order: 2;
+          width: 100%;
+          margin: 10px 0;
+        }
+        .markets {
+          margin: 10px 0 0 0;
+          width: 100%;
+          order: 1;
+          justify-content: center;
+        }
+      }
+      .right-side {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .img-cont {
+        width: auto;
+        order: 3;
+        margin-right: 10px;
+      }
+      .g-play {
+        margin-left: 0;
+      }
+    }
+  }
+}

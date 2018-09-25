@@ -138,16 +138,20 @@
         }
         .jq-selectbox__select-text {
           font-size: inherit;
-          line-height: 15px;
+          line-height: 12px;
           padding-left: 5px;
           color: #0dac49;
         }
         .jq-selectbox__trigger-arrow {
           &:before {
             right: 17px;
-            margin-top: -10px;
+            margin-top: -6px;
             font-size: 18px;
             color: #0dac49;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-origin: 50% 50%;
           }
         }
         .jq-selectbox__dropdown {
