@@ -58,7 +58,7 @@ $(document).ready(function(){
     })(jQuery);
 
     function runMobile(){
-
+        $(selector).mCustomScrollbar("destroy");
     }
 
     function runTablet(){
@@ -69,7 +69,7 @@ $(document).ready(function(){
 
     }
 
-    $(window).getDevice(768,1170);
+    $(window).getDevice(576,1200);
 
     $('.js-std-slider').slick({
         autoplay: true,
@@ -113,7 +113,9 @@ $(document).ready(function(){
 
     $('[data-styler]').styler();
 
-    $('.js-custom-scroll').mCustomScrollbar();
+    if($(window).width() > 576){
+        $('.js-custom-scroll').mCustomScrollbar();
+    }
 
     $('.js-has-dropdown > a').on('click', function(){
         var parent = $(this).parent();
@@ -157,6 +159,10 @@ $(document).ready(function(){
         centerMode: true,
         arrows: false,
         dots: true
+    });
+
+    $('.js-open-map').on('click', function(){
+        $('.map-search-cont').addClass('showmap');
     });
 
 });

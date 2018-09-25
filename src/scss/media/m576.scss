@@ -151,11 +151,33 @@
         position: static;
         margin: 0 auto;
         padding: 0;
-        height: 440px;
+        height: 330px;
+        overflow: hidden;
       }
     }
     #map {
       display: none;
+    }
+    .max576 {
+      display: block;
+      .btn {
+        margin-top: 20px;
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 215px;
+      }
+    }
+    .js-show-on-map {
+      border-bottom: 1px dashed #0dac49;
+      font-size: 12px;
+      color: #0dac49;
+      display: inline;
+      transition: all 0.15s ease;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
     }
   }
   .product-slider {
