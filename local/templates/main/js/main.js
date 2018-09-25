@@ -152,4 +152,11 @@ $(document).ready(function(){
        $(this).closest('.one-place').toggleClass('open').find('.open-hours').slideToggle();
     });
 
+    $('.mobile-home-slider').slick({
+        slidesToShow: 1,
+        centerMode: true,
+        arrows: false,
+        dots: true
+    });
+
 });

@@ -365,6 +365,9 @@
           overflow: auto;
         }
       }
+      .js-open-map {
+        display: none;
+      }
     }
     .tabs-controll {
       margin-bottom: 0;
@@ -459,6 +462,48 @@
         font-size: 15px;
         font-family: 'FontAwesome';
         color: #7F7F7F;
+      }
+    }
+  }
+  .mobile-home-slider {
+    display: none;
+    margin-bottom: 60px;
+    .item {
+      margin: 0 5px;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translate(-50%,-50%);
+      li {
+        border: 1px solid #7B7B7B;
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-right: 20px;
+        cursor: pointer;
+        &.slick-active {
+          border: 1px solid #0DAC49;
+          background: #0DAC49;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      button {
+        opacity: 0;
+        cursor: pointer;
       }
     }
   }

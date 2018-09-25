@@ -1,0 +1,232 @@
+@media (max-width: 576px) {
+  header {
+    .logo {
+      display: none;
+    }
+    .request-call {
+      display: none;
+    }
+    .mobile-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      background: #0DAC49;
+      img {
+        width: 136px;
+      }
+    }
+    .middle-stripe {
+      padding: 6px 0;
+      height: 49px;
+      .container {
+        padding: 0 15px;
+      }
+    }
+    .ja-open-menu {
+      font-size: 26px;
+      margin-right: 37px;
+    }
+    .open-search-mobile {
+      margin-right: 36px;
+    }
+    .basket {
+      margin-right: 31px;
+      .count {
+        left: 14px;
+        top: 4px;
+      }
+    }
+    .dressing-room {
+      .tit {
+        letter-spacing: -1px;
+      }
+    }
+  }
+  .container {
+    width: 320px;
+  }
+  .home-main {
+    .std-slider {
+      display: none;
+    }
+    .mini-banners-cont {
+      display: none;
+    }
+    .mobile-home-slider {
+      display: block;
+    }
+    .tabs-controll {
+      padding-top: 17px;
+      padding-left: 17px;
+      .tit {
+        margin-bottom: 10px;
+      }
+      .read-more {
+        display: none;
+      }
+      .tabs-nav {
+        width: 100%;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        margin-bottom: -13px;
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+        li {
+          height: 38px;
+          margin-right: 25px;
+        }
+        a {
+          white-space: nowrap;
+        }
+      }
+      .left-p {
+        width: 100%;
+      }
+    }
+    .news-cont {
+      padding: 37px 15px 55px 15px;
+      .read-more {
+        display: none;
+      }
+      .slick-dots {
+        bottom: -55px;
+      }
+    }
+    .one-news {
+      width: 212px;
+      margin: 0 8px;
+    }
+    .map-search-cont {
+      margin-top: 0;
+      .tabs-controll>.flex {
+        flex-direction: column;
+      }
+      .right-city {
+        display: flex;
+        width: calc( 100% + 32px );
+        margin-left: -17px;
+        margin-right: -15px;
+        border-left: none;
+        padding-top: 0;
+        padding-left: 0;
+        .label {
+          display: none;
+        }
+        .js-open-map {
+          display: flex;
+        }
+      }
+      .max1200 {
+        display: none;
+      }
+      .jq-selectbox__select {
+        border-radius: 0;
+        height: 54px;
+        min-width: 230px;
+      }
+      .js-open-map {
+        background: #0DAC49;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        .fa {
+          margin-right: 5px;
+          font-size: 16px;
+        }
+      }
+      .jq-selectbox__select-text {
+        padding-left: 15px;
+        font-size: 13px;
+        line-height: 53px;
+      }
+    }
+    .map-wrap {
+      .marker-list {
+        position: static;
+        margin: 0 auto;
+        padding: 0;
+        height: 440px;
+      }
+    }
+    #map {
+      display: none;
+    }
+  }
+  .product-slider {
+    &:before {
+      height: 100%;
+    }
+    .slick-dots {
+      bottom: 54px;
+    }
+    .slick-list {
+      margin-bottom: 0px;
+    }
+  }
+  .one-prod {
+    width: 200px;
+    .img-cont {
+      height: 120px;
+      margin: 0;
+    }
+  }
+  .questions-to-doctors {
+    display: none;
+  }
+  footer {
+    .col-3 {
+      width: 100%;
+    }
+    .subscribe-text {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+    .subscribe-form {
+      flex-direction: column;
+      .subscribe-in {
+        margin-left: 0;
+        border-radius: 22px;
+        width: 210px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      .btn {
+        width: 210px;
+        margin-left: 0;
+      }
+    }
+    .fot-list {
+      line-height: 28px;
+    }
+    .foot-links {
+      .container {
+        border-bottom: none;
+      }
+    }
+    .copyright {
+      .right-side {
+        margin-bottom: 18px;
+      }
+      .left-side {
+        .markets {
+          border-bottom: 1px solid #DEDFE0;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+        }
+        span {
+          order: 3;
+        }
+        .img-cont {
+          order: 2;
+        }
+      }
+    }
+  }
+}
