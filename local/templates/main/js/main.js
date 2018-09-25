@@ -58,7 +58,7 @@ $(document).ready(function(){
     })(jQuery);
 
     function runMobile(){
-        $(selector).mCustomScrollbar("destroy");
+
     }
 
     function runTablet(){
@@ -163,10 +163,21 @@ $(document).ready(function(){
 
     $('.js-open-map').on('click', function(){
         $('.map-search-cont').addClass('showmap');
+
+        $('.js-view-all').parent().hide();
     });
 
     $('.js-close-map').on('click', function(){
         $('.map-search-cont').removeClass('showmap');
+
+        $('.js-view-all').parent().show();
+    });
+
+    $('.js-view-all').on('click', function(){
+        $(this).hide();
+        $('.js-custom-scroll').css({
+            'padding': '15px 0 15px 20px'
+        }).mCustomScrollbar();
     });
 
 });

@@ -154,8 +154,47 @@
         }
         .close-map {
           display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          text-decoration: none;
+          span {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #252525;
+            margin-right: 16px;
+            &:after {
+              content: "";
+              display: inline-block;
+              position: relative;
+              top: 3px;
+              margin-left: 5px;
+              width: 15px;
+              height: 15px;
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url('../img/icons/delete.svg');
+            }
+          }
+        }
+        .addrss-cont {
+          display: block;
+          position: absolute;
+          left: 50%;
+          bottom: 90px;
+          width: 290px;
+          transform: translateX(-50%);
+          background: #FFFFFF;
+          padding: 20px 20px 20px 30px;
+          box-shadow: 0 0 18px 3px rgba(64,64,64,.15);
+          .address {
+            font-weight: 700;
+          }
         }
       }
+    }
+    .addrss-cont {
+      display: none;
     }
     .map-wrap {
       .marker-list {
