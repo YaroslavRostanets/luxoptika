@@ -145,6 +145,17 @@
         font-size: 13px;
         line-height: 53px;
       }
+      &.showmap {
+        .marker-list {
+          display: none;
+        }
+        #map {
+          display: block;
+        }
+        .close-map {
+          display: flex;
+        }
+      }
     }
     .map-wrap {
       .marker-list {
@@ -157,6 +168,15 @@
     }
     #map {
       display: none;
+    }
+    .close-map {
+      display: none;
+      border-bottom: 1px solid #CFD3D5;
+      background: rgba(255,255,255,0.58);
+      height: 51px;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
     }
     .max576 {
       display: block;

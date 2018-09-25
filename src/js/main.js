@@ -165,4 +165,8 @@ $(document).ready(function(){
         $('.map-search-cont').addClass('showmap');
     });
 
+    $('.js-close-map').on('click', function(){
+        $('.map-search-cont').removeClass('showmap');
+    });
+
 });
