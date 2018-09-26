@@ -180,7 +180,7 @@ $(document).ready(function(){
         }).mCustomScrollbar();
     });
 
-    $('div.js-cat-checkbox').on('click', function(){
+    $('div.js-cat-checkbox, label.js-cat-checkbox').on('click', function(){
         if($(this).find('input[type=checkbox]').is( ":checked" )){
             $(this).closest('li').addClass('selected');
         } else {
@@ -215,10 +215,10 @@ $(document).ready(function(){
 
         if (parent.hasClass('open')){
             parent.removeClass('open');
-            parent.find('.filter-block-cont').slideUp({ duration: 800, easing: "easeOutCubic" });
+            parent.find('.filter-block-cont').slideUp({ duration: 600, easing: "easeOutCubic" });
         } else {
             parent.addClass('open');
-            parent.find('.filter-block-cont').slideDown({ duration: 800, easing: "easeOutCubic" });
+            parent.find('.filter-block-cont').slideDown({ duration: 600, easing: "easeOutCubic" });
         }
 
     });
@@ -228,12 +228,12 @@ $(document).ready(function(){
 
         if (parent.hasClass('open')){
             parent.removeClass('open');
-            parent.find('.filter-dropdown').slideUp({ duration: 800, easing: "easeOutCubic" });
+            parent.find('.filter-dropdown').slideUp({ duration: 600, easing: "easeOutCubic" });
 
         } else {
             parent.addClass('open');
-            parent.find('.filter-dropdown').slideDown({ duration: 800, easing: "easeOutCubic" });
+            parent.find('.filter-dropdown').slideDown({ duration: 600, easing: "easeOutCubic" });
         }
     });
-
+    $('.filter-list li.open .filter-dropdown').show();
 });

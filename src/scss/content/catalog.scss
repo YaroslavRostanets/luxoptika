@@ -144,7 +144,32 @@
           .cat-name {
             font-weight: 700;
           }
+          .color {
+            width: 25px;
+            height: 25px;
+            border-radius: 13px;
+            margin-top: -3px;
+            margin-left: -3px;
+            margin-bottom: -3px;
+            margin-right: 4px;
+            position: relative;
+            transition: all 0.2s ease;
+            &:before {
+              content: "";
+              width: 11px;
+              height: 11px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-image: url('../img/checked.svg');
+            }
+          }
         }
+
       }
       &.open {
         .js-toggle-category {
@@ -154,12 +179,21 @@
         }
       }
     }
+    .color {
+      width: 19px;
+      height: 19px;
+      border-radius: 10px;
+      margin-right: 7px;
+    }
     label {
       display: flex;
       align-items: center;
       width: 100%;
       cursor: pointer;
       height: 19px;
+      input {
+        display: none;
+      }
     }
     .category {
       display: flex;
@@ -233,10 +267,48 @@
     padding: 14px 0 0 25px;
     margin: 0;
     list-style: none;
+    display: none;
     li {
       margin: 7px 0;
+      &.selected {
+        .color {
+          width: 19px;
+          height: 19px;
+          margin-left: -4px;
+          position: relative;
+          border-radius: 10px;
+          margin-right: 6px;
+          box-shadow: 0px 0px 16px 0px rgba(73,73,73,0.35);
+          &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('../img/checked.svg');
+          }
+        }
+        .cat-name {
+          font-weight: 700;
+        }
+      }
       &:first-child {
         margin-top: 0;
+      }
+    }
+    .color {
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      margin-right: 9px;
+      transition: all 0.2s ease;
+      input {
+        display: none;
       }
     }
   }
