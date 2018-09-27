@@ -236,4 +236,40 @@ $(document).ready(function(){
         }
     });
     $('.filter-list li.open .filter-dropdown').show();
+
+    $('[data-items-show]').each(function(i, item){
+        var itemsShowCount = +$(this).attr('data-items-show');
+        var listHeight = 0;
+
+        for(var j = 0; j < itemsShowCount; j++){
+            listHeight += $(this).find('.filter-list > li').eq(j).outerHeight(true);
+        }
+        $(item).find('.filter-list').css({
+            'max-height': listHeight + 'px'
+        });
+
+    });
+    $('.js-show-all').on('click', function(){
+        var parent = $(this).closest('.filter-block');
+        var toggle = $(this).attr('data-toggle-variant');
+
+        if (parent.hasClass('show-all')){
+            parent.removeClass('show-all');
+        } else {
+            parent.addClass('show-all');
+        }
+        $(this).attr('data-toggle-variant', $(this).text() );
+        $(this).text(toggle);
+    });
+
+    /*-- модалка выбрать на карте --*/
+    $('.js-view-on-map').on('click', function(){
+        $('#show-on-map').modal({
+            fadeDuration: 100
+        });
+    });
+    /*-- конец модалка выбрать на карте --*/
+
+
+
 });

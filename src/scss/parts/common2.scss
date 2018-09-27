@@ -340,3 +340,50 @@ main {
     text-decoration: none;
   }
 }
+.prod-viewed {
+  border-top: 1px solid #DADBDC;
+  padding-top: 48px;
+  position: relative;
+  .container {
+    position: relative;
+  }
+  .view-title {
+    color: #252525;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+  }
+  .view-all-prod {
+    position: absolute;
+    bottom: 43px;
+    right: 0;
+    color: #0dac49;
+    text-decoration: none;
+    border-bottom: 1px dashed #0dac49;
+    margin-right: 26px;
+    transition: all 0.15s ease-out;
+    overflow: visible;
+    &:hover {
+      border-bottom: 1px dashed transparent;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      right: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 21px;
+      height: 10px;
+      background-image: url(../img/icons/green-arrow.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.blocker {
+  z-index: 5;
+  background: rgba(37,37,37,0.23);
+}
+.bh-sl-container img { max-width: none; }
