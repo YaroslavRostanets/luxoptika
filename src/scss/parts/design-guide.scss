@@ -104,6 +104,8 @@ a {
   font-size: 12px;
   padding-left: 18px;
   position: relative;
+  margin-right: 0;
+  margin-left: auto;
   &:before {
     content: "";
     position: absolute;
@@ -116,16 +118,31 @@ a {
     background: #0DAC49;
   }
 }
+.not-avi {
+  font-size: 12px;
+  color: #747474;
+  margin-right: 0;
+  margin-left: auto;
+}
+.delivery-expected {
+  color: #8f8702;font-size: 12px;
+}
 .one-prod {
   max-height: 295px;
   width: 294px;
   display: block;
   text-decoration: none;
   overflow: hidden;
+  &.not-available {
+    .img-cont {
+      opacity: .4;
+      filter: grayscale(35%);
+    }
+  }
   &:hover {
     position: relative;
     overflow: visible;
-    z-index: 2;
+    z-index: 3;
     .one-prod-in {
       background: #FFFFFF;
       height: auto;
@@ -219,6 +236,27 @@ a {
       height: 17px;
       width: 11px;
       background-image: url('../img/icons/fitting.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .added-fitting {
+    position: relative;
+    font-size: 13px;
+    padding-left: 16px;
+    color: #0e91ec;
+    text-decoration: none;
+    display: inline;
+    &:before {
+      content: "";
+      height: 17px;
+      width: 11px;
+      background-image: url('../img/icons/added-fitting.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;

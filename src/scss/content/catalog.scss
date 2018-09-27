@@ -28,7 +28,7 @@
     width: calc( 100% - 300px );
   }
   .filter-block {
-    margin-bottom: 47px;
+    margin-bottom: 10px;
     &.open {
       .js-toggle-filter {
         &:after {
@@ -65,7 +65,7 @@
       font-size: 15px;
       color: #252525;
       font-weight: 700;
-      margin-bottom: 22px;
+      padding-bottom: 10px;
     }
     .std-dropdown {
       display: inline;
@@ -85,6 +85,10 @@
       max-height: 140px;
       overflow: auto;
     }
+  }
+  .filter-block-cont {
+    padding-top: 12px;
+    padding-bottom: 37px;
   }
   .price-range {
     display: flex;
@@ -214,6 +218,7 @@
   .filt-block-ctrl {
     display: flex;
     justify-content: space-between;
+    margin-top: 17px;
     a {
       font-size: 13px;
       color: #0dac49;
@@ -325,6 +330,97 @@
       color: #7E7E7E;
       transform-origin: 0 0 ;
       font-family: "FontAwesome";
+    }
+  }
+  .cat-sort-type {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+  .left-sort {
+    display: flex;
+    align-items: center;
+  }
+  .sort-label {
+    color: #747474;
+    font-size: 13px;
+    margin-right: 28px;
+  }
+  .sort-link {
+    a {
+      color: #252525;
+      text-decoration: none;
+      border-bottom: 1px dashed #CCCCCC;
+      margin-right: 24px;
+      transition: all 0.15s ease-out;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
+      &.selected {
+        color: #0dac49;
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+  .cat-type {
+    display: flex;
+    font-size: 18px;
+    .active {
+      color: #121319;
+    }
+    a {
+      color: #DADBDC;
+      text-decoration: none;
+      display: block;
+      margin-right: 10px;
+      font-size: 18px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .prod-tiles-cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .one-prod {
+    width: 33.333%;
+    max-height: 347px;
+    border: 1px solid #EBEEF0;
+    margin-left: -1px;
+    margin-top: -1px;
+    .one-prod-in {
+      padding: 20px 18px 30px;
+    }
+    &:hover {
+      border: 1px solid transparent;
+    }
+    &:nth-child(3n+1) {
+      margin-left: 0;
+    }
+    &:nth-child(n+4) {
+      margin-top: -1px;
+    }
+    .img-cont {
+      height: 168px;
+      margin: 0 0 6px 0;
+
+    }
+    .m17 {
+      opacity: 1;
+    }
+  }
+  .b-cat {
+    display: block;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
 }
