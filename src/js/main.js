@@ -81,17 +81,13 @@ $(document).ready(function(){
 
     $('.js-product-slider').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
         arrows: true
     });
 
-    $('.js-product-slider').on('init', function(){
-        console.log('a2');
-        // left
-    });
     $('.js-product-slider').wrap('<div class="product-slider-wrap" />');
 
     $('.js-product-slider .slick-arrow').each(function(i, item){
@@ -270,6 +266,16 @@ $(document).ready(function(){
     });
     /*-- конец модалка выбрать на карте --*/
 
+    /*-- модалка Авторизация --*/
+    $('.js-sign-in').on('click', function(){
+        $('#sign-in').modal({
+            fadeDuration: 200
+        });
+    });
+    /*-- конец модалка Авторизация --*/
+
+    // Подписка маска футер
+    $('.js-subscribe-in').mask('(099)-999-99-99');
 
 
 });

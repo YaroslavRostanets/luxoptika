@@ -476,17 +476,5 @@
   .prod-viewed {
     width: 100%;
   }
-  .one-row-prod {
-    height: 240px;
-    display: flex;
-    padding: 8px;
-    border: 1px solid #EBEEF0;
-    .prod-info {
-      width: calc( 100% - 230px );
-    }
-    .prod-ctrl {
-      border-left: 1px solid #EBEEF0;
-      width: 230px;
-    }
-  }
+
 }

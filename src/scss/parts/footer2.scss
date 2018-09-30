@@ -45,11 +45,23 @@ footer {
     font-weight: 700;
     color: #252525;
     outline: none;
-    padding-left: 45px;
+    padding-left: 74px;
     &::placeholder {
       font-weight: 400;
       font-size: 15px;
       color: #747474;
+    }
+  }
+  .subscribe-in-wrap {
+    position: relative;
+    &:before {
+      content: "+38";
+      font-weight: 700;
+      font-size: 15px;
+      color: #252525;
+      position: absolute;
+      left: 45px;
+      top: 12px;
     }
   }
   .subscribe-form {

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="local/templates/main/libs/formstyler/jquery.formstyler.css">
     <link rel="stylesheet" href="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/noUiSlider/nouislider.min.css">
+    <link rel="stylesheet" href="local/templates/main/libs/modal/jquery.modal.min.css">
     <link rel="stylesheet" href="local/templates/main/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -108,10 +109,22 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="profile">
+
+                    <!-- Если авторизирован
+
+                        <div class="profile">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Личный кабинет
+                        </div>
+
+                    -->
+
+                    <div class="profile js-sign-in">
                         <i class="fa fa-user" aria-hidden="true"></i>
-                        Личный кабинет
+                        Авторизация
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -1834,7 +1847,11 @@
                     и опытные менеджеры обязательно помогут Вам
                 </div>
                 <form action="#" class="subscribe-form">
-                    <input type="text" placeholder="+38 (0XX) XXX - XX - XX" class="subscribe-in">
+                    <div class="subscribe-in-wrap">
+                        <input type="text"
+                               placeholder="(0XX) XXX - XX - XX"
+                               class="subscribe-in js-subscribe-in">
+                    </div>
                     <button class="btn ripple">
                         оставить заявку
                     </button>
@@ -2026,6 +2043,55 @@
             </div>
         </div>
     </footer>
+
+    <div id="sign-in" class="modal">
+        <h4 class="modal-title">
+            Вход в личный кабинет
+        </h4>
+        <div class="social-sign">
+            Вход с помощью:
+            <div class="sign-btns">
+                <a href="#" class="soc soc-fb">
+                    <img src="local/templates/main/img/icons/facebook.png" alt="">
+                </a>
+                <a href="#" class="soc soc-twitter">
+                    <img src="local/templates/main/img/icons/twitter.png" alt="">
+                </a>
+                <a href="#" class="soc soc-fb">
+                    <img src="local/templates/main/img/icons/inst.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="or-sign">
+            <div class="or">или</div>
+            <div class="form-group has-error">
+                <input type="email" placeholder="Email" value="lala@la.com">
+                <div class="help-block">
+                    Email не зарегистрирован. </br>
+                    Введите другой email или зарегистрируйтесь
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Пароль">
+                <div class="help-block"></div>
+            </div>
+            <div class="forgot-cont">
+                Забыли пароль?
+                <a href="#">Восстановить</a>
+            </div>
+            <a href="javascript:void(0);" class="btn ripple">
+                Войти
+            </a>
+
+            <div class="sign-up-cont">
+                Не регистировались?
+                <a href="#">
+                    Зарегистрироваться
+                </a>
+            </div>
+        </div>
+    </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjfvwzPf8o8bp32KjSHlz8JQRy0ybauCo&callback=initMap"
         async defer></script>
 <script src="https://use.fontawesome.com/35f65baac5.js"></script>
@@ -2033,6 +2099,8 @@
 <script src="local/templates/main/libs/formstyler/jquery.formstyler.min.js"></script>
 <script src="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
 <script src="local/templates/main/libs/noUiSlider/nouislider.min.js"></script>
+<script src="local/templates/main/libs/modal/jquery.modal.min.js"></script>
+<script src="local/templates/main/libs/jquery.mask.min.js"></script>
 <script src="local/templates/main/js/main.js"></script>
 </body>
 </html>

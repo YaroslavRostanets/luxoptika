@@ -59,6 +59,9 @@
     }
     .news-slider-wrap {
       padding-bottom: 45px;
+      .slick-arrow {
+        top: 34%;
+      }
     }
     .top {
       display: flex;
