@@ -113,6 +113,40 @@
       padding-top: 35px;
       padding-bottom: 35px;
     }
+  }
+  footer {
+    .subscribe {
+      height: 110px;
+    }
+    .subscribe-text {
+      font-size: 16px;
+      line-height: normal;
+    }
+    .subscribe-form {
+      .btn {
+        padding: 0 25px;
+      }
+    }
+    .subscribe-in {
+      width: 260px;
+      padding-left: 60px;
+    }
+    .subscribe-in-wrap {
+      &:before {
+        left: 32px;
+      }
+    }
+  }
+  .catalog-main {
+    .left-side {
+      width: 240px;
+      margin-right: 20px;
+    }
+    .products-wrap {
+      width: calc(100% - 260px);
+    }
+  }
+  .page {
     .map-search-cont {
       .right-city {
         display: none;
@@ -165,29 +199,6 @@
     .map-wrap {
       .marker-list {
         left: calc(50% - 477px);
-      }
-    }
-  }
-  footer {
-    .subscribe {
-      height: 110px;
-    }
-    .subscribe-text {
-      font-size: 16px;
-      line-height: normal;
-    }
-    .subscribe-form {
-      .btn {
-        padding: 0 25px;
-      }
-    }
-    .subscribe-in {
-      width: 260px;
-      padding-left: 60px;
-    }
-    .subscribe-in-wrap {
-      &:before {
-        left: 32px;
       }
     }
   }

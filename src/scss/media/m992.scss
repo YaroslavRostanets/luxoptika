@@ -136,10 +136,10 @@
         }
       }
     }
-    .product-slider-wrap {
-      .slick-arrow {
-        display: none !important;
-      }
+  }
+  .product-slider-wrap {
+    .slick-arrow {
+      display: none !important;
     }
   }
   .sticker.discount {
@@ -270,56 +270,6 @@
         }
       }
     }
-    .map-search-cont {
-      margin-top: 13px;
-      .left-tabs {
-        padding-top: 16px;
-        width: 100%;
-      }
-      .title {
-        font-size: 16px;
-      }
-      .tabs-controll {
-        padding-top: 0;
-        box-shadow: 0 0 18px 3px rgba(64,64,64,.15);
-        &>.flex {
-          padding-left: 0;
-          padding-right: 0;
-          box-shadow: none;
-        }
-        .tabs-nav {
-          width: 100%;
-          overflow-x: auto;
-          -ms-overflow-style: none;
-          overflow: -moz-scrollbars-none;
-          margin-bottom: -6px;
-          display: block;
-          white-space: nowrap;
-          &::-webkit-scrollbar {
-            width: 0;
-          }
-          li {
-            display: inline-block;
-            margin-right: 34px;
-          }
-          a {
-            white-space: nowrap;
-          }
-        }
-      }
-    }
-    .map-wrap {
-      .address {
-        width: 230px;
-      }
-      .marker-list {
-        width: 320px;
-        left: calc(50% - 347px);
-      }
-    }
-    #map {
-      height: 365px;
-    }
   }
   footer {
     .subscribe {
@@ -374,6 +324,70 @@
       .g-play {
         margin-left: 0;
       }
+    }
+  }
+  .page {
+    .map-search-cont {
+      margin-top: 13px;
+      .left-tabs {
+        padding-top: 16px;
+        width: 100%;
+      }
+      .title {
+        font-size: 16px;
+      }
+      .tabs-controll {
+        padding-top: 0;
+        box-shadow: 0 0 18px 3px rgba(64,64,64,.15);
+        &>.flex {
+          padding-left: 0;
+          padding-right: 0;
+          box-shadow: none;
+        }
+        .tabs-nav {
+          width: 100%;
+          overflow-x: auto;
+          -ms-overflow-style: none;
+          overflow: -moz-scrollbars-none;
+          margin-bottom: -6px;
+          display: block;
+          white-space: nowrap;
+          &::-webkit-scrollbar {
+            width: 0;
+          }
+          li {
+            display: inline-block;
+            margin-right: 34px;
+          }
+          a {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .map-wrap {
+      .address {
+        width: 230px;
+      }
+      .marker-list {
+        width: 320px;
+        left: calc(50% - 347px);
+      }
+    }
+    #map {
+      height: 365px;
+    }
+  }
+  .catalog-main {
+    overflow: hidden;
+    .prod-viewed {
+      padding-bottom: 10px;
+    }
+    .js-catalog-filter {
+      display: none;
+    }
+    .products-wrap {
+      width: 100%;
     }
   }
 }
