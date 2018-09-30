@@ -1,21 +1,19 @@
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .container {
-    width: 540px;
+    width: 100%;
   }
   header {
     .logo {
-      margin-right: 20px;
+      margin-right: 65px;
       width: 120px;
       min-width: 120px
     }
     .request-call {
       margin-right: 20px;
+      flex-grow: 1;
       .tel {
         font-size: 16px;
       }
-    }
-    .wishlist {
-      display: none;
     }
     .basket {
       margin-right: 20px;
@@ -27,14 +25,21 @@
       font-size: 27px;
     }
     .middle-stripe {
-      padding: 15px 0;
+      padding: 15px 24px;
+      .flex {
+        justify-content: space-between;
+      }
     }
   }
   .home-main {
+    .container {
+      padding:  0 24px;
+    }
     .mini-banners-cont {
       flex-wrap: wrap;
+      margin-top: 4px;
       .one-ban {
-        width: calc(50% - 4px);
+        width: calc(25% - 4px);
         margin-bottom: 8px;
       }
     }
@@ -42,6 +47,8 @@
       padding-top: 35px;
       padding-bottom: 25px;
       .questions-cont {
+        margin-left: -24px;
+        margin-right: -24px;
         .date-name {
           margin-bottom: 5px;
           .name {
@@ -82,6 +89,7 @@
       width: 50%;
       max-width: none;
       margin-bottom: 17px;
+      padding-left: 10%;
     }
     .fot-list {
       line-height: 27px;
@@ -90,10 +98,13 @@
       height: auto;
       .left-side {
         flex-wrap: wrap;
+        justify-content: center;
         span {
           order: 2;
           width: 100%;
           margin: 10px 0;
+          text-align: center;
+          white-space: nowrap;
         }
         .markets {
           margin: 10px 0 0 0;
@@ -106,6 +117,10 @@
         margin-top: 10px;
         margin-bottom: 10px;
       }
+      .sense {
+        margin-left: auto;
+        margin-right: auto;
+      }
       .img-cont {
         width: auto;
         order: 3;
@@ -114,6 +129,9 @@
       .g-play {
         margin-left: 0;
       }
+    }
+    .subscribe {
+      padding: 24px 25px;
     }
   }
 }

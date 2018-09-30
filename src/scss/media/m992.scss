@@ -30,7 +30,7 @@
     .dressing-room {
       .ico {
         height: 29px;
-        width: 18px;
+        width: 19px;
         margin-right: 5px;
       }
       .tit {
@@ -117,6 +117,10 @@
   .home-main {
     .mini-banners-cont {
       margin-bottom: 29px;
+      margin-top: 4px;
+      .one-ban {
+        width: calc(25% - 4px);
+      }
     }
     .tabs-controll {
       padding-top: 22px;
@@ -124,12 +128,10 @@
       letter-spacing: 0.0px;
       .tabs-nav {
         width: calc( 100% + 110px );
-        display: block;
-        white-space: nowrap;
+        justify-content: space-between;
         margin-bottom: -6px;
         li {
           height: 33px;
-          margin-right: 0;
           display: inline-block;
         }
       }
@@ -337,6 +339,11 @@
     .subscribe-in {
       margin-left: -25px;
     }
+    .subscribe-in-wrap {
+      &:before {
+        left: 5px;
+      }
+    }
     .subscribe-form {
       .btn {
         padding: 0 30px;
@@ -357,11 +364,15 @@
         flex-direction: column;
         justify-content: center;
       }
-      .g-play {
-        margin-left: 130px;
-      }
       .right-side {
         margin-top: 15px;
+      }
+      .markets {
+        flex-grow: 1;
+        justify-content: flex-end;
+      }
+      .g-play {
+        margin-left: 0;
       }
     }
   }

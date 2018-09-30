@@ -26,6 +26,7 @@
     .ja-open-menu {
       font-size: 26px;
       margin-right: 37px;
+      flex-grow: 1;
     }
     .open-search-mobile {
       margin-right: 36px;
@@ -42,11 +43,17 @@
         letter-spacing: -1px;
       }
     }
+    .wishlist {
+      display: none;
+    }
   }
   .container {
-    width: 320px;
+    width: 100%;
   }
   .home-main {
+    & > .container {
+      padding: 0;
+    }
     .std-slider {
       display: none;
     }
@@ -93,6 +100,9 @@
       .slick-dots {
         bottom: -55px;
       }
+      .container {
+        padding: 0;
+      }
     }
     .one-news {
       width: 212px;
@@ -105,7 +115,7 @@
       }
       .right-city {
         display: flex;
-        width: calc( 100% + 32px );
+        width: calc(100% + 44px);
         margin-left: -17px;
         margin-right: -15px;
         border-left: none;
@@ -201,7 +211,7 @@
         margin: 0 auto;
         padding: 0;
         height: 330px;
-        overflow: hidden;
+        overflow: scroll;
       }
     }
     #map {
@@ -262,6 +272,7 @@
   footer {
     .col-3 {
       width: 100%;
+      padding-left: 15px;
     }
     .subscribe-text {
       width: 100%;
@@ -274,8 +285,14 @@
         margin-left: 0;
         border-radius: 22px;
         width: 210px;
-        padding-left: 20px;
+        padding-left: 34px;
         margin-bottom: 20px;
+      }
+      .subscribe-in-wrap {
+        &:before {
+          left: 10px;
+          top: 13px;
+        }
       }
       .btn {
         width: 210px;
@@ -288,6 +305,7 @@
     .foot-links {
       .container {
         border-bottom: none;
+        padding-bottom: 0;
       }
     }
     .copyright {
@@ -295,17 +313,27 @@
         margin-bottom: 18px;
       }
       .left-side {
+        justify-content: flex-start;
+        margin-left: 15px;
         .markets {
           border-bottom: 1px solid #DEDFE0;
           padding-bottom: 30px;
           margin-bottom: 30px;
+          justify-content: flex-start;
+          padding-left: 0;
         }
         span {
           order: 3;
+          text-align: left;
+          padding-left: 0;
         }
         .img-cont {
           order: 2;
         }
+      }
+      .sense {
+        margin-left: 15px;
+        margin-right: auto;
       }
     }
   }
