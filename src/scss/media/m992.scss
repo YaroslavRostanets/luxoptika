@@ -124,10 +124,12 @@
       letter-spacing: 0.0px;
       .tabs-nav {
         width: calc( 100% + 110px );
-        justify-content: space-between;
+        display: block;
+        white-space: nowrap;
         li {
           height: 33px;
           margin-right: 0;
+          display: inline-block;
         }
       }
     }
@@ -287,10 +289,14 @@
           overflow-x: auto;
           -ms-overflow-style: none;
           overflow: -moz-scrollbars-none;
+          margin-bottom: -5px;
+          display: block;
+          white-space: nowrap;
           &::-webkit-scrollbar {
             width: 0;
           }
           li {
+            display: inline-block;
             margin-right: 34px;
           }
           a {
