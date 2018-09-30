@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-291 380 28 33" enable-background="new -291 380 28 33" xml:space="preserve">
-<image overflow="visible" width="28" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAMAAAD9NzvVAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA81BMVEUAAAAlJSUlJSUlJSUl
-JSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUl
-JSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUl
-JSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUl
-JSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUA
-AADMRqz6AAAAT3RSTlMACHPR+xzTltL1VnhQ18AGh7/B4XvQ1uLNwiBg8pIUcDdNG1lYNlorOTh8
-CZ/lw+OhB38pXEw6S24XkPSz1bAB941rPUhfJYL9pMe+6pyAXqILeAAAAAFiS0dEAIgFHUgAAAAJ
-cEhZcwAACxIAAAsSAdLdfvwAAAEySURBVCjPddHncoJAFAXga1TsoNgLGk2iib3F2HvBlvP+b5MV
-0ckMl/Pj7F6+gWF2iZ5xvDhdLueLg5i4JUgejyi31Rxen/+2+n1e67sBBO+bIAIWDMmPnRz6/1wJ
-R2QVUdlMFKocCSsmxiDFE0jGzSSRiEuImZhKE2WQfXwoiwxROmVOOc2KWu4+5FGwYgF5Y3hFkaiE
-twe+o0RUxIcxlFER/ak8f/5LVAVlY6iiZj2wGqrGWm9wR92oG4va5LCpGkurzWG7desOuhx20RHd
-Q5/DPnqivzHgcIAf0UOMOBxhKHo8ITaTsaipl0fvVNRszuN8RrRYrnhcLRfiOtY8rsXlbLDlcYsN
-7bDncY8dHXSFR0U/0DFKNoke6XS2w/OJLlc7vF5IV39touqk6bCJrv0B5uI1uEYDvDoAAAAASUVO
-RK5CYII=" transform="matrix(1 0 0 1 -291 380)">
-</image>
-<path fill="none" enable-background="new    " d="z"/>
+	 viewBox="0 0 78 88" enable-background="new 0 0 78 88" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="78" height="88"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path fill="#252525" clip-path="url(#SVGID_2_)" d="M78,83.6l-9-64c-0.3-1.5-0.9-2.8-1.8-3.8c-1-1.1-2.6-1.8-4.1-1.8h-7.3l-0.2-0.8
+		C53.8,5.6,46.8,0,39,0S24.2,5.6,22.4,13.2L22.3,14H15c-1.5,0-3.1,0.7-4.1,1.8c-0.9,1-1.5,2.3-1.8,3.8l0,0.1L0,83.6
+		c0,0.1,0,0.2,0,0.3C0,86.1,1.9,88,4.1,88h69.8c2.2,0,4.1-1.9,4.1-4.1C78,83.8,78,83.7,78,83.6 M26.7,12.7C28.5,7.5,33.5,4,39,4
+		s10.5,3.5,12.3,8.7l0.5,1.3H26.3L26.7,12.7z M4,84l8.9-63.4l0,0l0-0.2c0.2-0.7,0.5-1.4,0.8-1.8c0.4-0.4,0.7-0.5,1.2-0.5h7v10
+		c0,0.5,0.2,1.1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6c0,0,0,0,0,0c1.1,0,2-0.9,2-2V18h26v10c0,0.5,0.2,1.1,0.6,1.4
+		c0.4,0.4,0.9,0.6,1.4,0.6c0.5,0,1-0.2,1.4-0.6c0.4-0.4,0.6-0.9,0.6-1.4V18h7c0.5,0,0.8,0.1,1.2,0.5c0.4,0.4,0.7,1.1,0.9,1.8l0,0.2
+		L74,84H4z"/>
+</g>
 </svg>

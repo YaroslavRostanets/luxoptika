@@ -126,6 +126,7 @@
         width: calc( 100% + 110px );
         display: block;
         white-space: nowrap;
+        margin-bottom: -6px;
         li {
           height: 33px;
           margin-right: 0;
@@ -289,7 +290,7 @@
           overflow-x: auto;
           -ms-overflow-style: none;
           overflow: -moz-scrollbars-none;
-          margin-bottom: -5px;
+          margin-bottom: -6px;
           display: block;
           white-space: nowrap;
           &::-webkit-scrollbar {
