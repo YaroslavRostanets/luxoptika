@@ -640,12 +640,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .one-row-prod {
   height: 240px;
-  display: flex;
-  padding: 8px;
   border: 1px solid #EBEEF0;
   margin-top: -1px;
   &:last-child {
     margin-top: 0;
+  }
+  .one-row-prod-in {
+    display: flex;
+    padding: 8px;
   }
   .old-price {
     color: #747474;
