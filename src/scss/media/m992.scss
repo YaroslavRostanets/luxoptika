@@ -138,6 +138,7 @@
     }
   }
   .product-slider-wrap {
+    padding-bottom: 45px;
     .slick-arrow {
       display: none !important;
     }
@@ -166,9 +167,10 @@
     }
     .one-prod {
       width: 205px;
+      max-height: 240px;
     }
     .slick-dots {
-      bottom: 25px;
+      bottom: -39px;
     }
   }
   .one-prod {
@@ -371,7 +373,7 @@
       }
       .marker-list {
         width: 320px;
-        left: calc(50% - 347px);
+        left: 0;
       }
     }
     #map {
@@ -380,14 +382,173 @@
   }
   .catalog-main {
     overflow: hidden;
+    padding-top: 16px;
+    .breadcrumbs {
+      display: none;
+    }
     .prod-viewed {
       padding-bottom: 10px;
+      & > .container {
+        padding: 0 24px;
+      }
+      .view-all-prod {
+        right: 24px;
+      }
     }
     .js-catalog-filter {
       display: none;
     }
     .products-wrap {
       width: 100%;
+    }
+    .cat-sort-type {
+      display: none;
+    }
+    .mobile-ctrl-block {
+      box-shadow: 0px 0px 18px 3px rgba(64,64,64,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      .ico {
+        width: 19px;
+        height: 19px;
+        margin-right: 8px;
+      }
+      .js-open-filters {
+        font-size: 14px;
+        text-transform: none;
+        height: 40px;
+        width: 210px;
+      }
+      .right-part {
+        display: flex;
+      }
+      .std-dropdown {
+        position: relative;
+        &.open {
+          .std-dropdown-link {
+            &:after {
+              transform: translateY(-50%) rotateX(180deg);
+            }
+          }
+        }
+      }
+      .std-dropdown-list {
+        min-width: 0;
+      }
+      .std-dropdown-link {
+        text-decoration: none;
+        color: #252525;
+        font-size: 14px;
+        border: 1px solid #DADBDC;
+        border-radius: 20px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        width: 220px;
+        padding-right: 35px;
+        &:after {
+          content: "\f107";
+          position: absolute;
+          right: 10px;
+          width: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-family: "FontAwesome";
+        }
+      }
+      .cat-type {
+        align-items: center;
+        a {
+          margin-right: 20px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        &:before {
+          content: "";
+          width: 1px;
+          height: 30px;
+          background: #EBEEF0;
+          margin-right: 33px;
+          margin-left: 30px;
+        }
+      }
+    }
+    .title {
+      margin: 15px 0 17px;
+      h1 {
+        font-size: 18px;
+        letter-spacing: 0;
+      }
+      span {
+        font-size: 18px;
+      }
+    }
+    .tablet-back {
+      color: #0dac49;
+      font-size: 13px;
+      display: inline-block;
+      text-decoration: none;
+      &:before {
+        content: "";
+        width: 21px;
+        height: 10px;
+        display: inline-block;
+        background-image: url('../img/icons/green-arrow.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        margin-right: 6px;
+      }
+    }
+    .prod-tiles-cont {
+      .one-prod {
+        max-height: 325px;
+        .one-prod-in {
+          padding: 15px 12px 30px;
+        }
+        .img-cont {
+          height: 155px;
+          margin: 0;
+        }
+        .prod-name {
+          margin-bottom: 7px;
+        }
+      }
+    }
+    .load-more {
+      margin-top: 28px;
+    }
+    .pagination {
+      margin: 7px 0;
+    }
+    .view-title {
+      letter-spacing: 0;
+    }
+    .left-side {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .one-row-prod {
+      .sticker.discount {
+        width: 48px;
+        height: 48px;
+        font-size: 14px;
+      }
+      .img-cont {
+        width: 185px;
+      }
+      .prod-ctrl {
+        padding-left: 24px;
+      }
+      .btn {
+        font-size: 12px;
+      }
     }
   }
 }

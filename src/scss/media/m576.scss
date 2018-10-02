@@ -108,6 +108,143 @@
       width: 212px;
       margin: 0 8px;
     }
+  }
+  .product-slider {
+    &:before {
+      height: 100%;
+    }
+    .slick-dots {
+      bottom: -10px;
+    }
+    .slick-list {
+      margin-bottom: 0px;
+    }
+  }
+  .one-prod {
+    width: 200px;
+    max-height: 230px;
+    .img-cont {
+      height: 120px;
+      margin: 0;
+    }
+  }
+  .questions-to-doctors {
+    display: none;
+  }
+  footer {
+    .col-3 {
+      width: 100%;
+      padding-left: 15px;
+    }
+    .subscribe-text {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+    .subscribe-form {
+      flex-direction: column;
+      .subscribe-in {
+        margin-left: 0;
+        border-radius: 22px;
+        width: 210px;
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+      .subscribe-in-wrap {
+        &:before {
+          left: 10px;
+          top: 13px;
+        }
+      }
+      .btn {
+        width: 210px;
+        margin-left: 0;
+      }
+    }
+    .fot-list {
+      line-height: 28px;
+    }
+    .foot-links {
+      .container {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+    .copyright {
+      .right-side {
+        margin-bottom: 18px;
+      }
+      .left-side {
+        justify-content: flex-start;
+        margin-left: 15px;
+        .markets {
+          border-bottom: 1px solid #DEDFE0;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          justify-content: flex-start;
+          padding-left: 0;
+        }
+        span {
+          order: 3;
+          text-align: left;
+          padding-left: 0;
+        }
+        .img-cont {
+          order: 2;
+        }
+      }
+      .sense {
+        margin-left: 15px;
+        margin-right: auto;
+      }
+    }
+  }
+  .page {
+    .addrss-cont {
+      display: none;
+    }
+    .map-wrap {
+      .marker-list {
+        position: static;
+        margin: 0 auto;
+        padding: 0;
+        height: 290px;
+        overflow: hidden;
+      }
+    }
+    #map {
+      display: none;
+    }
+    .close-map {
+      display: none;
+      border-bottom: 1px solid #CFD3D5;
+      background: rgba(255,255,255,0.58);
+      height: 51px;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+    }
+    .max576 {
+      display: block;
+      .btn {
+        margin-top: 20px;
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 215px;
+      }
+    }
+    .js-show-on-map {
+      border-bottom: 1px dashed #0dac49;
+      font-size: 12px;
+      color: #0dac49;
+      display: inline;
+      transition: all 0.15s ease;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
+    }
     .map-search-cont {
       margin-top: 0;
       .tabs-controll>.flex {
@@ -202,139 +339,153 @@
         }
       }
     }
-    .addrss-cont {
-      display: none;
-    }
-    .map-wrap {
-      .marker-list {
-        position: static;
-        margin: 0 auto;
-        padding: 0;
-        height: 330px;
-        overflow: scroll;
-      }
-    }
-    #map {
-      display: none;
-    }
-    .close-map {
-      display: none;
-      border-bottom: 1px solid #CFD3D5;
-      background: rgba(255,255,255,0.58);
-      height: 51px;
-      width: 100%;
-      position: absolute;
-      z-index: 2;
-    }
-    .max576 {
-      display: block;
-      .btn {
-        margin-top: 20px;
-        margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 215px;
-      }
-    }
-    .js-show-on-map {
-      border-bottom: 1px dashed #0dac49;
-      font-size: 12px;
-      color: #0dac49;
-      display: inline;
-      transition: all 0.15s ease;
-      text-decoration: none;
-      &:hover {
-        border-bottom: 1px dashed transparent;
-      }
-    }
   }
-  .product-slider {
-    &:before {
-      height: 100%;
+  .catalog-main {
+    .title {
+      margin: 7px 0 17px;
     }
-    .slick-dots {
-      bottom: 54px;
+    & > .container {
+      padding: 0 15px;
     }
-    .slick-list {
-      margin-bottom: 0px;
-    }
-  }
-  .one-prod {
-    width: 200px;
-    .img-cont {
-      height: 120px;
-      margin: 0;
-    }
-  }
-  .questions-to-doctors {
-    display: none;
-  }
-  footer {
-    .col-3 {
-      width: 100%;
-      padding-left: 15px;
-    }
-    .subscribe-text {
-      width: 100%;
-      text-align: center;
-      font-size: 14px;
-    }
-    .subscribe-form {
+    .mobile-ctrl-block {
       flex-direction: column;
-      .subscribe-in {
-        margin-left: 0;
-        border-radius: 22px;
-        width: 210px;
-        padding-left: 34px;
+      box-shadow: none;
+      align-items: flex-start;
+      padding: 0;
+      margin-bottom: 20px;
+      .right-part {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .js-open-filters {
+        width: 100%;
         margin-bottom: 20px;
       }
-      .subscribe-in-wrap {
+      .std-dropdown-link {
+        width: 200px;
+      }
+      .cat-type {
         &:before {
-          left: 10px;
-          top: 13px;
+          display: none;
+        }
+        a {
+          width: 40px;
+          height: 40px;
+          background: #FFFFFF;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0;
+          &.active {
+            z-index: 2;
+            box-shadow: 0px 2px 8px 0px rgba(64,64,64,0.2);
+          }
+        }
+        .fa-th {
+          &:before {
+            content: "\f009";
+          }
         }
       }
-      .btn {
-        width: 210px;
+    }
+    .prod-tiles-cont {
+      justify-content: center;
+      .one-prod {
+        width: 50%;
+        max-height: 170px;
         margin-left: 0;
-      }
-    }
-    .fot-list {
-      line-height: 28px;
-    }
-    .foot-links {
-      .container {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-    }
-    .copyright {
-      .right-side {
-        margin-bottom: 18px;
-      }
-      .left-side {
-        justify-content: flex-start;
-        margin-left: 15px;
-        .markets {
-          border-bottom: 1px solid #DEDFE0;
-          padding-bottom: 30px;
-          margin-bottom: 30px;
-          justify-content: flex-start;
-          padding-left: 0;
+        margin-top: 0;
+        &:nth-child(n+2) {
+          margin-top: -1px;
         }
-        span {
-          order: 3;
-          text-align: left;
-          padding-left: 0;
+        &:nth-child(2n) {
+          margin-left: -1px;
+        }
+        .prod-name {
+          line-height: 16px;
+          font-size: 12px;
+          margin-bottom: 4px;
+        }
+        .sticker-place {
+          display: none;
+        }
+        .old-price {
+          font-size: 13px;
+        }
+        .price {
+          font-size: 13px;
+        }
+        .new-price {
+          font-size: 13px;
+        }
+        .price-wrap {
+          margin-bottom: 4px;
+        }
+        .one-prod-in {
+          padding: 10px 10px 10px;
         }
         .img-cont {
-          order: 2;
+          height: 88px;
+        }
+        .m17 {
+          opacity: 0;
+          margin-bottom: 10px;
+        }
+        &:hover {
+          .m17 {
+            opacity: 1;
+          }
         }
       }
-      .sense {
-        margin-left: 15px;
-        margin-right: auto;
+    }
+    .load-more {
+      margin-top: 43px;
+      margin-bottom: 20px;
+    }
+    .prod-viewed {
+      padding-top: 32px;
+      &>.container {
+        padding: 0 15px;
       }
     }
+    .view-all-prod {
+      display: none;
+    }
+    .map-search-cont {
+      .tabs-controll {
+        padding-left: 17px;
+      }
+    }
+    .b-cat {
+      img {
+        display: none;
+      }
+      .img-mobile {
+        display: block;
+      }
+    }
+  }
+  .pagination {
+    font-size: 14px;
+    li {
+      width: 29px;
+      background: transparent !important;
+      margin-right: 0;
+      &.active {
+        color: #0dac49;
+        font-weight: 700;
+      }
+    }
+    a {
+      &:hover {
+        background: transparent !important;
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  #filter-modal.modal {
+    width: 100%;
   }
 }

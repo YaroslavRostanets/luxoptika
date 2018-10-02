@@ -238,12 +238,47 @@
                 </ul>
             </div>
             <!-- конец Хлебные крошки -->
+            <a href="#" class="tablet-back">
+                назад
+            </a>
             <div class="title">
                 <h1>Солнцезащитные очки</h1>
                 <span>(5 657)</span>
             </div>
             <div class="catalog-struct">
-                <div class="left-side js-catalog-filter">
+                <div id="filter-modal" class="left-side js-catalog-filter">
+                    <div class="tablet-filter-title">
+                        Фильтр товаров
+                    </div>
+                    <div class="selected-filters">
+                        <div class="selected-title">
+                            Вы выбрали
+                        </div>
+                        <div class="sel-tags">
+                            <div class="one-tag">
+                                Товары со скидками
+                                <a href="javascript:void(0);"
+                                   class="this-remove"></a>
+                            </div>
+                            <div class="one-tag">
+                                Киев, ул. Сагайдачного, 35
+                                <a href="javascript:void(0);"
+                                   class="this-remove"></a>
+                            </div>
+                            <div class="one-tag">
+                                FRESHLOOK
+                                <a href="javascript:void(0);"
+                                   class="this-remove"></a>
+                            </div>
+                            <div class="one-tag">
+                                -1.5 (PRW)
+                                <a href="javascript:void(0);"
+                                   class="this-remove"></a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);"
+                           class="clear-filters">Очистить фильтры</a>
+                    </div>
                     <div class="filter-block price-block">
                         <div class="filter-title">
                             Цена
@@ -1295,6 +1330,41 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="mobile-ctrl-block">
+                        <a href="javascript:void(0);"
+                           class="js-open-filters btn ripple">
+                            <img src="local/templates/main/img/icons/filter.svg" alt="" class="ico">
+                            Фильтр товаров
+                        </a>
+                        <div class="right-part">
+                            <div class="std-dropdown">
+                                <a href="javascript:void(0);" class="std-dropdown-link">
+                                    По популярности
+                                </a>
+                                <ul class="std-dropdown-list">
+                                    <li>
+                                        <a href="#">Сначала дешевые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сначала дорогие</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">По названию</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cat-type">
+                                <a href="#" class="tiles active">
+                                    <i class="fa fa-th" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="rows">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="prod-tiles-cont">
                         <a href="#" class="one-prod">
                             <div class="one-prod-in">
@@ -1683,6 +1753,7 @@
                     </div>
                     <a href="#" class="b-cat">
                         <img src="local/templates/main/img/content/b-cat.jpg" alt="">
+                        <img class="img-mobile" src="local/templates/main/img/content/banner-mobile.jpg" alt="">
                     </a>
                     <div class="prod-tiles-cont">
                         <a href="#" class="one-prod">
@@ -2893,6 +2964,7 @@
 <script src="local/templates/main/libs/formstyler/jquery.formstyler.min.js"></script>
 <script src="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
 <script src="local/templates/main/libs/modal/jquery.modal.min.js"></script>
+<script src="local/templates/main/libs/jquery.mask.min.js"></script>
 <script src="local/templates/main/js/main.js"></script>
 </body>
 </html>

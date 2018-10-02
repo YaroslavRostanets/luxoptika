@@ -134,4 +134,54 @@
       padding: 24px 25px;
     }
   }
+  .catalog-main {
+    & > .container {
+      padding: 0 24px;
+    }
+  }
+}
+@media (max-width: 690px) {
+  header {
+    .logo {
+      margin-right: 30px;
+    }
+    .request-call {
+      flex-grow: initial;
+      margin-right: 10px;
+      .tel {
+        font-size: 14px;
+      }
+      .js-req-call {
+        font-size: 12px;
+      }
+    }
+    .wishlist {
+      display: none;
+    }
+    .open-search-mobile {
+      margin-right: 15px;
+    }
+    .basket {
+      margin-right: 15px;
+    }
+  }
+  .catalog-main {
+    .mobile-ctrl-block {
+      .std-dropdown-link {
+        width: 200px;
+      }
+      .cat-type {
+        a {
+          margin-right: 15px;
+        }
+        &:before {
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+    .js-open-filters {
+      margin-right: 15px;
+    }
+  }
 }

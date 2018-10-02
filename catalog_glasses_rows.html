@@ -229,6 +229,9 @@
 
         <div class="container">
             <!-- Хлебные крошки -->
+            <a href="#" class="tablet-back">
+                назад
+            </a>
             <div class="breadcrumbs">
                 <ul>
                     <li>
@@ -245,7 +248,7 @@
                 <span>(5 657)</span>
             </div>
             <div class="catalog-struct">
-                <div class="left-side">
+                <div id="filter-modal" class="js-catalog-filter left-side">
                     <div class="filter-block price-block">
                         <div class="filter-title">
                             Цена
@@ -1297,6 +1300,41 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="mobile-ctrl-block">
+                        <a href="javascript:void(0);"
+                           class="js-open-filters btn ripple">
+                            <img src="local/templates/main/img/icons/filter.svg" alt="" class="ico">
+                            Фильтр товаров
+                        </a>
+                        <div class="right-part">
+                            <div class="std-dropdown">
+                                <a href="javascript:void(0);" class="std-dropdown-link">
+                                    По популярности
+                                </a>
+                                <ul class="std-dropdown-list">
+                                    <li>
+                                        <a href="#">Сначала дешевые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сначала дорогие</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">По названию</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cat-type">
+                                <a href="#" class="tiles">
+                                    <i class="fa fa-th" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="rows active">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="prod-rows-cont">
 
                         <div class="one-row-prod">
@@ -2727,6 +2765,7 @@
 <script src="local/templates/main/libs/formstyler/jquery.formstyler.min.js"></script>
 <script src="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
 <script src="local/templates/main/libs/modal/jquery.modal.min.js"></script>
+<script src="local/templates/main/libs/jquery.mask.min.js"></script>
 <script src="local/templates/main/js/main.js"></script>
 </body>
 </html>

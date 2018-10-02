@@ -172,8 +172,8 @@ $(document).ready(function(){
     $('.js-view-all').on('click', function(){
         $(this).hide();
         $('.js-custom-scroll').css({
-            'padding': '15px 0 15px 20px'
-        }).mCustomScrollbar();
+            'overflow': 'auto'
+        });
     });
 
     $('div.js-cat-checkbox, label.js-cat-checkbox').on('click', function(){
@@ -233,18 +233,23 @@ $(document).ready(function(){
     });
     $('.filter-list li.open .filter-dropdown').show();
 
-    $('[data-items-show]').each(function(i, item){
-        var itemsShowCount = +$(this).attr('data-items-show');
-        var listHeight = 0;
+    function countItemsShow() {
+        $('[data-items-show]').each(function(i, item){
+            var itemsShowCount = +$(this).attr('data-items-show');
+            var listHeight = 0;
 
-        for(var j = 0; j < itemsShowCount; j++){
-            listHeight += $(this).find('.filter-list > li').eq(j).outerHeight(true);
-        }
-        $(item).find('.filter-list').css({
-            'max-height': listHeight + 'px'
+            for(var j = 0; j < itemsShowCount; j++){
+                listHeight += $(this).find('.filter-list > li').eq(j).outerHeight(true);
+            }
+            $(item).find('.filter-list').css({
+                'max-height': listHeight + 'px'
+            });
+
         });
+    }
 
-    });
+    countItemsShow();
+
     $('.js-show-all').on('click', function(){
         var parent = $(this).closest('.filter-block');
         var toggle = $(this).attr('data-toggle-variant');
@@ -277,5 +282,14 @@ $(document).ready(function(){
     // Подписка маска футер
     $('.js-subscribe-in').mask('(099)-999-99-99');
 
+    // Открыть\закрыть фильтры
+    $('.js-open-filters').on('click', function(){
+        $('.js-catalog-filter').modal({
+            fadeDuration: 100
+        });
+    });
+    $('.js-catalog-filter').on($.modal.OPEN, function(event, modal) {
+        countItemsShow();
+    });
 
 });
