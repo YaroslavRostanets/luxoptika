@@ -292,4 +292,38 @@ $(document).ready(function(){
         countItemsShow();
     });
 
+    /*-- Слайдер Линзы каталог --*/
+
+    $('.js-lenses-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.js-lenses-nav'
+    });
+    $('.js-lenses-nav').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.js-lenses-for',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: true,
+        prevArrow: "<a class='fa fa-angle-left'></a>",
+        nextArrow: "<a class='fa fa-angle-right'></a>"
+
+    });
+
+    /*-- конец Слайдер Линзы каталог --*/
+
+    $('.lenses-buy label').on('click', function(){
+        var parent = $(this).closest('tr');
+        if($(this).find('input[type=radio]').is( ":checked" )){
+            parent.siblings().removeClass('selected');
+            parent.addClass('selected');
+        } else {
+
+        }
+    });
+
 });

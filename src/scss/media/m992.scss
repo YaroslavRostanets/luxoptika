@@ -535,14 +535,15 @@
       left: 0;
     }
   }
-  .one-row-prod {
+  .one-row-prod, .one-row-lense {
     .sticker.discount {
       width: 48px;
       height: 48px;
       font-size: 14px;
     }
     .img-cont {
-      width: 185px;
+      min-width: 185px;
+      max-width: 185px;
     }
     .prod-ctrl {
       padding-left: 24px;

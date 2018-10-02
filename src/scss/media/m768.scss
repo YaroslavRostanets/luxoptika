@@ -144,7 +144,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .one-row-prod{
+  .one-row-prod, .one-row-lense{
     width: 50%;
     height: 340px;
     overflow: hidden;
@@ -184,6 +184,8 @@
     .img-cont {
       height: 210px;
       width: 100%;
+      min-width: 0;
+      max-width: 100%;
       margin-left: auto;
       margin-right: auto;
     }

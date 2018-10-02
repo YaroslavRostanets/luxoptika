@@ -513,6 +513,57 @@
       display: none;
     }
   }
+  .typeset-ban {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 43px 40px 50px 42px;
+    h4 {
+      color: #252525;
+      font-size: 24px;
+      margin: 0 0 7px 0;
+      text-transform: uppercase;
+    }
+    .after-title {
+      font-size: 15px;
+      color: #252525;
+      line-height: 24px;
+      max-width: 500px;
+      margin-bottom: 17px;
+    }
+    .links {
+      a {
+        font-size: 13px;
+        color: #0dac49;
+        text-decoration: none;
+        margin-right: 23px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .js-view-on-map {
+        &:after {
+          content: "\f105";
+          position: static;
+          transform: translate(0, 0);
+          position: relative;
+          top: 2px;
+          left: 0;
+        }
+      }
+      .video {
+        &:before {
+          content: "\f144";
+          font-size: 16px;
+          text-decoration: none;
+          font-family: 'FontAwesome';
+        }
+      }
+    }
+  }
   .load-more {
     margin-left: auto;
     margin-right: auto;
