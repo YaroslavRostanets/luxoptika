@@ -112,6 +112,7 @@ $(document).ready(function(){
     if($(window).width() > 576){
         $('.js-custom-scroll').mCustomScrollbar();
     }
+    $('.sel-wrap .jq-selectbox__dropdown ul').mCustomScrollbar();
 
     $('.js-has-dropdown > a').on('click', function(){
         var parent = $(this).parent();
@@ -294,24 +295,44 @@ $(document).ready(function(){
 
     /*-- Слайдер Линзы каталог --*/
 
-    $('.js-lenses-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.js-lenses-nav'
-    });
     $('.js-lenses-nav').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
-        asNavFor: '.js-lenses-for',
         dots: false,
         centerMode: false,
-        focusOnSelect: true,
         arrows: true,
+        infinite: false,
         prevArrow: "<a class='fa fa-angle-left'></a>",
-        nextArrow: "<a class='fa fa-angle-right'></a>"
+        nextArrow: "<a class='fa fa-angle-right'></a>",
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }
+        ]
 
+    });
+
+    $('.js-hover-color').hover(function(){
+        var parent = $(this).closest('.img-slider-wrap');
+        var imgSrc = $(this).attr('data-src');
+        var oldImgSrc = parent.find('.colors-img-cont img').attr('src');
+        parent.attr('data-src', oldImgSrc);
+        parent.find('.colors-img-cont img').remove();
+        var wrap = parent.find('.colors-img-cont').append(
+            '<img src=' + imgSrc + '>'
+        );
+        wrap.find('img').hide().fadeIn(150);
+    }, function(){
+        var parent = $(this).closest('.img-slider-wrap');
+        var img = parent.attr('data-src');
+        $(this).closest('.img-slider-wrap').find('.colors-img-cont img').remove();
+        parent.find('.colors-img-cont').append(
+            '<img src=' + img + '>'
+        );
     });
 
     /*-- конец Слайдер Линзы каталог --*/
@@ -323,6 +344,15 @@ $(document).ready(function(){
             parent.addClass('selected');
         } else {
 
+        }
+    });
+
+    $('.js-datelist input').on('input', function(){
+        var parent = $(this).closest('.std-dropdown');
+        if($(this).val().length >= 1){
+            parent.find('.std-dropdown-list').fadeIn(100);
+        } else {
+            parent.find('.std-dropdown-list').fadeOut(100);
         }
     });
 

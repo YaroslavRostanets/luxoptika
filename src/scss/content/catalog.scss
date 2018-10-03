@@ -72,6 +72,98 @@
   .products-wrap {
     width: calc( 100% - 300px );
   }
+  .city-select-filter.filter-block {
+    padding-bottom: 25px;
+    .filter-title {
+      padding-bottom: 17px;
+    }
+    .choose-city {
+      font-size: 14px;
+      color: #252525;
+      margin-bottom: 11px;
+      .fa {
+        margin-right: 9px;
+        color: #0DAC49;
+      }
+    }
+    .city-select-wrap {
+      margin-bottom: 8px;
+      input[type="text"]{
+        display: block;
+        width: 100%;
+        border: 1px solid #DADBDC;
+        height: 44px;
+        border-radius: 22px;
+        padding-left: 22px;
+        outline: none;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        color: #252525;
+      }
+    }
+    .hint {
+      color: #747474;
+      font-size: 12px;
+    }
+    .std-dropdown-list {
+      min-width: 270px;
+    }
+  }
+  .sel-wrap {
+    margin-right: 17px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .jq-selectbox.opened {
+      .jq-selectbox__trigger {
+        border-left: 1px solid #727272;
+      }
+    }
+    .jq-selectbox:hover {
+      .jq-selectbox__trigger {
+        border-left: 1px solid #727272;
+      }
+    }
+    .label {
+      color: #252525;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .jq-selectbox__select {
+      width: 118px;
+      min-width: 0;
+      height: 42px;
+      border-radius: 4px;
+      padding-left: 12px;
+    }
+    .jq-selectbox__trigger {
+      border-left: 1px solid #DADBDC;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    .jq-selectbox__trigger-arrow {
+      &:before {
+        right: 9px;
+      }
+    }
+    .jq-selectbox__select-text {
+      padding-left: 0;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .jq-selectbox__dropdown {
+      ul {
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-height: 140px !important;
+        overflow: hidden;
+      }
+      li {
+        height: 28px;
+      }
+    }
+  }
   .filter-block {
     margin-bottom: 10px;
     &.open {
@@ -265,7 +357,8 @@
       align-items: center;
       width: 100%;
       cursor: pointer;
-      height: 19px;
+      min-height: 19px;
+      padding-left: 15px;
       input {
         display: none;
       }

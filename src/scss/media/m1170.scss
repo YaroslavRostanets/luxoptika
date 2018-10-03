@@ -214,4 +214,32 @@
       padding-left: 10px;
     }
   }
+  .one-row-lense {
+    height: auto;
+    .prod-ctrl {
+      width: 240px;
+    }
+    .img-slider-wrap {
+      min-width: 210px;
+      max-width: 210px;
+    }
+    .img-cont {
+      min-width: 210px;
+      max-width: 210px;
+    }
+    .prod-table {
+      tr {
+        display: flex;
+        flex-direction: column;
+      }
+      td {
+        &:first-child {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
