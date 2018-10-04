@@ -266,6 +266,12 @@
       }
     }
   }
+  .one-lense {
+    width: 50%;
+    .sticker-place {
+      display: none;
+    }
+  }
 }
 @media (max-width: 690px) {
   header {

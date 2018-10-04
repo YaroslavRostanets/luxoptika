@@ -345,13 +345,17 @@
 
                     <!-- Один блок фильтра -->
 
-                    <div data-items-show="5" class="filter-block">
+                    <div class="filter-block city-select-filter">
                         <div class="filter-title">
                             Наличие в оптиках
-                            <div class="std-dropdown">
-                                <a href="javascript:void(0);" class="std-dropdown-link">
-                                    Киева
-                                </a>
+                        </div>
+                        <div class="city-select-wrap">
+                            <div class="choose-city">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Выберите свой город
+                            </div>
+                            <div class="std-dropdown js-datelist">
+                                <input type="text">
                                 <ul class="std-dropdown-list">
                                     <li>
                                         <a href="#">Одессы</a>
@@ -377,89 +381,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="filter-block-cont">
-                            <ul class="filter-list">
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Лаврухина, 4, ТЦ</span>
-                                            <span class="count">12</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Ольжича, 8</span>
-                                            <span class="count">15</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Сагайдачного, 35</span>
-                                            <span class="count">210</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Б. Васильковская, 66</span>
-                                            <span class="count">25</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Мельникова, 2/10</span>
-                                            <span class="count">57</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Выборгская, 40/16-А</span>
-                                            <span class="count">7</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Мельникова, 2/10</span>
-                                            <span class="count">57</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Киев, ул. Выборгская, 40/16-А</span>
-                                            <span class="count">7</span>
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                            <div class="filt-block-ctrl">
-                                <a href="javascript:void(0);" data-toggle-variant="Скрыть" class="js-show-all">
-                                    Смотреть все
-                                </a>
-                                <a href="javascript:void(0);" class="js-view-on-map">
-                                    Выбрать на карте
-                                </a>
-                            </div>
+                        <div class="hint">
+                            Если вы выберите свой город,
+                            то увидите наличие товара по магазинам.
                         </div>
                     </div>
 
@@ -631,10 +555,10 @@
                     <!--конец Один блок фильтра -->
                     <!-- Один блок фильтра -->
 
-                    <div class="filter-block open">
+                    <div data-items-show="9" class="filter-block open">
                         <div class="filter-title">
                             <a href="javascript:void(0);" class="js-toggle-filter">
-                                Пол
+                                Производитель
                             </a>
                         </div>
                         <div class="filter-block-cont">
@@ -643,270 +567,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Мужские</span>
-                                            <span class="count">122</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Женские</span>
-                                            <span class="count">142</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Детские</span>
-                                            <span class="count">328</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">Унисекс</span>
-                                            <span class="count">38</span>
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--конец Один блок фильтра -->
-                    <!-- Один блок фильтра -->
-
-                    <div class="filter-block open">
-                        <div class="filter-title">
-                            <a href="javascript:void(0);" class="js-toggle-filter">
-                                Форма оправы
-                            </a>
-                        </div>
-                        <div class="filter-block-cont">
-                            <ul class="filter-list">
-                                <li>
-                                    <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g1.png" alt="">
-                                        </div>
-                                        <div class="category">
-                                            <span class="cat-name">Авиатор</span>
-                                            <span class="count">122</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g2.png" alt="">
-                                        </div>
-                                        <div class="category">
-                                            <span class="cat-name">Бабочка</span>
-                                            <span class="count">12</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g3.png" alt="">
-                                        </div>
-                                        <div class="category">
-                                            <span class="cat-name">Вайфарер</span>
-                                            <span class="count">54</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g4.png" alt="">
-                                        </div>
-                                        <div class="category">
-                                            <span class="cat-name">Квадратная</span>
-                                            <span class="count">81</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g5.png" alt="">
-                                        </div>
-                                        <div class="category">
-                                            <span class="cat-name">Круглая</span>
-                                            <span class="count">45</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g6.png" alt="">
-                                        </div>
-                                        <div class="category">
-                                            <span class="cat-name">Маска</span>
-                                            <span class="count">78</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g7.png" alt="">
-                                        </div>
-                                        <div class="category">
-                                            <span class="cat-name">Прямоугольная</span>
-                                            <span class="count">199</span>
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--конец Один блок фильтра -->
-                    <!-- Один блок фильтра -->
-
-                    <div class="filter-block open">
-                        <div class="filter-title">
-                            <a href="javascript:void(0);" class="js-toggle-filter">
-                                Материал оправы
-                            </a>
-                        </div>
-                        <div class="filter-block-cont">
-                            <ul class="filter-list">
-                                <li class="open">
-                                    <div class="cat-dropdown">
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name js-toggle-category">Пластик</span>
-                                            <span class="count">122</span>
-                                        </div>
-                                    </div>
-                                    <ul class="filter-dropdown">
-                                        <li>
-                                            <label>
-                                                <input data-styler class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Фторпласт</span>
-                                                    <span class="count">50</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input data-styler class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Полиэтилен</span>
-                                                    <span class="count">52</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input data-styler class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">ABS - пластик</span>
-                                                    <span class="count">512</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="open">
-                                    <div class="cat-dropdown">
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name js-toggle-category">Металл</span>
-                                            <span class="count">98</span>
-                                        </div>
-                                    </div>
-                                    <ul class="filter-dropdown">
-                                        <li>
-                                            <label>
-                                                <input data-styler="" class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Алюминий</span>
-                                                    <span class="count">45</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input data-styler="" class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Ацетат</span>
-                                                    <span class="count">9</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input data-styler="" class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Титан</span>
-                                                    <span class="count">18</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input data-styler="" class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Бронза</span>
-                                                    <span class="count">28</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input data-styler="" class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Латунь</span>
-                                                    <span class="count">18</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input data-styler="" class="js-cat-checkbox" type="checkbox">
-                                                <div class="category">
-                                                    <span class="cat-name">Уран</span>
-                                                    <span class="count">1</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--конец Один блок фильтра -->
-
-                    <!-- Один блок фильтра -->
-
-                    <div data-items-show="5" class="filter-block open">
-                        <div class="filter-title">
-                            <a href="javascript:void(0);" class="js-toggle-filter">
-                                Материал линзы
-                            </a>
-                        </div>
-                        <div class="filter-block-cont">
-                            <ul class="filter-list">
-                                <li>
-                                    <label>
-                                        <input data-styler class="js-cat-checkbox" type="checkbox">
-                                        <div class="category">
-                                            <span class="cat-name">24K iridium pol</span>
+                                            <span class="cat-name">GUESS</span>
                                             <span class="count">12</span>
                                         </div>
                                     </label>
@@ -915,7 +576,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Blue</span>
+                                            <span class="cat-name">GUCCI</span>
                                             <span class="count">22</span>
                                         </div>
                                     </label>
@@ -924,7 +585,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Brown</span>
+                                            <span class="cat-name">FURLA</span>
                                             <span class="count">32</span>
                                         </div>
                                     </label>
@@ -933,7 +594,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Нейлон</span>
+                                            <span class="cat-name">FENDI</span>
                                             <span class="count">144</span>
                                         </div>
                                     </label>
@@ -942,7 +603,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Карбон</span>
+                                            <span class="cat-name">ESCADA</span>
                                             <span class="count">45</span>
                                         </div>
                                     </label>
@@ -951,7 +612,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Аргон</span>
+                                            <span class="cat-name">EMPORIO ARMANI</span>
                                             <span class="count">56</span>
                                         </div>
                                     </label>
@@ -960,7 +621,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Неон</span>
+                                            <span class="cat-name">EMILIO PUCCI</span>
                                             <span class="count">4</span>
                                         </div>
                                     </label>
@@ -969,7 +630,7 @@
                                     <label>
                                         <input data-styler class="js-cat-checkbox" type="checkbox">
                                         <div class="category">
-                                            <span class="cat-name">Gabbana</span>
+                                            <span class="cat-name">Dolce & Gabbana</span>
                                             <span class="count">3</span>
                                         </div>
                                     </label>
@@ -1053,6 +714,292 @@
                                     Смотреть все
                                 </a>
                             </div>
+                        </div>
+                    </div>
+
+                    <!--конец Один блок фильтра -->
+                    <!-- Один блок фильтра -->
+
+                    <div class="filter-block open">
+                        <div class="filter-title">
+                            <a href="javascript:void(0);" class="js-toggle-filter">
+                                Оптическая сила (PWR)
+                            </a>
+                        </div>
+                        <div class="filter-block-cont">
+                            <div class="flex">
+                                <div class="sel-wrap">
+                                    <div class="label">
+                                        Левый глаз
+                                    </div>
+                                    <select data-styler>
+                                        <option>
+                                            0.8
+                                        </option>
+                                        <option>
+                                            4
+                                        </option>
+                                        <option>
+                                            6
+                                        </option>
+                                        <option>
+                                            8
+                                        </option>
+                                        <option>
+                                            10
+                                        </option>
+                                        <option>
+                                            12
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="sel-wrap">
+                                    <div class="label">
+                                        Правый  глаз
+                                    </div>
+                                    <select data-styler>
+                                        <option>
+                                            2
+                                        </option>
+                                        <option>
+                                            4
+                                        </option>
+                                        <option>
+                                            6
+                                        </option>
+                                        <option>
+                                            8
+                                        </option>
+                                        <option>
+                                            10
+                                        </option>
+                                        <option>
+                                            12
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--конец Один блок фильтра -->
+                    <!-- Один блок фильтра -->
+
+                    <div class="filter-block open">
+                        <div class="filter-title">
+                            <a href="javascript:void(0);" class="js-toggle-filter">
+                                Радиус кривизны (BC)
+                            </a>
+                        </div>
+                        <div class="filter-block-cont">
+                            <div class="flex">
+                                <div class="sel-wrap">
+                                    <div class="label">
+                                        Левый глаз
+                                    </div>
+                                    <select data-styler>
+                                        <option>
+                                            0.8
+                                        </option>
+                                        <option>
+                                            4
+                                        </option>
+                                        <option>
+                                            6
+                                        </option>
+                                        <option>
+                                            8
+                                        </option>
+                                        <option>
+                                            10
+                                        </option>
+                                        <option>
+                                            12
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="sel-wrap">
+                                    <div class="label">
+                                        Правый  глаз
+                                    </div>
+                                    <select data-styler>
+                                        <option>
+                                            2
+                                        </option>
+                                        <option>
+                                            4
+                                        </option>
+                                        <option>
+                                            6
+                                        </option>
+                                        <option>
+                                            8
+                                        </option>
+                                        <option>
+                                            10
+                                        </option>
+                                        <option>
+                                            12
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--конец Один блок фильтра -->
+
+                    <!-- Один блок фильтра -->
+
+                    <div class="filter-block open">
+                        <div class="filter-title">
+                            <a href="javascript:void(0);" class="js-toggle-filter">
+                                Режим замены
+                            </a>
+                        </div>
+                        <div class="filter-block-cont">
+                            <ul class="filter-list">
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Однодневные</span>
+                                            <span class="count">12</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Ежемесячные</span>
+                                            <span class="count">32</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Квартальные</span>
+                                            <span class="count">92</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Непрерывного ношения (до 30 д)</span>
+                                            <span class="count">7</span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--конец Один блок фильтра -->
+                    <!-- Один блок фильтра -->
+
+                    <div class="filter-block open">
+                        <div class="filter-title">
+                            <a href="javascript:void(0);" class="js-toggle-filter">
+                                Назначение
+                            </a>
+                        </div>
+                        <div class="filter-block-cont">
+                            <ul class="filter-list">
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Мультифокальные</span>
+                                            <span class="count">12</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Цветные</span>
+                                            <span class="count">32</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Торические</span>
+                                            <span class="count">92</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Для Дали (+ Или -)</span>
+                                            <span class="count">7</span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--конец Один блок фильтра -->
+                    <!-- Один блок фильтра -->
+
+                    <div class="filter-block open">
+                        <div class="filter-title">
+                            <a href="javascript:void(0);" class="js-toggle-filter">
+                                Материал линз
+                            </a>
+                        </div>
+                        <div class="filter-block-cont">
+                            <ul class="filter-list">
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Гидрогелевые</span>
+                                            <span class="count">12</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Силикон-Гидрогелевые</span>
+                                            <span class="count">32</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">Биосовместимые</span>
+                                            <span class="count">92</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input data-styler class="js-cat-checkbox" type="checkbox">
+                                        <div class="category">
+                                            <span class="cat-name">
+                                                Линзы с градиентным содержанием воды
+                                            </span>
+                                            <span class="count">7</span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -1382,11 +1329,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп <span>ак</span>.(30 шт <span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп <span>ак</span>.(90 шт <span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1395,7 +1342,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_1" checked data-styler type="radio">
-                                                За упак.(30 штук)
+                                                За уп <span>ак</span>.(30 шт <span>ук</span>)
                                             </label>
                                         </td>
                                         <td>300 грн</td>
@@ -1404,7 +1351,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_1" data-styler type="radio">
-                                                За упак.(90 штук)
+                                                За уп <span>ак</span>.(90 шт <span>ук</span>)
                                             </label>
                                         </td>
                                         <td>500 грн</td>
@@ -1437,11 +1384,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт <span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(90 шт <span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1450,7 +1397,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_2" checked data-styler type="radio">
-                                                За упак.(30 штук)
+                                                За уп <span>ак</span>.(30 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>300 грн</td>
@@ -1459,7 +1406,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_2" data-styler type="radio">
-                                                За упак.(90 штук)
+                                                За уп<span>ак</span>.(30 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>500 грн</td>
@@ -1494,11 +1441,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(90 шт<span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1507,7 +1454,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_3" checked data-styler type="radio">
-                                                За упак.(30 штук)
+                                                За уп<span>ак</span>.(30 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>300 грн</td>
@@ -1516,7 +1463,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_3" data-styler type="radio">
-                                                За упак.(90 штук)
+                                                За уп<span>ак</span>.(90 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>500 грн</td>
@@ -1551,11 +1498,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1564,7 +1511,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_4" checked data-styler type="radio">
-                                                За упак.(30 штук)
+                                                За уп<span>ак</span>.(30 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>300 грн</td>
@@ -1573,7 +1520,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_4" data-styler type="radio">
-                                                За упак.(90 штук)
+                                                За уп<span>ак</span>.(90 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>500 грн</td>
@@ -1608,11 +1555,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(90 шт<span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1621,7 +1568,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_5" checked data-styler type="radio">
-                                                За упак.(30 штук)
+                                                За уп<span>ак</span>.(30 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>300 грн</td>
@@ -1630,7 +1577,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_5" data-styler type="radio">
-                                                За упак.(90 штук)
+                                                За уп<span>ак</span>.(90 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>500 грн</td>
@@ -1665,11 +1612,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(90 шт<span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1678,7 +1625,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_6" checked data-styler type="radio">
-                                                За упак.(30 штук)
+                                                За уп<span>ак</span>.(30 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>300 грн</td>
@@ -1687,7 +1634,7 @@
                                         <td>
                                             <label>
                                                 <input name="DAILIES_6" data-styler type="radio">
-                                                За упак.(90 штук)
+                                                За уп<span>ак</span>.(90 шт<span>ук</span>)
                                             </label>
                                         </td>
                                         <td>500 грн</td>
@@ -1742,11 +1689,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(90 шт<span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1778,11 +1725,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(90 шт<span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>
@@ -1814,11 +1761,11 @@
                                 </div>
                                 <table width="100%" class="price-var">
                                     <tr>
-                                        <td>За упак.(30 штук)</td>
+                                        <td>За уп<span>ак</span>.(30 шт<span>ук</span>)</td>
                                         <td>300 грн</td>
                                     </tr>
                                     <tr>
-                                        <td>За упак.(90 штук)</td>
+                                        <td>За уп<span>ак</span>.(90 шт<span>ук</span>)</td>
                                         <td>500 грн</td>
                                     </tr>
                                 </table>

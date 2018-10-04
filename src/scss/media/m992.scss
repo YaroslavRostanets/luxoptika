@@ -596,4 +596,35 @@
       }
     }
   }
+  .one-lense {
+    height: auto;
+    max-height: none;
+    border: 1px solid #EBEEF0 !important;
+    .one-lense-in {
+      box-shadow: none !important;
+    }
+    .price-var {
+      display: none;
+    }
+    .hover-price-var {
+      display: table;
+    }
+    .ctrl-block {
+      opacity: 1;
+    }
+    .center {
+      display: none;
+    }
+    .img-cont {
+      height: 160px;
+    }
+    table {
+      td {
+        padding: 4px 0;
+      }
+    }
+    .lense-name {
+      margin-bottom: 10px;
+    }
+  }
 }
