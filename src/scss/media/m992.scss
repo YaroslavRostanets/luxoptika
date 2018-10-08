@@ -627,4 +627,80 @@
       margin-bottom: 10px;
     }
   }
+  .product-main {
+    padding-top: 16px;
+    .breadcrumbs {
+      display: none;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 15px 0 10px;
+    }
+    .prod-cont {
+      margin-top: 15px;
+    }
+    .tablet-back {
+      color: #0dac49;
+      font-size: 13px;
+      display: inline-block;
+      text-decoration: none;
+      &:before {
+        content: "";
+        width: 21px;
+        height: 10px;
+        display: inline-block;
+        background-image: url(../img/icons/green-arrow.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        margin-right: 6px;
+      }
+    }
+    .img-char {
+      width: 175px;
+    }
+    .rate-rev {
+      margin-left: 1px;
+      .fa-star {
+        font-size: 10px;
+        margin-right: 0px;
+      }
+      .rate {
+        margin-right: 10px;
+      }
+    }
+    .prod-img-cont {
+      height: 168px;
+      .sticker-place {
+        .sticker {
+          height: 26px;
+          font-size: 11px;
+          padding-left: 17px;
+          padding-right: 16px;
+        }
+      }
+    }
+    .char-table-wrap {
+      tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+      }
+      td {
+        width: 100%;
+        padding: 0;
+      }
+      .js-show-table {
+        margin-top: 0px;
+        border-bottom: 1px solid #0dac49;
+      }
+    }
+    .eye-setting {
+      width: 265px;
+    }
+    .del-price {
+      width: 250px;
+    }
+  }
 }

@@ -100,7 +100,7 @@
       margin-bottom: 70px;
     }
   }
-  .home-main {
+  .page {
     .one-news {
       width: 222px;
       margin: 0 10px;
@@ -109,6 +109,8 @@
         line-height: 18px;
       }
     }
+  }
+  .home-main {
     .questions-to-doctors {
       padding-top: 35px;
       padding-bottom: 35px;
@@ -239,6 +241,43 @@
         &:last-child {
           width: 100%;
         }
+      }
+    }
+  }
+  .product-main {
+    .img-char {
+      width: 250px;
+    }
+    .eye-setting {
+      width: 390px;
+    }
+    .del-price {
+      width: 270px;
+    }
+    .box-sel {
+      label {
+        padding-left: 15px;
+      }
+      .jq-radio {
+        margin-right: 7px;
+      }
+      li {
+        padding-right: 15px;
+      }
+      .price {
+        font-size: 14px;
+      }
+    }
+    .other-prod-slider {
+      .one-lense {
+        width: 222px;
+        margin: 20px 7px;
+        .one-lense-in {
+          padding: 20px 14px 10px 14px;
+        }
+      }
+      .img-cont {
+        height: 155px;
       }
     }
   }
