@@ -938,10 +938,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     outline: none;
     font-size: 14px;
     color: #252525;
+    transition: all 0.15s ease-out;
     &::placeholder {
       color: #747474;
       font-size: 14px;
       font-family: 'Open Sans', sans-serif;
+    }
+    &:hover {
+      border: 1px solid #747474;
+    }
+    &:focus {
+      border: 1px solid #747474;
     }
   }
   .help-block{

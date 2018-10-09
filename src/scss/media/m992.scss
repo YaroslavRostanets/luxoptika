@@ -629,6 +629,7 @@
   }
   .product-main {
     padding-top: 16px;
+    overflow: hidden;
     .breadcrumbs {
       display: none;
     }
@@ -692,15 +693,98 @@
         padding: 0;
       }
       .js-show-table {
-        margin-top: 0px;
+        margin-top: 0;
         border-bottom: 1px solid #0dac49;
       }
     }
     .eye-setting {
       width: 265px;
+      .tab-cont {
+        margin-bottom: 10px;
+      }
+      .tabs-nav {
+        li {
+          height: 54px;
+          a {
+            padding: 4px 20px 0 20px;
+            text-align: center;
+          }
+        }
+      }
+      .tab-content {
+        .one-eye-sel {
+          justify-content: space-between;
+          padding: 17px 13px 0 13px;
+          &:last-child {
+            padding: 17px 13px 14px 13px;
+          }
+        }
+        .sel-wtap {
+          margin-right: 0;
+          width: calc( 50% - 13px );
+        }
+      }
     }
     .del-price {
       width: 250px;
+      padding: 15px 25px 20px 17px;
+      .prod-price {
+        font-size: 24px;
+        margin-bottom: -2px;
+      }
+      .aft-price {
+        margin-bottom: 15px;
+      }
+      .add-to-wish {
+        width: 36px;
+        height: 28px;
+      }
+      .one-click {
+        margin-left: 18px;
+      }
+      .top-part {
+        padding-bottom: 17px;
+      }
+      .bot-part {
+        padding-top: 19px;
+        h4 {
+          font-size: 13px;
+        }
+        p {
+          line-height: 15px;
+        }
+        & > div {
+          margin-bottom: 21px;
+        }
+      }
     }
+    .box-sel {
+      .descr {
+        & > div {
+          margin-bottom: -3px;
+        }
+      }
+      label {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 40px;
+        position: relative;
+        padding-top: 12px;
+        width: 170px;
+      }
+      .sm-hide {
+        display: none;
+      }
+      .jq-radio {
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .price {
+        font-size: 15px;
+      }
+    }
+
   }
 }

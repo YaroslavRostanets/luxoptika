@@ -387,4 +387,17 @@ $(document).ready(function(){
 
     });
 
+    $('.js-give-feedback').on('click', function(){
+        $('#give-feedback').modal({
+            fadeDuration: 200
+        });
+    });
+
+    $('.js-starrr').starrr({
+        rating: 0,
+        change: function(e, value){
+            console.log('rate value: ' + value);
+        }
+    });
+
 });

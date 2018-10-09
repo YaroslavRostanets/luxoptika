@@ -364,6 +364,9 @@
         z-index: 2;
         border: 1px solid transparent;
         box-shadow: 0px 0px 10px 0px rgba(64,64,64,0.25);
+        .jq-number {
+          display: flex;
+        }
         .price {
           color: #252525;
         }
@@ -424,9 +427,9 @@
     }
     .jq-number {
       border: 1px solid #DADBDC;
-      display: flex;
       border-radius: 3px;
       transition: all 0.15s ease-out;
+      display: none;
       &:hover {
         border: 1px solid #727272;
       }
@@ -594,5 +597,170 @@
         margin: 0;
       }
     }
+    .reviews-cont {
+      .rev-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #EBEEF0;
+        padding-bottom: 19px;
+        .count {
+          color: #252525;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: bold;
+          span {
+            color: #747474;
+          }
+        }
+      }
+      .btn {
+        height: 40px;
+        width: 215px;
+      }
+      .fa-star {
+        font-size: 13px;
+        margin-right: 1px;
+        color: #747474;
+      }
+      .yell {
+        color: #FACF08;
+      }
+      .reviews-wrap {
+        padding-top: 25px;
+      }
+      .one-review {
+        padding-top: 5px;
+        margin-bottom: 45px;
+        &:last-child {
+          margin-bottom: 25px;
+        }
+      }
+      .name-date {
+        display: flex;
+        margin-bottom: 12px;
+        .name {
+          color: #252525;
+          font-size: 13px;
+          font-weight: 700;
+          margin-right: 13px;
+        }
+        .date {
+          color: #747474;
+          font-size: 12px;
+        }
+      }
+      .rate {
+        margin-bottom: 8px;
+      }
+      .rev-text {
+        font-size: 13px;
+        line-height: 24px;
+        color: #252525;
+      }
+    }
+    .questions-cont {
+      .one-question {
+        margin-bottom: 14px;
+      }
+      .one-quest {
+        padding-top: 24px;
+        border-top: 1px solid #F7F8F9;
+        padding-bottom: 28px;
+      }
+      .quest-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #EBEEF0;
+        padding-bottom: 19px;
+        .count {
+          color: #252525;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: bold;
+          span {
+            color: #747474;
+          }
+        }
+      }
+      .btn {
+        height: 40px;
+        width: 215px;
+      }
+      .date-name {
+        display: flex;
+        margin-bottom: 15px;
+        .name {
+          font-size: 15px;
+          color: #252525;
+          font-weight: 700;
+          margin-right: 13px;
+        }
+        .date {
+          font-size: 12px;
+          color: #a9a8a8;
+        }
+      }
+      .quest-text {
+        font-size: 13px;
+      }
+      .date-admin {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+        .admin {
+          font-size: 13px;
+          color: #0dac49;
+          font-weight: 700;
+          margin-right: 12px;
+          &:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background: #0DAC49;
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+        .date {
+          color: #a9a8a8;
+          font-size: 12px;
+        }
+      }
+      .answ-text {
+        font-size: 13px;
+        line-height: 18px;
+        color: #252525;
+      }
+      .one-answer {
+        padding: 18px 60px 21px 38px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 10px 2px rgba(64,64,64,0.14);
+        margin-left: 67px;
+      }
+    }
+    .char-table {
+      width: 100%;
+      font-size: 13px;
+      border-collapse: collapse;
+      tr {
+        border-bottom: 1px solid #EBEEF0;
+        &:first-child {
+          border-top: 1px solid #EBEEF0;
+        }
+      }
+      td {
+        color: #252525;
+        padding: 10px 0;
+        &:first-child {
+          color: #747474;
+          width: 295px;
+          padding-left: 18px;
+        }
+      }
+    }
+
   }
 }
