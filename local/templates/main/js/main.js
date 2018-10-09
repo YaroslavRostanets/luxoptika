@@ -387,6 +387,16 @@ $(document).ready(function(){
 
     });
 
+    $('.box-sel label').on('click', function(){
+        var parent = $(this).closest('li');
+        var check = $(this).find('input[type=radio]');
+
+        if(check.is( ":checked" )){
+            parent.siblings().removeClass('selected');
+            parent.addClass('selected');
+        }
+    });
+
     $('.js-give-feedback').on('click', function(){
         $('#give-feedback').modal({
             fadeDuration: 200

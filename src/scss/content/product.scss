@@ -1,4 +1,5 @@
 .product-main {
+  overflow: hidden;
   h1 {
     font-size: 24px;
     color: #252525;
@@ -359,7 +360,7 @@
       &:last-child {
         border-bottom: 1px solid #DADBDC;
       }
-      &:hover {
+      &.selected {
         position: relative;
         z-index: 2;
         border: 1px solid transparent;
@@ -394,6 +395,7 @@
       padding-top: 11px;
       padding-bottom: 11px;
       cursor: pointer;
+      width: 100%;
     }
     .descr {
       font-size: 13px;
@@ -631,9 +633,12 @@
       }
       .one-review {
         padding-top: 5px;
-        margin-bottom: 45px;
+        margin-bottom: 19px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #EBEEF0;
         &:last-child {
           margin-bottom: 25px;
+          border-bottom: none;
         }
       }
       .name-date {
