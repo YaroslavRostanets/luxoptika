@@ -410,4 +410,18 @@ $(document).ready(function(){
         }
     });
 
+    $('.js-char-link').on('click', function(e){
+        e.preventDefault();
+        $(this).closest('li').toggleClass('open');
+        $(this).closest('li').find('.one-mobile-tab').slideToggle();
+    });
+
+    $('.js-glass-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        dots: true,
+        arrows: true
+    });
+
 });

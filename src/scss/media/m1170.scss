@@ -285,5 +285,20 @@
         width: 100%;
       }
     }
+    .prod-code-mobile {
+      display: none;
+    }
+    .bot-wrap-glass {
+      .prod-ctrl {
+        .btn-dray {
+          width: auto;
+        }
+      }
+    }
+    .glass-slider {
+      .glass-item {
+        height: 260px;
+      }
+    }
   }
 }
