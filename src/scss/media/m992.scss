@@ -983,7 +983,7 @@
     }
     .bot-wrap-glass {
       flex-wrap: wrap;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
       .center-glass-cont {
         width: 100%;
         order: 1;
@@ -1020,6 +1020,13 @@
           height: 40px;
           width: 155px;
           margin-right: 8px;
+        }
+        .buy-one-click {
+          left: 170px;
+          top: calc( 100% + 3px );
+        }
+        .btn-dray {
+          height: 40px;
         }
       }
     }

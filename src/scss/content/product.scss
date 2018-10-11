@@ -932,16 +932,28 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      .buy-one-click {
+        position: absolute;
+        left: 70px;
+        color: #0dac49;
+        text-decoration: none;
+        border-bottom: 1px dashed #0dac49;
+        top: calc( 100% + 11px );
+      }
       .btn {
         height: 52px;
         border-radius: 26px;
         margin-right: 14px;
+        box-shadow: 0px 3px 5px 0px rgba(64,64,64,0.32);
       }
       .btn-dray {
         width: 250px;
+        height: 52px;
         font-size: 14px;
         white-space: nowrap;
         margin-right: 14px;
+        box-shadow: 0px 3px 5px 0px rgba(64,64,64,0.32);
         &:before {
           content: "\f00c";
           font-size: 14px;
@@ -952,6 +964,7 @@
       .add-wishlist {
         width: 32px;
         height: 30px;
+        font-size: 0;
         background-image: url(../img/icons/wishlist.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -1038,8 +1051,11 @@
     }
   }
   .brands-product {
+    padding-top: 40px;
+    border-top: 1px solid #EBEEF0;
     .view-title {
       font-size: 18px;
+      margin: 0;
       text-transform: uppercase;
     }
     .s-between {
@@ -1066,6 +1082,9 @@
   }
   .prod-viewed {
     border-top: none;
+  }
+  .mobile-rate {
+    display: none;
   }
 }
 .product-glass {

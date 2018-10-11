@@ -421,7 +421,16 @@ $(document).ready(function(){
         slidesToScroll: 1,
         centerMode: true,
         dots: true,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: false,
+                    arrows: false
+                }
+            }
+        ]
     });
 
 });

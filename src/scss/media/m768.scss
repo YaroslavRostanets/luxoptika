@@ -367,6 +367,41 @@
         display: none;
       }
     }
+    .bot-wrap-glass {
+      .bot-part {
+        width: 50%;
+        margin-right: 0;
+      }
+      .prod-ctrl {
+        flex-wrap: wrap;
+        width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: flex-start;
+        .buy-one-click {
+          position: relative;
+          top: 0;
+          left: 0;
+          margin-top: 3px;
+          margin-left: 14px;
+        }
+
+      }
+    }
+    .glass-slider {
+      margin-bottom: 20px;
+      .slick-dots {
+        bottom: 0;
+      }
+      .glass-item {
+        height: 180px;
+      }
+    }
+    .brands-product {
+      & > .container {
+        padding: 0 24px;
+      }
+    }
   }
 }
 @media (max-width: 690px) {
