@@ -433,4 +433,10 @@ $(document).ready(function(){
         ]
     });
 
+    $('.js-buy-one-click').on('click', function(){
+        $('#buy-one-click').modal({
+            fadeDuration: 200
+        });
+    });
+
 });

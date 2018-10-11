@@ -787,3 +787,69 @@
     margin: 30px auto 0 auto;
   }
 }
+@media (max-width: 567px) {
+  #give-feedback {
+    width: 280px;
+    padding: 10px 25px 25px;
+    .modal-title {
+      margin: 15px 0 15px;
+    }
+    .js-starrr {
+      a {
+        font-size: 16px;
+      }
+    }
+    .form-group {
+      input[type=email],
+      input[type=text],
+      input[type=password] {
+        height: 40px;
+      }
+    }
+    .btn {
+      display: block;
+      width: 220px;
+      margin: 20px auto 0;
+      height: 40px;
+    }
+  }
+}
+#buy-one-click {
+  padding: 23px 50px 50px 50px;
+  width: 400px;
+  .modal-title {
+    font-size: 18px;
+    color: #252525;
+    text-transform: uppercase;
+    margin: 23px 0 19px 0;
+    text-align: center;
+    letter-spacing: 0.6px;
+  }
+  .form-group {
+    margin-bottom: 14px;
+  }
+  .btn {
+    display: block;
+    width: 220px;
+    margin: 30px auto 0 auto;
+  }
+}
+@media (max-width: 567px) {
+  #buy-one-click {
+    width: 280px;
+    padding: 10px 25px 25px;
+    .form-group {
+      input[type=email],
+      input[type=text],
+      input[type=password] {
+        height: 40px;
+      }
+    }
+    .btn {
+      display: block;
+      width: 220px;
+      margin: 20px auto 0;
+      height: 40px;
+    }
+  }
+}
