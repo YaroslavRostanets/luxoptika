@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/noUiSlider/nouislider.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/modal/jquery.modal.min.css">
+    <link rel="stylesheet" href="local/templates/main/libs/starrr/starrr.css">
     <link rel="stylesheet" href="local/templates/main/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -130,7 +131,7 @@
         </div>
         <div class="middle-stripe">
             <div class="container flex">
-                <a href="javascript:void(0);" class="ja-open-menu">
+                <a href="javascript:void(0);" class="js-open-menu ripple">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </a>
                 <a href="#" class="logo">
@@ -188,6 +189,121 @@
                         </div>
                     </div>
 
+                <!-- мобильное меню -->
+                <div id="mobile-menu" class="modal">
+                    <div class="top-part">
+                        <a href="javascript:void(0);" class="profile">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            личный кабинет
+                        </a>
+                        <a href="javascript:void(0);">
+                            <b>Рус</b> / Укр
+                        </a>
+                        <a href="javascript:void(0);" class="js-close-menu"></a>
+                    </div>
+                    <div class="top-ctrl-part">
+                        <a href="#">
+                            <span class="ico">
+                                <img src="local/templates/main/img/icons/wishlist.svg" alt="">
+                            </span>
+                            Избранное
+                            <span>(6)</span>
+                        </a>
+                        <a href="#">
+                            <span class="ico">
+                                <img src="local/templates/main/img/icons/basket.svg" alt="">
+                            </span>
+                            Корзина
+                            <span>(14)</span>
+                        </a>
+                        <a href="#">
+                            <span class="ico">
+                                <img src="local/templates/main/img/icons/dressing-room.svg" alt="">
+                            </span>
+                            Примерочная
+                            <span>(5)</span>
+                        </a>
+                    </div>
+                    <ul class="gray-nav">
+                        <li>
+                            <a href="#">Контактные линзы</a>
+                        </li>
+                        <li>
+                            <a href="#">Pactворы и Капли для линз</a>
+                        </li>
+                        <li>
+                            <a href="#">Оправы, очки</a>
+                        </li>
+                        <li>
+                            <a href="#">Солнцезащитные очки</a>
+                        </li>
+                        <li>
+                            <a href="#">Бренды</a>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">Sale</a>
+                        </li>
+                        <li>
+                            <a href="#">люксоптика-дети</a>
+                        </li>
+                        <li class="green">
+                            <a href="#">Сеть оптик</a>
+                        </li>
+                        <li class="white">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="js-has-dropdown">
+                            <a href="#">Все о покупке</a>
+                            <ul class="mobile-dropdown">
+                                <li>
+                                    <a href="#">Программы лояльности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Как сделать заказ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Обмен и возврат</a>
+                                </li>
+                                <li>
+                                    <a href="#">Примерка очков</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="white">
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="white">
+                            <a href="#">Бонусная программа</a>
+                        </li>
+                        <li class="white">
+                            <a href="#">Отследить заказ</a>
+                        </li>
+                        <li class="white">
+                            <a href="#">Задать вопрос</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-city-select">
+                        <div class="label">Выберите свой город</div>
+                        <select data-styler>
+                            <option>Киев</option>
+                            <option>Чернигов</option>
+                            <option>Одесса</option>
+                            <option>Белая церковь</option>
+                        </select>
+                    </div>
+                    <div class="request-call">
+                        <a href="tel:+1234567890" class="tel">
+                            0 800 30 98 97
+                        </a>
+                        <a class="btn ripple">
+                            Заказать звонок
+                        </a>
+                    </div>
+                </div>
+                <!-- конец мобильное меню -->
 
             </div>
         </div>
@@ -2103,6 +2219,7 @@
 <script src="local/templates/main/libs/noUiSlider/nouislider.min.js"></script>
 <script src="local/templates/main/libs/modal/jquery.modal.min.js"></script>
 <script src="local/templates/main/libs/jquery.mask.min.js"></script>
+<script src="local/templates/main/libs/starrr/starrr.js"></script>
 <script src="local/templates/main/js/main.js"></script>
 </body>
 </html>

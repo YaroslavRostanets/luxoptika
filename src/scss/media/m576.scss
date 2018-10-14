@@ -23,7 +23,7 @@
         padding: 0 15px;
       }
     }
-    .ja-open-menu {
+    .js-open-menu {
       font-size: 26px;
       margin-right: 37px;
       flex-grow: 1;
@@ -1131,6 +1131,19 @@
       }
       .yell {
         color: #FACF08;
+      }
+    }
+    .color-select {
+      display: block;
+      white-space: nowrap;
+      overflow: auto;
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+      & > a {
+        display: inline-block;
       }
     }
   }

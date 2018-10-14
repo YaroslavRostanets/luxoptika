@@ -439,4 +439,27 @@ $(document).ready(function(){
         });
     });
 
+    $('.js-select-color').hover(function(){
+        var colorName = $(this).attr('data-color-name');
+        var colorSrc = $(this).attr('data-hover-src');
+
+        $('.js-color-name').text(colorName);
+        $('.js-hover-img').attr('src', colorSrc);
+            console.log($(this).attr('data-hover-src'));
+    }, function(){
+        $('.js-color-name').text('');
+        $('.js-hover-img').attr('src', $('.js-hover-img').attr('data-src'));
+    });
+
+    $('.js-open-menu').on('click', function(){
+        $('#mobile-menu').modal({
+            fadeDuration: 150
+        });
+    });
+
+    $('.js-has-dropdown > a').on('click', function(){
+        $(this).toggleClass('open');
+        $(this).closest('.js-has-dropdown').find('.mobile-dropdown').slideToggle();
+    });
+
 });

@@ -267,6 +267,7 @@ main {
       text-decoration: none;
       letter-spacing: -0.6px;
       margin-top: 19px;
+      white-space: nowrap;
       &:after {
         content: "";
         display: inline-block;

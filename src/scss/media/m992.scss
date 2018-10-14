@@ -21,11 +21,17 @@
       height: 68px;
       padding: 12px 0;
     }
-    .ja-open-menu {
+    .js-open-menu {
       display: block;
+      text-align: center;
       font-size: 29px;
       color: #252525;
-      margin-right: 21px;
+      margin-right: 14px;
+      border-radius: 20px;
+      width: 40px;
+      &:after {
+        background: rgba(240,240,240,.3);
+      }
     }
     .dressing-room {
       .ico {
@@ -683,6 +689,17 @@
         }
       }
     }
+    .color-select {
+      & > a {
+        border: 2px solid #FFFFFF;
+        width: 33px;
+        height: 33px;
+        border-radius: 18px;
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
     .char-table-wrap {
       tr {
         display: flex;
@@ -767,9 +784,7 @@
         & > div {
           margin-bottom: -3px;
         }
-        .red {
-          display: none;
-        }
+
       }
       label {
         align-items: flex-start;
@@ -777,6 +792,7 @@
         padding-left: 40px;
         position: relative;
         padding-top: 12px;
+        width: 170px;
       }
       .sm-hide {
         display: none;
