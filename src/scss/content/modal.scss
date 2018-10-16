@@ -726,6 +726,25 @@
     }
   }
 }
+@media (max-width: 767px) {
+  #filter-modal.modal {
+    padding-top: 50px;
+    .tablet-filter-title {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 320px;
+      background: #FFFFFF;
+      z-index: 2;
+    }
+    a.close-modal {
+      position: fixed;
+      top: 18px;
+      left: 292px;
+      z-index: 2;
+    }
+  }
+}
 #give-feedback {
   width: 400px;
   padding: 23px 50px 50px 50px;
@@ -849,6 +868,195 @@
       display: block;
       width: 220px;
       margin: 20px auto 0;
+      height: 40px;
+    }
+  }
+}
+
+#mobile-search-modal {
+  width: 100%;
+  max-width: none;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 68px;
+  .flex {
+    height: 100%;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0px 0px 18px 0px rgba(64,64,64,0.15);
+    position: relative;
+  }
+  .close-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 20px;
+    &:after {
+      content: "";
+      width: 20px;
+      height: 11px;
+      display: block;
+      background-image: url(../img/icons/green-arrow.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+    }
+  }
+  .close-modal {
+    display: none;
+  }
+  input[type="text"] {
+    display: block;
+    flex-grow: 1;
+    font-size: 13px;
+    color: #252525;
+    font-weight: 700;
+    padding: 10px 10px;
+    border: none;
+  }
+  .search-result {
+    background: #FFFFFF;
+    padding: 12px 0 12px 25px;
+    max-height: 250px;
+  }
+  .brands-wrap {
+    margin-bottom: 15px;
+    .label {
+      font-size: 13px;
+      color: #747474;
+      margin-bottom: 6px;
+    }
+  }
+  .brands-cont {
+    padding: 0 0 0 20px;
+    margin: 0;
+    list-style: none;
+    li {
+      margin-bottom: 5px;
+    }
+    a {
+      font-size: 13px;
+      text-decoration: none;
+      color: #252525;
+      text-transform: uppercase;
+    }
+  }
+  .products-wrap {
+    .label {
+      font-size: 13px;
+      color: #747474;
+      display: inline-block;
+      background: #FFFFFF;
+      padding-right: 10px;
+    }
+    .products-cont {
+      margin-top: -2px;
+      border-top: 1px solid #EEEDED;
+      a {
+        display: flex;
+        align-items: center;
+        height: 58px;
+        color: #252525;
+        font-size: 13px;
+        border-bottom: 1px solid #EEEDED;
+        text-decoration: none;
+      }
+      .img-cont {
+        width: 50px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  .price {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+}
+@media (max-width: 567px) {
+  #mobile-search-modal {
+    height: 50px;
+    .close-search {
+      display: none;
+    }
+    .search-result {
+      max-height: calc( 100vh - 50px );
+      padding: 25px 0 12px 10px;
+    }
+    input[type="text"] {
+      padding: 10px 0px;
+    }
+    .brands-wrap {
+      margin-bottom: 20px;
+      .label {
+        text-transform: capitalize;
+        margin-bottom: 0px;
+        display: inline-block;
+        padding-right: 10px;
+        background: #FFFFFF;
+      }
+    }
+    .brands-cont {
+      padding: 25px 0 0 31px;
+      border-top: 1px solid #EEEDED;
+      margin-top: -6px;
+      li {
+        margin-bottom: 11px;
+      }
+    }
+    .products-cont {
+      margin-top: -8px;
+
+    }
+    .products-wrap {
+      .label {
+        text-transform: capitalize;
+        background: #FFFFFF;
+      }
+      .products-cont {
+        margin-top: -6px;
+        .img-cont {
+          height: 60px;
+          width: 75px;
+          min-width: 75px;
+          margin-right: 22px;
+        }
+        .price {
+          display: block;
+          font-weight: 700;
+          font-size: 14px;
+        }
+        & > a {
+          height: 90px;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+      .name {
+        margin-bottom: 6px;
+      }
+    }
+    .btn {
+      display: flex;
+      width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px;
       height: 40px;
     }
   }

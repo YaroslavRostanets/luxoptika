@@ -191,9 +191,10 @@
       .marker-list {
         position: static;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 20px 0 20px;
         height: 290px;
         overflow: hidden;
+        width: auto;
       }
       .one-place {
         padding: 21px 30px 22px;
@@ -317,7 +318,7 @@
           display: block;
           position: absolute;
           left: 50%;
-          bottom: 90px;
+          bottom: 20px;
           width: 290px;
           transform: translateX(-50%);
           background: #FFFFFF;
@@ -1144,6 +1145,17 @@
       }
       & > a {
         display: inline-block;
+      }
+    }
+    .descr-ban {
+      padding: 0;
+      height: auto;
+      h3 {
+        font-size: 15px;
+      }
+      .descr-text {
+        width: 100%;
+        
       }
     }
   }

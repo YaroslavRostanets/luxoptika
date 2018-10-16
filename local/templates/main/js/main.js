@@ -462,4 +462,12 @@ $(document).ready(function(){
         $(this).closest('.js-has-dropdown').find('.mobile-dropdown').slideToggle();
     });
 
+    $('.js-search-mobile').on('click', function(){
+        $('#mobile-search-modal').modal({
+            fadeDuration: 150
+        });
+    });
+
+    $('.js-search-result').mCustomScrollbar();
+
 });

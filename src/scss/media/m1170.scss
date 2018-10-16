@@ -195,6 +195,15 @@
         }
         .jq-selectbox__dropdown {
           width: 180px !important;
+          top: 100% !important;
+          ul {
+            padding: 5px 0 5px 15px;
+            text-transform: none;
+            font-weight: 400;
+          }
+          li {
+            height: 25px;
+          }
         }
       }
     }
@@ -301,6 +310,15 @@
     .glass-slider {
       .glass-item {
         height: 260px;
+      }
+    }
+    .descr-ban {
+      height: 210px;
+      .descr-text {
+        width: 420px;
+      }
+      h3 {
+        margin: 0 0 12px 0;
       }
     }
   }

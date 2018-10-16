@@ -1109,6 +1109,26 @@
   .mobile-rate {
     display: none;
   }
+  .descr-ban {
+    height: 210px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+    h3 {
+      font-size: 18px;
+      margin: 0 0 17px 0;
+      width: 340px;
+    }
+    .descr-text {
+      width: 515px;
+      font-size: 13px;
+      line-height: 22px;
+    }
+    .read-more {
+
+    }
+  }
 }
 .product-glass {
   .char-rev-cont {

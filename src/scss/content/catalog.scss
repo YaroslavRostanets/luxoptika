@@ -234,6 +234,18 @@
       overflow: auto;
     }
   }
+  .filter-color-block {
+    .filter-list {
+      padding-left: 3px;
+      padding-top: 3px;
+      margin-left: -3px;
+    }
+  }
+  .frame-shape {
+    .js-cat-checkbox {
+      display: none;
+    }
+  }
   .price-block {
     margin-bottom: 45px;
     .filter-title {

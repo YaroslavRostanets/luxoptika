@@ -154,7 +154,7 @@
 
 
                 <div class="open-search-mobile">
-                        <div class="ico">
+                        <div class="ico js-search-mobile">
                             <img src="local/templates/main/img/icons/search.svg" alt="">
                         </div>
                     </div>
@@ -1706,6 +1706,60 @@
             </div>
             <!-- конец Вопросы врачам -->
 
+            <!-- мобильный поиск -->
+            <div id="mobile-search-modal" class="modal">
+                <div class="flex">
+                    <a href="#" class="close-search"></a>
+                    <input type="text" placeholder="Поиск...">
+                </div>
+                <div class="search-result">
+                    <div class="search-result-in js-search-result">
+                        <div class="brands-wrap">
+                            <div class="label">бренд</div>
+                            <ul class="brands-cont">
+                                <li>
+                                    <a href="#">
+                                        ALEXANDER MCQUEEN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Alexander Wang
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products-wrap">
+                            <div class="label">товары</div>
+                            <div class="products-cont">
+                                <a href="#">
+                                    <div class="img-cont">
+                                        <img src="local/templates/main/img/content/p1.jpg" alt="">
+                                    </div>
+                                    <div class="prod-right-part">
+                                        <div class="name">ALEXANDER MCQUEEN AM0020S-002 59</div>
+                                        <div class="price">12 000 грн</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="img-cont">
+                                        <img src="local/templates/main/img/content/p2.jpg" alt="">
+                                    </div>
+                                    <div class="prod-right-part">
+                                        <div class="name">ALEXANDER MCQUEEN AM0020S-002 59</div>
+                                        <div class="price">4 545 грн</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn ripple">
+                        Смотреть все результаты
+                    </a>
+                </div>
+            </div>
+            <!-- конец мобильный поиск -->
+
             <!-- Карта -->
             <div class="map-search-cont">
                 <div class="tabs-controll">
@@ -1797,15 +1851,15 @@
                     </div>
                     <script>
                         var markers = [{
-                            'TEXT':'<a href=\"#">г. Киев, ул. Анны Ахматовой, 22<\/a>',
+                            'TEXT':'г. Киев, ул. Анны Ахматовой, 22',
                             'LON':'30.6250835',
                             'LAT':'50.4085326'
                         },{
-                            'TEXT':'<a href=\"#">г. Киев, просп. Героев Сталинграда, 8<\/a>',
+                            'TEXT':'г. Киев, просп. Героев Сталинграда, 8',
                             'LON':'30.518685',
                             'LAT':'50.497136'
                         },{
-                            'TEXT':'<a href=\"#">г. Киев, ул. Крещатик, 38 (ЦУМ)<\/a>',
+                            'TEXT':'г. Киев, ул. Крещатик, 38 (ЦУМ)',
                             'LON':'30.520624',
                             'LAT':'50.445161'
                         }];

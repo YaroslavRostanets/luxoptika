@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="local/templates/main/libs/noUiSlider/nouislider.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/jqueryUI/jquery-ui.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/modal/jquery.modal.min.css">
+    <link rel="stylesheet" href="local/templates/main/libs/starrr/starrr.css">
     <link rel="stylesheet" href="local/templates/main/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -682,7 +683,7 @@
                     <!--конец Один блок фильтра -->
                     <!-- Один блок фильтра -->
 
-                    <div class="filter-block open">
+                    <div class="filter-block frame-shape open">
                         <div class="filter-title">
                             <a href="javascript:void(0);" class="js-toggle-filter">
                                 Форма оправы
@@ -693,7 +694,8 @@
                                 <li>
                                     <label>
                                         <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g1.png" alt="">
+                                            <img src="local/templates/main/img/content/g1.svg" alt="">
+                                            <input data-styler class="js-cat-checkbox" type="checkbox">
                                         </div>
                                         <div class="category">
                                             <span class="cat-name">Авиатор</span>
@@ -704,7 +706,8 @@
                                 <li>
                                     <label>
                                         <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g2.png" alt="">
+                                            <img src="local/templates/main/img/content/g2.svg" alt="">
+                                            <input data-styler class="js-cat-checkbox" type="checkbox">
                                         </div>
                                         <div class="category">
                                             <span class="cat-name">Бабочка</span>
@@ -715,7 +718,8 @@
                                 <li>
                                     <label>
                                         <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g3.png" alt="">
+                                            <img src="local/templates/main/img/content/g3.svg" alt="">
+                                            <input data-styler class="js-cat-checkbox" type="checkbox">
                                         </div>
                                         <div class="category">
                                             <span class="cat-name">Вайфарер</span>
@@ -726,7 +730,8 @@
                                 <li>
                                     <label>
                                         <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g4.png" alt="">
+                                            <img src="local/templates/main/img/content/g4.svg" alt="">
+                                            <input data-styler class="js-cat-checkbox" type="checkbox">
                                         </div>
                                         <div class="category">
                                             <span class="cat-name">Квадратная</span>
@@ -737,7 +742,8 @@
                                 <li>
                                     <label>
                                         <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g5.png" alt="">
+                                            <img src="local/templates/main/img/content/g5.svg" alt="">
+                                            <input data-styler class="js-cat-checkbox" type="checkbox">
                                         </div>
                                         <div class="category">
                                             <span class="cat-name">Круглая</span>
@@ -747,8 +753,9 @@
                                 </li>
                                 <li>
                                     <label>
-                                        <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g6.png" alt="">
+                                        <div class="cat-img" style="height: 13px;">
+                                            <img src="local/templates/main/img/content/g6.svg" alt="">
+                                            <input data-styler class="js-cat-checkbox" type="checkbox">
                                         </div>
                                         <div class="category">
                                             <span class="cat-name">Маска</span>
@@ -759,7 +766,8 @@
                                 <li>
                                     <label>
                                         <div class="cat-img">
-                                            <img src="local/templates/main/img/content/g7.png" alt="">
+                                            <img src="local/templates/main/img/content/g7.svg" alt="">
+                                            <input data-styler class="js-cat-checkbox" type="checkbox">
                                         </div>
                                         <div class="category">
                                             <span class="cat-name">Прямоугольная</span>
@@ -1060,7 +1068,7 @@
 
                     <!-- Один блок фильтра -->
 
-                    <div data-items-show="3" class="filter-block open">
+                    <div data-items-show="3" class="filter-block filter-color-block open">
                         <div class="filter-title">
                             <a href="javascript:void(0);" class="js-toggle-filter">
                                 Цвет линз
@@ -1653,6 +1661,11 @@
                             </div>
                         </a>
 
+                        <a href="#" class="b-cat">
+                            <img src="local/templates/main/img/content/b-cat.jpg" alt="">
+                            <img class="img-mobile" src="local/templates/main/img/content/banner-mobile.jpg" alt="">
+                        </a>
+
                         <a href="#" class="one-prod">
                             <div class="one-prod-in">
                                 <div class="sticker-place">
@@ -1751,10 +1764,7 @@
                             </div>
                         </a>
                     </div>
-                    <a href="#" class="b-cat">
-                        <img src="local/templates/main/img/content/b-cat.jpg" alt="">
-                        <img class="img-mobile" src="local/templates/main/img/content/banner-mobile.jpg" alt="">
-                    </a>
+
                     <div class="prod-tiles-cont">
                         <a href="#" class="one-prod">
                             <div class="one-prod-in">
@@ -2877,15 +2887,15 @@
 
 <script>
     var markers = [{
-        'TEXT':'<a href=\"#">г. Киев, ул. Анны Ахматовой, 22<\/a>',
+        'TEXT':'г. Киев, ул. Анны Ахматовой, 22',
         'LON':'30.6250835',
         'LAT':'50.4085326'
     },{
-        'TEXT':'<a href=\"#">г. Киев, просп. Героев Сталинграда, 8<\/a>',
+        'TEXT':'г. Киев, просп. Героев Сталинграда, 8',
         'LON':'30.518685',
         'LAT':'50.497136'
     },{
-        'TEXT':'<a href=\"#">г. Киев, ул. Крещатик, 38 (ЦУМ)<\/a>',
+        'TEXT':'г. Киев, ул. Крещатик, 38 (ЦУМ)',
         'LON':'30.520624',
         'LAT':'50.445161'
     }];
@@ -2965,6 +2975,7 @@
 <script src="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
 <script src="local/templates/main/libs/modal/jquery.modal.min.js"></script>
 <script src="local/templates/main/libs/jquery.mask.min.js"></script>
+<script src="local/templates/main/libs/starrr/starrr.js"></script>
 <script src="local/templates/main/js/main.js"></script>
 </body>
 </html>
