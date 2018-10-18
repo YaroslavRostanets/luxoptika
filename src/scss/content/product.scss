@@ -297,6 +297,7 @@
         transition: border-bottom .15s ease-in;
         position: relative;
         margin-left: 12px;
+        cursor: pointer;
         &:before {
           content: "\f041";
           font-size: 15px;
