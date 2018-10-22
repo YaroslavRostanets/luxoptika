@@ -85,7 +85,14 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                speed: 100
+            }
+        ]
+
     });
 
     $('.js-product-slider').wrap('<div class="product-slider-wrap" />');
@@ -423,6 +430,10 @@ $(document).ready(function(){
         dots: true,
         arrows: true,
         responsive: [
+            {
+                breakpoint: 1024,
+                speed: 100
+            },
             {
                 breakpoint: 576,
                 settings: {

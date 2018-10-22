@@ -421,6 +421,11 @@
       }
     }
   }
+  #go-to-top {
+    right: 50%;
+    bottom: 35px;
+    transform: translateX(50%);
+  }
 }
 @media (max-width: 690px) {
   header {
