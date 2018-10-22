@@ -367,10 +367,28 @@
         display: none;
       }
     }
+    .glass-prod-cont {
+      .sticker {
+        top: 0;
+        left: 20px;
+      }
+    }
     .bot-wrap-glass {
       .bot-part {
         width: 50%;
         margin-right: 0;
+        padding-left: 0;
+        border-left: none;
+        & > div {
+          &:first-child {
+            h4 {
+              margin-top: 5px;
+            }
+          }
+          &:last-child {
+            margin-bottom: 16px;
+          }
+        }
       }
       .prod-ctrl {
         flex-wrap: wrap;

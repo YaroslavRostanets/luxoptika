@@ -470,4 +470,56 @@ $(document).ready(function(){
 
     $('.js-search-result').mCustomScrollbar();
 
+    $('.js-go-to-rev').on('click', function(){
+        $('[href="#reviews"]').click();
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('.vert-tabs').offset().top
+        }, 1000);
+    });
+
+    (function( $ ) {
+        $.fn.readMore = function(options) {
+            var separator = options.separator || '<span>...read more<span/>';
+            $(this).each(function(i, item){
+                var characters = $(item).data('sym-count');
+                var text = $(item).text().trim();
+                $(item).context.fullText = text;
+                $(item).text( text.substring(0,characters) );
+                $(item).append(separator);
+                $(item).on('click', function(e){
+                    e.preventDefault();
+                    $(this).text( $(this).context.fullText );
+                });
+            });
+
+        };
+    })(jQuery);
+
+    $('[data-sym-count]').readMore({
+        separator: '... <a href="#" class="more">Читать все</a>'
+    });
+
+    /*--Go To Top --*/
+    (function( $ ) {
+        $.fn.goToTop = function() {
+            var _this = $(this);
+            $(document).scroll(function(){
+                var windowHeigh = $(window).height();
+                var contTop = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
+                if (windowHeigh > contTop){
+                    _this.fadeOut();
+                } else {
+                    _this.fadeIn();
+                }
+            });
+            $(this).click(function(){
+                var scroll_pos=(0);
+                $('html, body').animate({scrollTop:(scroll_pos)}, '4000');
+            });
+        };
+    })(jQuery);
+
+    $('#go-to-top').goToTop();
+    /*--Конец Go To Top --*/
+
 });

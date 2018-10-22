@@ -101,6 +101,7 @@
       margin-right: 60px;
       .tel {
         font-size: 18px;
+        white-space: nowrap;
       }
       .js-req-call {
         font-size: 13px;
@@ -161,7 +162,7 @@
     &:before {
       content: "";
       top: 0;
-      right: calc( 100% + 10px );
+      right: calc( 100% + 7px );
       height: 104%;
       width: 272px;
       position: absolute;
@@ -667,6 +668,16 @@
         margin-right: 6px;
       }
     }
+    .glass-prod-cont {
+      .sticker {
+        font-size: 11px;
+        height: 24px;
+        padding-left: 15px;
+        padding-right: 15px;
+        top: 10px;
+        left: calc(50% - 360px);
+      }
+    }
     .img-char {
       width: 175px;
     }
@@ -980,6 +991,7 @@
       margin-bottom: 34px;
       .glass-item {
         height: 220px;
+        margin: 0 20px;
       }
       .slick-current {
         img {
@@ -1024,6 +1036,19 @@
         width: 250px;
         margin-right: 45px;
         order: 3;
+        padding-left: 55px;
+        padding-top: 0;
+        border-left: 1px solid #EBEEF0;
+        & > div {
+          &:first-child {
+            h4 {
+              margin-top: 0;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
       .prod-name {
         font-size: 18px;

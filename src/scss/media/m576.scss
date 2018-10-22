@@ -661,6 +661,12 @@
     .char-table-wrap {
       display: none;
     }
+    .glass-prod-cont {
+      .sticker {
+        top: 15px;
+        left: 20px;
+      }
+    }
     .eye-setting {
       width: 100%;
       margin-bottom: 16px;
@@ -1054,8 +1060,8 @@
       .char-table-wrap {
         width: 100%;
         display: table;
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: 0;
+        padding-right: 0;
         margin-left: auto;
         margin-right: auto;
         max-width: 290px;
@@ -1078,8 +1084,8 @@
       .bot-part {
         max-width: 290px;
         width: 100%;
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: 0;
+        padding-right: 0;
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -1095,6 +1101,10 @@
         }
         & > div {
           margin-bottom: 33px;
+        }
+        .std-dropdown-list {
+          left: auto;
+          right: 15px;
         }
       }
     }
@@ -1148,14 +1158,20 @@
       }
     }
     .descr-ban {
-      padding: 0;
+      padding: 15px 0 0 0;
       height: auto;
       h3 {
         font-size: 15px;
+        margin: 0 0 16px;
       }
       .descr-text {
         width: 100%;
-
+        margin-bottom: 30px;
+      }
+      .read-more {
+        text-decoration: none;
+        color: #0dac49;
+        border-bottom: 1px solid #0dac49;
       }
     }
   }

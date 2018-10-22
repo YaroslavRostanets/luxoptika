@@ -254,6 +254,11 @@
     }
   }
   .product-main {
+    .glass-prod-cont {
+      .sticker {
+        left: calc(50% - 475px);
+      }
+    }
     .img-char {
       width: 250px;
     }
