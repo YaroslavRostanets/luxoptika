@@ -31,6 +31,18 @@
       }
     }
   }
+  .page {
+    .map-search-cont {
+      .tabs-controll {
+        padding-right: 0;
+        .tabs-nav {
+          li {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
   .home-main {
     .container {
       padding:  0 24px;
@@ -81,7 +93,7 @@
     .foot-links {
       .container {
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding-top: 25px;
         padding-bottom: 30px;
       }
     }

@@ -92,7 +92,6 @@ $(document).ready(function(){
                 speed: 100
             }
         ]
-
     });
 
     $('.js-product-slider').wrap('<div class="product-slider-wrap" />');
@@ -107,7 +106,13 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                speed: 100
+            }
+        ]
     });
 
     $('.js-news-slider .slick-arrow').each(function(i, item){
@@ -532,5 +537,11 @@ $(document).ready(function(){
 
     $('#go-to-top').goToTop();
     /*--Конец Go To Top --*/
+
+    $('.js-brands-slider').slick({
+        slidesToShow: 3,
+        prevArrow: "<a class='fa fa-angle-left'></a>",
+        nextArrow: "<a class='fa fa-angle-right'></a>"
+    })
 
 });

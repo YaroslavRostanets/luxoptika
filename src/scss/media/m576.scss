@@ -271,11 +271,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-grow: 1;
+        width: 95px;
         .fa {
           margin-right: 5px;
           font-size: 16px;
         }
+      }
+      .jq-selectbox {
+        width: calc( 100% - 123px);
       }
       .jq-selectbox__select-text {
         padding-left: 15px;
