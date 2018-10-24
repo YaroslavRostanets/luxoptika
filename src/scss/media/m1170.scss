@@ -327,4 +327,109 @@
       }
     }
   }
+  .about-main {
+    .about-baner {
+      height: 290px;
+      .cont-part {
+        margin-right: 35px;
+        padding-top: 30px;
+      }
+    }
+    .blocks-wrap {
+      .one-block {
+        height: 240px;
+      }
+      .our-services {
+        width: 25%;
+        h4 {
+          font-size: 20px;
+          line-height: normal;
+        }
+      }
+      .diagnostics {
+        h4 {
+          font-size: 16px;
+        }
+        .red {
+          font-size: 16px;
+        }
+        .img {
+          width: 160px;
+        }
+      }
+      .night {
+        .b-title {
+          font-size: 20px;
+        }
+      }
+      .child-treatment {
+        .b-title {
+          font-size: 20px;
+        }
+      }
+      .guarantee {
+        padding-top: 25px;
+        h4 {
+          font-size: 20px;
+        }
+      }
+      .repairs {
+        padding-top: 25px;
+        .half {
+          padding-top: 0;
+        }
+        h4 {
+          font-size: 20px;
+          line-height: normal;
+        }
+      }
+      .selection {
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        h4 {
+          font-size: 20px;
+          line-height: normal;
+        }
+        .img {
+          margin-left: auto;
+          margin-right: auto;
+          width: 175px;
+        }
+      }
+    }
+    .ophthal {
+      padding-top: 50px;
+    }
+    .we-care {
+      margin-bottom: 50px;
+      .advantages-wrap {
+        .item {
+          width: 290px;
+        }
+        h4 {
+          font-size: 16px;
+        }
+      }
+    }
+    .ban-body {
+      padding-top: 25px;
+      .text-cont {
+        width: 520px;
+        margin-right: 30px;
+      }
+    }
+    .after-ban {
+      padding: 35px 0;
+    }
+    .brand-slider {
+      .slick-list {
+        &:before {
+          width: calc(50vw - 480px);
+          left: calc(480px - 50vw);
+        }
+      }
+    }
+  }
+
 }

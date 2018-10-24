@@ -1,4 +1,8 @@
 .about-main {
+  overflow-x: hidden;
+  .tablet-back {
+    display: none;
+  }
   .about-baner {
     height: 360px;
     background-position: center;
@@ -24,9 +28,9 @@
       line-height: 24px;
       margin-bottom: 10px;
     }
-    .bot-num {
-      display: flex;
-    }
+  }
+  .bot-num {
+    display: flex;
     .one-num {
       display: flex;
       align-items: center;
@@ -43,6 +47,9 @@
         font-weight: 700;
         width: 190px;
       }
+    }
+    &.tablet {
+      display: none;
     }
   }
   .gray-stripe {
@@ -398,13 +405,23 @@
   }
   .brand-slider {
     display: flex;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
     .one-brand {
       border: 1px solid #D6D6D6;
+      border-right: 1px solid transparent;
       height: 195px;
       width: 390px;
       display: block;
-      padding: 15px;
+      padding: 15px 0px 15px 25px;
       text-decoration: none;
+      text-align: center;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.0);
+      transition: all 0.15s ease;
+      &:hover {
+        border: 1px solid transparent;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+      }
     }
     .price {
       text-align: center;
@@ -418,6 +435,21 @@
         width: 100%;
       }
     }
+    .slick-list {
+      overflow: visible;
+      width: 100%;
+      &:before {
+        content: "";
+        display: block;
+        background: #FFFFFF;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        left: calc( 585px - 50vw );
+        width: calc( 50vw - 585px );
+      }
+    }
     .slick-arrow {
       width: 65px;
       height: 65px;
@@ -425,7 +457,7 @@
       border-radius: 50%;
       font-size: 0;
       position: absolute;
-      top: 38%;
+      top: calc( 50% - 20px );
       border: none;
       z-index: 2;
       transition: all 0.2s ease-out;
@@ -447,18 +479,210 @@
         background-size: contain;
       }
     }
-    .slick-next {
+    .fa-angle-right {
+      left: 0;
+      transform: translate(-50%,-50%);
+      &:after {
+        background-image: url('../img/icons/gray-left-arrow.svg');
+      }
+    }
+    .fa-angle-left {
+      display: none !important;
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      li {
+        border: 1px solid #7B7B7B;
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-right: 20px;
+        cursor: pointer;
+        &.slick-active {
+          border: 1px solid #0DAC49;
+          background: #0DAC49;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      button {
+        opacity: 0;
+      }
+    }
+  }
+  .ask-ban {
+    border: 1px solid #EBEEF0;
+    height: 285px;
+    padding-top: 55px;
+    padding-left: 500px;
+    background-position: 16% 25%;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-image: url('../img/content/girl.png');
+    font-size: 15px;
+    h3 {
+      font-size: 28px;
+      text-transform: uppercase;
+      color: #252525;
+      font-weight: 700;
+      margin: 0 0 0 0;
+      letter-spacing: 0.6px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    a {
+      color: #0dac49;
+      font-weight: 700;
+    }
+    .tel {
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #252525;
+    }
+  }
+  .rev-slider-cont {
+    padding-top: 80px;
+    margin-bottom: 80px;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 28px;
+      margin: 0 0 30px 0;
+      letter-spacing: 0.6px;
+    }
+    .rev-slider {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .one-rev {
+      width: 368px;
+      min-height: 230px;
+      box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.08);
+      padding: 38px 30px 30px 30px;
+      margin: 15px 15px;
+      background: #FFFFFF;
+      .rate {
+        display: flex;
+        margin-bottom: 10px;
+        .fa {
+          margin-right: 8px;
+          color: #747474;
+        }
+        .yell {
+          color: #FACF08;
+        }
+      }
+      .date-name {
+        display: flex;
+        margin-bottom: 17px;
+      }
+      .name {
+        font-size: 13px;
+        font-weight: 700;
+        color: #252525;
+        margin-right: 30px;
+      }
+      .date {
+        color: #747474;
+        font-size: 12px;
+      }
+      .text {
+        font-size: 13px;
+        line-height: 24px;
+        color: #252525;
+      }
+    }
+    .rev-slider-wrap {
+      position: relative;
+    }
+    .slick-arrow {
+      width: 65px;
+      height: 65px;
+      background: rgba(234,237,241,0.5);
+      border-radius: 50%;
+      font-size: 0;
+      position: absolute;
+      top: 130px;
+      border: none;
+      z-index: 2;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        background: rgba(234,237,241,1);
+      }
+      &:after {
+        content: "";
+        width: 24px;
+        height: 11px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .fa-angle-left {
+      left: 0;
+      transform: translate(-50%,-50%);
+      &:after {
+        background-image: url('../img/icons/gray-left-arrow.svg');
+      }
+    }
+    .fa-angle-right {
       right: 0;
       transform: translate(50%,-50%);
       &:after {
         background-image: url('../img/icons/gray-right-arrow.svg');
       }
     }
-    .slick-prev {
-      left: 0;
-      transform: translate(-50%,-50%);
-      &:after {
-        background-image: url('../img/icons/gray-left-arrow.svg');
+    .slick-list {
+      z-index: 2;
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: absolute;
+      top: 295px;
+      bottom: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      li {
+        border: 1px solid #7B7B7B;
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-right: 20px;
+        cursor: pointer;
+        &.slick-active {
+          border: 1px solid #0DAC49;
+          background: #0DAC49;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      button {
+        opacity: 0;
       }
     }
   }

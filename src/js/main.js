@@ -58,18 +58,19 @@ $(document).ready(function(){
     })(jQuery);
 
     function runMobile(){
-
+        //console.log('mobile');
     }
 
     function runTablet(){
+        //console.log('tablet');
 
     }
 
     function runDesctop(){
-
+        //console.log('desctop');
     }
 
-    $(window).getDevice(576,1200);
+    $(window).getDevice(768,1024);
 
     $('.js-std-slider').slick({
         autoplay: true,
@@ -89,7 +90,9 @@ $(document).ready(function(){
         responsive: [
             {
                 breakpoint: 1024,
-                speed: 100
+                settings: {
+                    speed: 100
+                }
             }
         ]
     });
@@ -110,7 +113,9 @@ $(document).ready(function(){
         responsive: [
             {
                 breakpoint: 1024,
-                speed: 100
+                settings: {
+                    speed: 100
+                }
             }
         ]
     });
@@ -495,7 +500,7 @@ $(document).ready(function(){
 
     (function( $ ) {
         $.fn.readMore = function(options) {
-            var separator = options.separator || '<span>...read more<span/>';
+            var separator = options.separator || '<a href="#" class="more">Читать все</a>';
             $(this).each(function(i, item){
                 var characters = $(item).data('sym-count');
                 var text = $(item).text().trim();
@@ -512,7 +517,7 @@ $(document).ready(function(){
     })(jQuery);
 
     $('[data-sym-count]').readMore({
-        separator: '... <a href="#" class="more">Читать все</a>'
+        separator: '<span class="rev-read-more">... <a href="#" class="more">Читать все</a></span>'
     });
 
     /*--Go To Top --*/
@@ -541,7 +546,40 @@ $(document).ready(function(){
     $('.js-brands-slider').slick({
         slidesToShow: 3,
         prevArrow: "<a class='fa fa-angle-left'></a>",
-        nextArrow: "<a class='fa fa-angle-right'></a>"
-    })
+        nextArrow: "<a class='fa fa-angle-right'></a>",
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true
+                }
+            }
+        ]
+    });
+
+    $('.js-rev-slider').slick({
+        slidesToShow: 3,
+        prevArrow: "<a class='fa fa-angle-left'></a>",
+        nextArrow: "<a class='fa fa-angle-right'></a>",
+        dots: true,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true
+                }
+            }
+        ]
+    });
+
+    $('.js-rev-slider').wrap('<div class="rev-slider-wrap" />');
+
+    $('.js-rev-slider .slick-arrow').each(function(i, item){
+        $(item).appendTo($(this).closest('.rev-slider-wrap'));
+    });
 
 });
