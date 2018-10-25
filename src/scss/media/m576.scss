@@ -1178,6 +1178,230 @@
       }
     }
   }
+  .about-main {
+    .about-baner {
+      background-image: none !important;
+      margin-bottom: 0;
+      margin-top: 0;
+      background-color: #E8F3F8;
+      height: auto;
+      flex-direction: column;
+      .cont-part {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .text {
+        font-size: 13px;
+      }
+      .mob-img {
+        display: block;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+    .tablet-back {
+      margin-top: 0;
+      position: absolute;
+      top: 17px;
+      left: 13px;
+    }
+    & > .container {
+      padding: 0 0;
+      position: relative;
+    }
+    .bot-num {
+      padding: 27px 10px 27px 10px;
+      margin-bottom: 210px;
+      &.tablet {
+        flex-direction: column;
+      }
+      .one-num {
+        .num {
+          width: 70px;
+          text-align: right;
+          margin-right: 20px;
+        }
+      }
+    }
+    .blocks-wrap {
+      top: -210px;
+      margin-bottom: -210px;
+      .one-block {
+        width: 100%;
+        border: none;
+        height: 245px;
+      }
+      .our-services {
+        text-align: center;
+        padding-top: 55px;
+        padding-left: 60px;
+        padding-right: 60px;
+        h4 {
+          font-size: 25px;
+          margin-bottom: 15px;
+        }
+      }
+      .diagnostics {
+        padding-top: 37px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        h4 {
+          margin: 0 0 10px;
+        }
+        .red {
+          text-align: center;
+        }
+        .img {
+          width: 200px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .child-treatment {
+        text-align: center;
+        .txt {
+          display: inline-block;
+          &:before {
+            display: none;
+          }
+        }
+      }
+      .guarantee {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .repairs {
+        h4 {
+          font-size: 16px;
+          line-height: 25px;
+          margin: 0 0 10px;
+        }
+        .half {
+          width: 100%;
+          &.bg {
+            display: none;
+          }
+        }
+      }
+      .selection {
+        padding-top: 34px;
+        h4 {
+          text-transform: uppercase;
+        }
+        .img {
+          width: 220px;
+          img {
+            margin-left: -15px;
+          }
+        }
+      }
+      .ophthal {
+        .left {
+          h4 {
+            font-size: 16px;
+          }
+        }
+        .right-txt {
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .we-care {
+      h3 {
+        font-size: 16px;
+        margin: 0 0 26px;
+      }
+      & > .container {
+        padding-top: 50px;
+      }
+      .advantages-wrap {
+        h4 {
+          font-size: 14px;
+        }
+      }
+      .item {
+        margin-bottom: 35px;
+      }
+    }
+    .ban-body {
+      padding-bottom: 60px;
+      ul {
+        li {
+          margin-left: 0;
+          padding-left: 30px;
+          margin-bottom: 19px;
+          line-height: 24px;
+          &:before {
+            width: 18px;
+            height: 18px;
+            top: 6px;
+          }
+        }
+      }
+    }
+    .after-ban {
+      padding: 46px 0 20px;
+      .keep-up {
+        padding-right: 0;
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      .keep-up-text {
+        width: 100%;
+      }
+    }
+    .brand-slider {
+      width: 80%;
+      .slick-list {
+        &:before {
+          width: calc(50vw - 150px);
+          left: calc(150px - 50vw);
+        }
+      }
+      .slick-dots {
+        left: 65%;
+      }
+    }
+    .ask-ban {
+      padding-top: 42px;
+      padding-left: 20px;
+      padding-right: 20px;
+      h3 {
+        font-size: 16px;
+      }
+    }
+    .rev-slider-cont {
+      .rev-slider-wrap {
+        width: 190%;
+      }
+      .rate{
+        .fa {
+          font-size: 13px;
+        }
+      }
+      h3 {
+        font-size: 16px;
+      }
+      .one-rev {
+        padding: 23px 20px 20px;
+      }
+      .slick-dots {
+        left: 28%;
+      }
+    }
+  }
 }
 @media (max-width: 380px) {
   #filter-modal.modal {

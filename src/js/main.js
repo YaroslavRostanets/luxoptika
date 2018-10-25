@@ -555,6 +555,12 @@ $(document).ready(function(){
                     slidesToShow: 2,
                     infinite: true
                 }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
             }
         ]
     });
@@ -571,6 +577,12 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                     infinite: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
                 }
             }
         ]

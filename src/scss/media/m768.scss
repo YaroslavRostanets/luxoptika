@@ -438,6 +438,99 @@
     bottom: 35px;
     transform: translateX(50%);
   }
+  .about-main {
+    .container {
+      padding: 0 15px;
+    }
+    .about-baner {
+      .cont-part {
+        width: 340px;
+      }
+    }
+    .bot-num {
+      .one-num {
+        margin-right: 35px;
+      }
+    }
+    .blocks-wrap {
+      .one-block {
+        width: 50%;
+      }
+      .our-services {
+        width: 100%;
+      }
+      .repairs {
+        width: 100%;
+      }
+      .selection {
+        width: 100%;
+      }
+    }
+    .we-care {
+      & >.container {
+        flex-direction: column;
+        padding-top: 30px;
+      }
+      h3 {
+        width: 100%;
+        margin: 0 0 20px;
+      }
+      .advantages-wrap {
+        width: 100%;
+        padding-left: 0;
+        .item {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .about-ban {
+      background-image: none;
+      background-color: #EFF2F7;
+    }
+    .ban-body {
+      height: auto;
+      padding-bottom: 40px;
+      ul {
+        width: 100%;
+      }
+    }
+    .ask-ban {
+      padding-top: 25px;
+      padding-left: 0;
+      background-image: none;
+      background: #FBFCFC;
+      margin-left: -15px;
+      margin-right: -15px;
+      border-left: none;
+      border-right: none;
+      text-align: center;
+      height: auto;
+      br {
+        display: block;
+      }
+    }
+    .rev-slider-wrap {
+      .slick-arrow {
+        display: none !important;
+      }
+    }
+    .rev-slider-cont {
+      margin-bottom: 60px;
+      .rev-read-more {
+        font-size: inherit;
+        .more {
+          font-size: inherit;
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .slick-dots {
+        top: auto;
+        bottom: -20px;
+      }
+    }
+  }
 }
 @media (max-width: 690px) {
   header {
