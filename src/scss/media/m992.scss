@@ -1394,4 +1394,117 @@
       }
     }
   }
+  .delivery-page {
+    .cols {
+      flex-wrap: wrap;
+    }
+    .col-2 {
+      width: 100%;
+    }
+    h2 {
+      font-size: 24px;
+      letter-spacing: 0;
+      margin: 14px 0 25px;
+    }
+    .breadcrumbs {
+      display: none;
+    }
+    .tablet-back {
+      color: #0dac49;
+      font-size: 13px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 17px;
+      &:before {
+        content: "";
+        background-image: url(../img/icons/green-arrow.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        width: 21px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 6px;
+      }
+    }
+    .courier-del {
+      h4 {
+        display: inline-block;
+        font-size: 16px;
+      }
+      .cities {
+        display: inline;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+    .tablet-flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 14px;
+      .text-block {
+        width: 50%;
+      }
+      .first {
+        .text {
+          line-height: 24px;
+          padding-right: 60px;
+        }
+      }
+      .note {
+        width: 50%;
+        margin-top: -185px;
+        padding-left: 0;
+        line-height: 24px;
+        &:before {
+          position: static;
+        }
+      }
+    }
+    .col-2 {
+      &:first-child {
+        .i-block {
+          &:first-child {
+            padding-right: 20px;
+            padding-bottom: 32px;
+            background-position: 6% 95%;
+            background-size: 14%;
+          }
+        }
+      }
+    }
+    .np-cont {
+      h4 {
+        font-size: 16px;
+        margin-bottom: 22px;
+      }
+    }
+    .pickup {
+      .text {
+        width: 380px;
+      }
+    }
+    .payment {
+      margin-top: 27px;
+      h3 {
+        font-size: 16px;
+      }
+      h5 {
+        font-size: 14px;
+        line-height: 18px;
+        height: 37px;
+        margin-bottom: 15px;
+      }
+      .i-block {
+        padding: 29px 10px 10px 23px;
+      }
+      .ico {
+        margin-right: 12px;
+      }
+    }
+    .col-3 {
+      width: calc(33.333% - 3px);
+    }
+  }
 }
