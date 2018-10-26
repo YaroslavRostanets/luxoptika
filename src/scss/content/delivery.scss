@@ -1,0 +1,184 @@
+.delivery-name {
+  h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin: 27px 0 25px 0;
+  }
+  .cols {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-2 {
+    width: calc( 50% - 14px );
+    &:first-child {
+      .i-block {
+        &:first-child {
+          padding-right: 100px;
+          background-image: url('../img/content/car.png');
+          background-position: 99% 95%;
+          background-repeat: no-repeat;
+          background-size: 25%;
+        }
+      }
+    }
+  }
+  .i-block {
+    box-shadow: 0px 2px 18px 0px rgba(139,146,152,0.3);
+    line-height: 24px;
+    padding: 37px 30px 60px 35px;
+    margin-bottom: 21px;
+
+    h4 {
+      font-size: 18px;
+      margin: 0 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    h3 {
+      font-size: 13px;
+      font-weight: 700;
+    }
+    h5 {
+      margin: 4px 0 4px 0;
+    }
+    .cities {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 23px;
+    }
+    ul {
+      list-style: none;
+      margin: 9px 0 9px 0;
+      padding: 0 20px 0 0;
+      font-size: 13px;
+      line-height: 18px;
+      li {
+        padding-left: 19px;
+        position: relative;
+        margin-bottom: 14px;
+        &:before {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 3px;
+          background: #0DAC49;
+          display: block;
+          position: absolute;
+          top: 4px;
+          left: 0;
+        }
+      }
+    }
+    .text {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .text-block {
+      margin-bottom: 20px;
+    }
+  }
+  .note {
+    font-size: 13px;
+    padding-left: 15px;
+    padding-top: 4px;
+    position: relative;
+    line-height: 18px;
+    padding-right: 40px;
+    &:before {
+      content: "*";
+      position: absolute;
+      color: #ED1C24;
+      top: 5px;
+      font-size: 15px;
+      left: 0;
+      font-weight: 700;
+    }
+  }
+  .np-cont {
+    h4 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      &:after {
+        content: "";
+        width: 38px;
+        height: 38px;
+        display: inline-block;
+        background-image: url('../img/content/np.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 15px;
+      }
+    }
+    .text {
+      margin-bottom: 16px;
+      line-height: 24px;
+    }
+  }
+  .pickup {
+    background-color: #FBFAFA;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/content/glass-bg.png');
+    padding: 40px 30px 37px 50px;
+    h4 {
+      margin-top: -4px;
+      margin-bottom: 10px;
+    }
+    .text {
+      line-height: 24px;
+      width: 270px;
+      margin-bottom: 16px;
+    }
+    .view-on-map {
+      text-decoration: none;
+      border-bottom: 1px dashed #0dac49;
+      color: #0dac49;
+      font-size: 13px;
+      margin-left: 20px;
+      position: relative;
+      transition: all 0.15s ease;
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
+      &:before {
+        content: "\f041";
+        font-size: 17px;
+        font-family: FontAwesome;
+        position: absolute;
+        left: -19px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .col-3 {
+    width: calc( 33.333% - 20px );
+    .i-block {
+      height: 100%;
+    }
+  }
+  .payment {
+    margin-top: 39px;
+    h3 {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #252525;
+      text-align: center;
+      margin: 24px 0;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+    }
+    .ico {
+      margin-right: 8px;
+    }
+  }
+}

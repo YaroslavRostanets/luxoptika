@@ -282,7 +282,8 @@ $(document).ready(function(){
     });
 
     /*-- модалка выбрать на карте --*/
-    $('.js-view-on-map').on('click', function(){
+    $('.js-view-on-map').on('click', function(e){
+        e.preventDefault();
         $('#show-on-map').modal({
             fadeDuration: 100
         });
