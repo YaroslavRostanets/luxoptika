@@ -1507,4 +1507,89 @@
       width: calc(33.333% - 3px);
     }
   }
+  .guarantee-main {
+    .breadcrumbs {
+      display: none;
+    }
+    .tablet-back {
+      color: #0dac49;
+      font-size: 13px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 17px;
+      margin-bottom: 20px;
+      &:before {
+        content: "";
+        background-image: url(../img/icons/green-arrow.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        width: 21px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 6px;
+      }
+    }
+    .guarantee-baner {
+      height: 220px;
+      background-size: cover;
+      background-position: left center;
+    }
+    .col-2 {
+      width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .page-title {
+      font-size: 24px;
+    }
+    .text-cont {
+      margin-right: 55px;
+      width: 290px;
+      margin-top: -6px;
+    }
+    .column {
+      flex-wrap: wrap;
+    }
+    .page-title {
+      letter-spacing: .0px;
+      margin: 0 0 5px;
+    }
+    .i-block {
+      padding: 40px 50px;
+    }
+    .return {
+      h3 {
+        font-size: 20px;
+        letter-spacing: 0;
+        margin: 0 0 8px;
+      }
+      .after-title {
+        margin-bottom: 28px;
+      }
+    }
+
+    .return-blocks {
+      .item {
+        width: 100%;
+        margin-top: -1px;
+        padding: 33px 25px 25px 28px;
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+        &:nth-child(2) {
+          margin-top: -1px;
+        }
+        &:nth-child(2n) {
+          margin-left: 0;
+        }
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
 }
