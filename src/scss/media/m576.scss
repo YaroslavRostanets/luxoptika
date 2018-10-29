@@ -25,14 +25,14 @@
     }
     .js-open-menu {
       font-size: 26px;
-      margin-right: 37px;
+      margin-right: 20px;
       flex-grow: 1;
     }
     .open-search-mobile {
-      margin-right: 36px;
+      margin-right: 28px;
     }
     .basket {
-      margin-right: 31px;
+      margin-right: 28px;
       .count {
         left: 14px;
         top: 4px;
@@ -41,6 +41,13 @@
     .dressing-room {
       .tit {
         letter-spacing: -1px;
+      }
+      .foc {
+        font-size: 11px;
+        white-space: nowrap;
+        a {
+          font-size: 11px;
+        }
       }
     }
     .wishlist {
@@ -118,7 +125,8 @@
   footer {
     .col-3 {
       width: 100%;
-      padding-left: 15px;
+      //padding-left: 15px;
+      padding-left: 55px;
     }
     .subscribe-text {
       width: 100%;
@@ -160,13 +168,10 @@
       }
       .left-side {
         justify-content: flex-start;
-        margin-left: 15px;
         .markets {
-          border-bottom: 1px solid #DEDFE0;
           padding-bottom: 30px;
           margin-bottom: 30px;
           justify-content: flex-start;
-          padding-left: 0;
         }
         span {
           order: 3;
@@ -262,7 +267,8 @@
       .jq-selectbox__select {
         border-radius: 0;
         height: 54px;
-        min-width: 230px;
+        min-width: 220px !important;
+
       }
       .js-open-map {
         background: #0DAC49;

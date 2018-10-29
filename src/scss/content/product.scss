@@ -34,6 +34,49 @@
       color: #252525;
     }
   }
+  .computer-lenses {
+    border: 1px solid #DADBDC;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    .left-price {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+    .comp-price {
+      display: flex;
+      justify-content: center;
+      width: 110px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .js-add-lenses {
+      color: #0dac49;
+      font-size: 13px;
+      text-decoration: none;
+      border-bottom: 1px dashed #0dac49;
+      transition: all 0.15s ease;
+      display: inline-block;
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
+    }
+    .man {
+      color: #737373;
+      font-size: 12px;
+      margin-top: -2px;
+    }
+    .jq-checkbox {
+      margin-right: 12px;
+    }
+  }
   .prod-cont {
     display: flex;
     justify-content: space-between;

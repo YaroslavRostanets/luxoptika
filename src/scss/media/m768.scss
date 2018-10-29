@@ -33,6 +33,9 @@
   }
   .page {
     .map-search-cont {
+      .title {
+        padding-right: 15px;
+      }
       .tabs-controll {
         padding-right: 0;
         .tabs-nav {
@@ -111,6 +114,9 @@
       .left-side {
         flex-wrap: wrap;
         justify-content: center;
+        margin-left: 0;
+        padding-left: 55px;
+        overflow: hidden;
         span {
           order: 2;
           width: 100%;
@@ -123,11 +129,22 @@
           width: 100%;
           order: 1;
           justify-content: center;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: #DEDFE0;
+            width: 768px;
+            left: -60px;
+            bottom: 0;
+          }
         }
       }
       .right-side {
         margin-top: 10px;
         margin-bottom: 10px;
+        padding-left: 40px;
       }
       .sense {
         margin-left: auto;
@@ -738,5 +755,7 @@
       margin-right: 15px;
     }
   }
-
+  .guarantee-main {
+    overflow: hidden;
+  }
 }
