@@ -595,4 +595,7 @@ $(document).ready(function(){
         $(item).appendTo($(this).closest('.rev-slider-wrap'));
     });
 
+    $('.js-promo').mask('9999');
+    $('.js-phone-mask').mask('(099)-999-99-99');
+
 });

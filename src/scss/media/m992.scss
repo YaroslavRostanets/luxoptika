@@ -1592,4 +1592,71 @@
       }
     }
   }
+  .cart-main {
+    .cart-flex {
+      flex-wrap: wrap;
+      .continue-shopping {
+        display: none;
+      }
+    }
+    .cart-cont {
+      width: 100%;
+    }
+    .total-cont {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .total-block {
+      width: calc( 50% - 15px );
+    }
+    .promo-block {
+      width: calc( 50% - 15px );
+    }
+    .buy-one-click-block {
+      width: calc( 50% - 15px );
+    }
+    .to-order-cont-wrap {
+      overflow-x: auto;
+    }
+    .to-order-cont {
+      .oder-item {
+        width: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .img-cont {
+        height: 140px;
+        width: 150px;
+      }
+      .prod-name {
+        width: 100%;
+      }
+    }
+    .page-title {
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+    .tablet-back {
+      color: #0dac49;
+      font-size: 13px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 0;
+      &:before {
+        content: "";
+        width: 21px;
+        height: 10px;
+        display: inline-block;
+        background-image: url(../img/icons/green-arrow.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        margin-right: 6px;
+      }
+    }
+  }
 }

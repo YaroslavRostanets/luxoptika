@@ -431,5 +431,27 @@
       }
     }
   }
-
+  .cart-main {
+    .total-cont {
+      width: 330px;
+    }
+    .cart-cont {
+      width: calc(100% - 360px);
+    }
+    .one-product {
+      .jq-number {
+        margin-right: 30px;
+      }
+      .prod-info {
+        margin-right: 20px;
+        width: 190px;
+      }
+      .img-cont {
+        margin-right: 20px;
+      }
+    }
+    .products-wrap {
+      padding: 0 20px;
+    }
+  }
 }
