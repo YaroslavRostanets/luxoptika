@@ -246,14 +246,48 @@ header {
     outline: none;
     color: #747474;
     font-size: 13px;
+    font-weight: 700;
     &::placeholder {
       color: #747474;
       font-size: 13px;
+      font-weight: 400;
     }
   }
   .search-wrap {
     position: relative;
     margin-right: 39px;
+    width: 380px;
+    height: 45px;
+    &.focused {
+      .search-wrap-in {
+        width: 570px;
+      }
+      .search-input {
+        width: 100%;
+      }
+    }
+    &.open {
+      .search-wrap-in {
+        box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.35);
+        border-radius: 20px;
+      }
+      .search-input {
+        border: transparent;
+        font-weight: 700;
+        color: #252525;
+        font-size: 13px;
+
+      }
+    }
+    .search-wrap-in {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      background: #FFFFFF;
+      transition: all 0.15s ease-out;
+    }
     button {
       width: 16px;
       height: 16px;
@@ -266,8 +300,94 @@ header {
       font-size: 0;
       position: absolute;
       right: 20px;
-      top: 50%;
+      top: 23px;
       transform: translateY(-50%);
+    }
+    .search-result {
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0 20px;
+      margin-top: -3px;
+      display: none;
+    }
+    .brand-label {
+      font-size: 13px;
+      color: #747474;
+    }
+    .product-label {
+      font-size: 13px;
+      color: #747474;
+      position: relative;
+      &:after {
+        content: "";
+        height: 1px;
+        width: 470px;
+        background: #EEEDED;
+        position: absolute;
+        right: 0px;
+        bottom: 3px;
+      }
+    }
+    .brand-result {
+      margin: 0;
+      padding: 5px 0 10px 20px;
+      list-style: none;
+      li {
+        margin-bottom: 5px;
+      }
+      a {
+        font-size: 13px;
+        color: #252525;
+        text-decoration: none;
+      }
+    }
+    .product-result {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        border-bottom: 1px solid #EEEDED;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: #252525;
+        text-decoration: none;
+        font-size: 13px;
+        height: 60px;
+      }
+      .prod-name {
+        flex-grow: 1;
+      }
+      .price {
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .img-cont {
+        width: 60px;
+        height: 50px;
+        margin-right: 14px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        img {
+          display: block;
+          height: auto;
+          width: auto;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+    .all-result {
+      width: 270px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 23px;
+      margin-bottom: 30px;
     }
   }
   .request-call {

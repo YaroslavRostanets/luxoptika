@@ -598,4 +598,26 @@ $(document).ready(function(){
     $('.js-promo').mask('9999');
     $('.js-phone-mask').mask('(099)-999-99-99');
 
+    $('.js-search-input').on('focus', function(){
+       $(this).closest('.search-wrap').addClass('focused');
+    });
+
+    /*$('.js-search-input').on('focusout', function(){
+        $(this).closest('.search-wrap').removeClass('focused open');
+        $(this).closest('.search-wrap').find('.search-result').fadeOut(100);
+
+    });*/
+
+    $('.js-search-input').keyup(function(){
+        var result = $(this).closest('.search-wrap').find('.search-result');
+        if($(this).val().length > 2){
+            $(this).closest('.search-wrap').addClass('open');
+            result.fadeIn(100);
+        } else {
+            result.fadeOut(100);
+
+        }
+    });
+
+
 });

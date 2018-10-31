@@ -34,6 +34,16 @@
     }
     .search-wrap {
       margin-right: 25px;
+      width: 260px;
+      button {
+        right: 15px;
+        top: 20px;
+      }
+      &.focused {
+        .search-wrap-in {
+          width: 550px;
+        }
+      }
     }
     .request-call {
       margin-right: 25px;
