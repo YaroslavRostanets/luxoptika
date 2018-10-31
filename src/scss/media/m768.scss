@@ -940,4 +940,57 @@
       }
     }
   }
+  .search-main {
+    & > .container {
+      position: relative;
+    }
+    .tablet-back {
+      left: 15px;
+      top: 18px;
+      margin-top: 0;
+      margin-bottom: 0;
+      position: absolute;
+    }
+    .not-found-in {
+      width: 100%;
+      margin-left: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 55px;
+    }
+    .not-found-ban {
+      background-image: none;
+    }
+    .after-query {
+      margin-bottom: 26px;
+    }
+    .ban-query {
+      margin-bottom: 13px;
+    }
+    .not-found-ban {
+      height: auto;
+      padding-bottom: 30px;
+    }
+    .bot-found {
+      flex-direction: column;
+    }
+    .call-help {
+      margin-right: 0;
+      text-align: center;
+    }
+    .call-me-back {
+      flex-direction: column;
+      .btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .call-me-in {
+      border-top-right-radius: 23px;
+      border-bottom-right-radius: 23px;
+    }
+    .call-me-wrap {
+      margin-bottom: 25px;
+    }
+  }
 }

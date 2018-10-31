@@ -464,4 +464,27 @@
       padding: 0 20px;
     }
   }
+  .search-main {
+    .bot-found {
+      padding-left: 25px;
+      .advice {
+        width: 220px;
+      }
+    }
+    .call-me-back {
+      .btn {
+        padding: 0 15px;
+        width: 180px;
+      }
+    }
+    .call-me-wrap {
+      &:before {
+        left: 15px;
+      }
+    }
+    .call-me-in {
+      padding-left: 45px;
+      width: 220px;
+    }
+  }
 }

@@ -1730,5 +1730,94 @@
     .catalog-struct {
       margin-top: 5px;
     }
+    .breadcrumbs {
+      display: none;
+    }
+    .tablet-back {
+      color: #0dac49;
+      font-size: 13px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 19px;
+      margin-bottom: 22px;
+      &:before {
+        content: "";
+        width: 21px;
+        height: 10px;
+        display: inline-block;
+        background-image: url(../img/icons/green-arrow.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        margin-right: 6px;
+      }
+    }
+    .ban-query {
+      font-size: 16px;
+    }
+    .not-found-in {
+      padding-top: 36px;
+      margin-left: 20px;
+      width: 430px;
+    }
+    .not-found-ban {
+      height: 300px;
+      background-position: 107% -160%;
+      background-size: 40%;
+      margin-bottom: 30px;
+    }
+    .bot-found {
+      height: auto;
+      flex-wrap: wrap;
+      border: none;
+      padding-left: 0;
+      justify-content: center;
+      .advice {
+        width: auto;
+        font-size: 16px;
+        margin-right: 20px;
+      }
+    }
+    .call-help {
+      width: 220px;
+      br {
+        display: none;
+      }
+    }
+    .search-input {
+      border-radius: 4px;
+      width: 100%;
+      height: 46px;
+    }
+    .search-wrap {
+      button {
+        width: 20px;
+        height: 20px;
+        right: 12px;
+      }
+    }
+    .call-me-back {
+      margin-top: 25px;
+      .btn {
+        padding: 0 30px;
+        width: 220px;
+      }
+    }
+    .call-me-in {
+      width: 265px;
+      padding-left: 74px;
+    }
+    .call-me-wrap {
+      &:before {
+        left: 45px;
+      }
+    }
+    .prod-viewed {
+      border-top: 1px solid #DADBDC;
+    }
+    & > .container {
+      margin-bottom: 40px;
+    }
   }
 }

@@ -1,4 +1,8 @@
 .search-main {
+  overflow-x: hidden;
+  & > .container {
+    margin-bottom: 16px;
+  }
   .search-query {
     background: #F7F8F9;
     font-size: 18px;
