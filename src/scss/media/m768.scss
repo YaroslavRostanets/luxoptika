@@ -943,6 +943,7 @@
   .search-main {
     & > .container {
       position: relative;
+      margin-bottom: 63px;
     }
     .tablet-back {
       left: 15px;
@@ -991,6 +992,28 @@
     }
     .call-me-wrap {
       margin-bottom: 25px;
+      &:before {
+        left: 56px;
+      }
+    }
+    .bot-found {
+      .advice {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+    .call-me-in {
+      width: 290px;
+      padding-left: 88px;
+    }
+    .prod-viewed {
+      padding-top: 33px;
+      & > .container {
+        padding-left: 15px;
+      }
+      .view-title {
+        font-size: 16px;
+      }
     }
   }
 }
