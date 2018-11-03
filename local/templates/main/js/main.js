@@ -619,5 +619,12 @@ $(document).ready(function(){
         }
     });
 
+    $('.js-site-menu > li').hover(function(){
+        var item = $(this).closest('li');
+        item.find('.drop-down-menu').fadeIn(100);
+    }, function(){
+        var item = $(this).closest('li');
+        item.find('.drop-down-menu').fadeOut(100);
+    });
 
 });
