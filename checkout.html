@@ -228,9 +228,11 @@
         <div class="container">
             <div class="checkout-flex">
                 <div class="check-filling">
-                    <h4 class="check-title">
-                        Оформление заказа
-                    </h4>
+                    <div class="check-title-wrap">
+                        <h4 class="check-title">
+                            Оформление заказа
+                        </h4>
+                    </div>
                     <div class="check-filling-cont">
                         <div class="acc-item">
                             <div class="acc-label">
@@ -247,7 +249,7 @@
                                                 новый покупатель
                                             </a>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#regular-customer">
                                                 постоянный клиент
                                             </a>
@@ -255,10 +257,113 @@
                                     </ul>
                                     <div class="tabs-content">
                                         <div id="new-buyer">
-                                            Test1
+
+                                            <form class="new-buyer-cont">
+                                                <div class="form-group-wrap">
+                                                    <div class="form-group">
+                                                        <input type="text"
+                                                               placeholder="Имя"
+                                                               class="form-control">
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                    <div class="form-hint">
+                                                        На эти имя и фамилию будет оформлен заказ
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-wrap">
+                                                    <div class="form-group">
+                                                        <input type="text"
+                                                               placeholder="Фамилия"
+                                                               class="form-control">
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-wrap">
+                                                    <div class="form-group">
+                                                        <input type="text"
+                                                               placeholder="Телефон"
+                                                               class="form-control">
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                    <div class="form-hint">
+                                                        Контактный номер нужен для подтверждения заказа
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-wrap">
+                                                    <div class="form-group">
+                                                        <input type="text"
+                                                               placeholder="E-mail"
+                                                               class="form-control">
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                    <div class="form-hint">
+                                                        На этот адрес мы пришлем подробности по заказу
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group-wrap">
+                                                    <label class="checkout-label">
+                                                        <input type="checkbox" data-styler>
+                                                        <span>
+                                                            У вас есть бонусная карта?
+                                                        </span>
+                                                    </label>
+                                                </div>
+
+                                                <a href="#" class="btn ripple ">
+                                                    Далее
+                                                </a>
+                                            </form>
+
                                         </div>
                                         <div id="regular-customer">
-                                            Test2
+                                            <form id="auth-form">
+
+                                                <div class="auth-flex">
+                                                    <div class="left-part">
+                                                        <h5>Авторизяация</h5>
+                                                        <div class="form-group">
+                                                            <input type="text"
+                                                                   placeholder="Логин"
+                                                                   class="form-control">
+                                                            <div class="help-block"></div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="password"
+                                                                   placeholder="Пароль"
+                                                                   class="form-control">
+                                                            <div class="help-block"></div>
+                                                        </div>
+                                                        <div class="remind-password">
+                                                            Забыли пароль?
+                                                            <a href="#">Восстановить</a>
+                                                        </div>
+                                                        <a href="#" class="btn ripple">
+                                                            Далее
+                                                        </a>
+                                                    </div>
+                                                    <div class="delim">
+                                                        или
+                                                    </div>
+                                                    <div class="right-part">
+                                                        <h5>Войти с помощью</h5>
+                                                        <div class="social">
+                                                            <a href="#" class="ripple">
+                                                                <img src="local/templates/main/img/icons/facebook.png" alt="" class="ico">
+                                                            </a>
+                                                            <a href="#" class="ripple">
+                                                                <img src="local/templates/main/img/icons/twitter.png" alt="" class="ico">
+                                                            </a>
+                                                            <a href="#" class="ripple">
+                                                                <img src="local/templates/main/img/icons/inst.png" alt="" class="ico">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -272,26 +377,563 @@
                                 Доставка
                             </div>
                             <div class="acc-cont">
+                                <div class="tabs-wrap">
+                                    <ul class="tabs-nav">
+                                        <li>
+                                            <a href="#delivery-courier">
+                                                курьером
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#delivery-np">
+                                                на склад новой почты
+                                            </a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#delivery-sam">
+                                                самовывоз
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tabs-content">
+                                        <div id="delivery-courier">
+                                            <div class="del-width">
+                                                <div class="form-group">
+                                                    <label>
+                                                        Выберите свой город
+                                                    </label>
+                                                    <select data-styler>
+                                                        <option>
+                                                            Киев
+                                                        </option>
+                                                        <option>
+                                                            Львов
+                                                        </option>
+                                                        <option>
+                                                            Днепр
+                                                        </option>
+                                                        <option>
+                                                            Киев
+                                                        </option>
+                                                        <option>
+                                                            Львов
+                                                        </option>
+                                                        <option>
+                                                            Днепр
+                                                        </option>
+                                                    </select>
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text"
+                                                           placeholder="Улица"
+                                                           class="form-control">
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="flex-ctrl">
+                                                        <input type="text"
+                                                               placeholder="Дом"
+                                                               class="form-control">
+                                                        <input type="text"
+                                                               placeholder="Квартира"
+                                                               class="form-control">
+                                                    </div>
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Комментарий к доставке</label>
+                                                    <textarea class="form-control"></textarea>
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <a href="#" class="btn ripple">
+                                                    Далее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="delivery-np">
+                                            <div class="del-width">
 
+                                                <div class="form-group">
+                                                    <label>
+                                                        Выберите свой город
+                                                    </label>
+                                                    <select data-styler>
+                                                        <option>
+                                                            Киев
+                                                        </option>
+                                                        <option>
+                                                            Львов
+                                                        </option>
+                                                        <option>
+                                                            Днепр
+                                                        </option>
+                                                        <option>
+                                                            Киев
+                                                        </option>
+                                                        <option>
+                                                            Львов
+                                                        </option>
+                                                        <option>
+                                                            Днепр
+                                                        </option>
+                                                    </select>
+                                                    <div class="help-block"></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>
+                                                        Склад Новой Почты
+                                                    </label>
+                                                    <select data-styler>
+                                                        <option>
+                                                            № 1, ул. Пироговский путь, 135
+                                                        </option>
+                                                        <option>
+                                                            № 2, ул. Пироговский путь, 13
+                                                        </option>
+                                                        <option>
+                                                            № 3, ул. Пироговский путь, 15
+                                                        </option>
+                                                        <option>
+                                                            № 4, ул. Пироговский путь, 1
+                                                        </option>
+                                                    </select>
+                                                    <div class="help-block"></div>
+                                                </div>
+
+                                                <a href="#" class="btn ripple">
+                                                    далее
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div id="delivery-sam">
+                                            <div class="del-width">
+
+                                                <div class="form-group">
+                                                    <label>
+                                                        Выберите свой город
+                                                    </label>
+                                                    <select data-styler>
+                                                        <option>
+                                                            Киев
+                                                        </option>
+                                                        <option>
+                                                            Львов
+                                                        </option>
+                                                        <option>
+                                                            Днепр
+                                                        </option>
+                                                        <option>
+                                                            Киев
+                                                        </option>
+                                                        <option>
+                                                            Львов
+                                                        </option>
+                                                        <option>
+                                                            Днепр
+                                                        </option>
+                                                    </select>
+                                                    <div class="help-block"></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>
+                                                        Выберите оптику
+                                                    </label>
+                                                    <select data-styler>
+                                                        <option>
+                                                            ул. Ивана Мазепы, 9
+                                                        </option>
+                                                        <option>
+                                                            ул. Богдана Хмельницкого, 10
+                                                        </option>
+                                                        <option>
+                                                            ул. Петра Сагайдачного, 11
+                                                        </option>
+                                                    </select>
+                                                    <div class="help-block"></div>
+                                                </div>
+
+                                                <a href="" class="js-view-on-map">
+                                                    Выбрать оптику на карте
+                                                </a>
+
+                                                <a href="#" class="btn ripple">
+                                                    Далее
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acc-item">
+                            <div class="acc-label">
+                                <span class="num">
+                                    3
+                                </span>
+                                Оплата
+                            </div>
+                            <div class="acc-cont">
+                                <div class="pay-method">
+                                    <div class="label">
+                                        Выберите способ оплаты
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="radio" name="pay" data-styler checked>
+                                            <span>
+                                            Наличными курьеру
+                                        </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="radio" name="pay" data-styler>
+                                            <span>
+                                            Visa/MasterCard
+                                        </span>
+                                        </label>
+                                    </div>
+                                    <div class="btn ripple">
+                                        Далее
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acc-item show">
+                            <div class="acc-label">
+                                <span class="num">
+                                    4
+                                </span>
+                                Подтверждение
+                            </div>
+                            <div class="acc-cont">
+                                <div class="checkout-detail">
+                                    <h5>Детали заказа</h5>
+                                    <table class="checkout-table">
+                                        <tr>
+                                            <td>Имя и фамилия</td>
+                                            <td>Алексей Станиславский</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Телефон</td>
+                                            <td>+38 (093) 12-23-345</td>
+                                        </tr>
+                                        <tr class="indent">
+                                            <td>E-mail</td>
+                                            <td>alex.st@mail.com</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Способ доставки</td>
+                                            <td>Курьером по Киеву</td>
+                                        </tr>
+                                        <tr class="indent">
+                                            <td>Адрес</td>
+                                            <td>ул. Ломоносова 6а, кв. 75</td>
+                                        </tr>
+
+                                        <tr class="indent">
+                                            <td>Способ оплаты</td>
+                                            <td>Наличными</td>
+                                        </tr>
+                                        <tr class="total">
+                                            <td>К оплате</td>
+                                            <td>1 797 грн</td>
+                                        </tr>
+                                    </table>
+                                    <button class="btn ripple">
+                                        Подтвердить заказ
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="check-info">
-                    <h4 class="check-title">
-                        Информация о заказе
-                    </h4>
-                    <a href="#" class="edit-order">
-                        Редактировать заказ
-                    </a>
+                    <div class="check-title-wrap">
+                        <h4 class="check-title">
+                            Информация о заказе
+                        </h4>
+                        <a href="#" class="edit-order">
+                            Редактировать заказ
+                        </a>
+                    </div>
                     <div class="check-info-cont">
+                        <div class="products-wrap">
 
+                            <a href="#" class="prod-item">
+                                <span class="img-cont">
+                                    <img src="local/templates/main/img/content/product.jpg" alt="">
+                                </span>
+                                <span class="prod-info">
+                                    <span class="prod-name">CASTA CST 216 MBK</span>
+                                    <span class="prod-price">
+                                        <span class="price">599 грн</span>
+                                    </span>
+                                </span>
+                            </a>
+
+                            <a href="#" class="prod-item">
+                                <span class="img-cont">
+                                    <img src="local/templates/main/img/content/p1.jpg" alt="">
+                                </span>
+                                <span class="prod-info">
+                                    <span class="prod-name">Casta F 412 MBKGUN</span>
+                                    <span class="discount">На этот товар скидка -30%</span>
+                                    <span class="prod-price">
+                                        <span class="old-price">297 грн</span>
+                                        <span class="new-price">197 грн</span>
+                                    </span>
+                                </span>
+                            </a>
+
+                            <a href="#" class="prod-item">
+                                <span class="img-cont">
+                                    <img src="local/templates/main/img/content/prod-lense.jpg" alt="">
+                                </span>
+                                <span class="prod-info">
+                                    <span class="prod-name">Casta F 412 MBKGUN</span>
+                                    <span class="gray-info">
+                                        <p>Упаковок: 2</p>
+                                        <p>Pадиус кривизны (BC): 8.7</p>
+                                        <p>Оптическая сила (PWR): -0.7</p>
+                                    </span>
+                                    <span class="prod-price">
+                                        <span class="old-price">297 грн</span>
+                                        <span class="new-price">197 грн</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <table class="total-table">
+                            <tr>
+                                <td>Сумма заказа</td>
+                                <td>1 797 грн</td>
+                            </tr>
+                            <tr>
+                                <td>Доставка</td>
+                                <td>Бесплатно</td>
+                            </tr>
+                            <tr>
+                                <td>Итого</td>
+                                <td>1 797 грн</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        <!-- Карта -->
+        <div class="map-search-cont">
+            <div class="tabs-controll">
+                <div class="container flex">
+                    <div class="left-tabs">
+                        <div class="title">
+                            самовывоз в удобной для вас оптике
+                            <div class="max1200">
+                                <select data-styler>
+                                    <option>Киев</option>
+                                    <option>Белая церковь</option>
+                                    <option>Борисполь</option>
+                                    <option>Бровары</option>
+                                    <option>Днепр</option>
+                                    <option>Полтава</option>
+                                    <option>Черновцы</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="tabs-nav">
+                            <li class="active">
+                                <a href="#">
+                                    Все
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Детский врач
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Дисконт центры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Детское аппаратное лечение
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Подбор ночных линз Парагон
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Мастер оптик
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-city">
+                        <div class="label">
+                            Выберите свой город
+                        </div>
+                        <select data-styler>
+                            <option>Киев</option>
+                            <option>Белая церковь</option>
+                            <option>Борисполь</option>
+                            <option>Бровары</option>
+                            <option>Днепр</option>
+                            <option>Полтава</option>
+                            <option>Черновцы</option>
+                        </select>
+                        <a href="javascript:void(0);" class="js-open-map ripple">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Карта
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="map-wrap">
+                <div class="max576">
+                    <a href="javascript:void(0);" class="close-map js-close-map">
+                        <span>Закрыть карту</span>
+                    </a>
+                </div>
+                <div id="map"></div>
+                <div class="addrss-cont">
+                    <div class="address">
+                        Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                    </div>
+                    <div class="open-hours" style="display: block;">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 <br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="marker-list js-custom-scroll">
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Луговая, 12 (2 линия), ТЦ «Караван»
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                    <div class="one-place">
+                        <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                        <div class="address">
+                            Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б
+                        </div>
+                        <div class="open-hours">
+                            пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                            Мастер: пн - пт 10.00-19.00
+                        </div>
+                        <a href="javascript:void(0);" class="js-show-on-map">
+                            Показать на карте
+                        </a>
+                    </div>
+                </div>
+                <div class="max576">
+                    <a href="javascript:void(0);" class="btn ripple js-view-all">
+                        Смотреть все оптики
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- конец Карта -->
 
     </div>
 
@@ -501,6 +1143,192 @@
     </div>
 </footer>
 
+<!-- модалка Смотреть на карте -->
+<div id="show-on-map">
+    <div class="flex">
+        <div class="places-list">
+            <div class="marker-list js-custom-scroll">
+                <div class="one-place">
+
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler checked>
+                        <span>Киев, ул. Луговая, 12 (2 линия), ТЦ «Караван»</span>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="one-place">
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler checked>
+                        <span>Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б</span>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="one-place">
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler>
+                        <span>Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б</span>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="one-place">
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler checked>
+                        <span>Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б</span>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="one-place">
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler>
+                        <span>Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б</span>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="one-place">
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler>
+                        <span>Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б</span>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="one-place">
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler>
+                        <span>Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б</span>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+                <div class="one-place">
+                    <a href="javascript:void(0);" class="open-arrow js-toggle-hours"></a>
+                    <label class="address">
+                        <input type="checkbox" data-styler>
+                        <spam>Киев, ул. Бульварно-Кудрявская (Воровского), 9-Б</spam>
+                    </label>
+                    <div class="open-hours">
+                        пн-сб 10:00-19:00, вс 10:00-18:00 </br>
+                        Мастер: пн - пт 10.00-19.00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-wrap">
+            <div id="modal-map"></div>
+        </div>
+    </div>
+</div>
+<!-- конец модалка смотреть на карте -->
+
+<script>
+    var markers = [{
+        'TEXT':'г. Киев, ул. Анны Ахматовой, 22',
+        'LON':'30.6250835',
+        'LAT':'50.4085326'
+    },{
+        'TEXT':'г. Киев, просп. Героев Сталинграда, 8',
+        'LON':'30.518685',
+        'LAT':'50.497136'
+    },{
+        'TEXT':'г. Киев, ул. Крещатик, 38 (ЦУМ)',
+        'LON':'30.520624',
+        'LAT':'50.445161'
+    }];
+    var map, modalMap;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 11,
+            center: new google.maps.LatLng(50.4502765, 30.5547975),
+            //scrollwheel: true,
+            disableDoubleClickZoom: false,
+            draggable: true,
+            keyboardShortcuts: true,
+            mapTypeControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            fullscreenControl: false
+        });
+
+        for (i = 0; i < markers.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(+markers[i]['LAT'], +markers[i]['LON']),
+                map: map,
+                title: markers[i]['TEXT'],
+                icon: {
+                    url: 'local/templates/main/img/marker.svg',
+                    scaledSize: new google.maps.Size(26, 35),
+                    origin: new google.maps.Point(0, 0),
+                    //anchor: new google.maps.Point(25, 25)
+                }
+            });
+        }
+
+        initModalMap();
+    }
+
+    function initModalMap() {
+        modalMap = new google.maps.Map(document.getElementById('modal-map'), {
+            zoom: 10,
+            center: new google.maps.LatLng(50.4502765, 30.5547975),
+            scrollwheel: true,
+            disableDoubleClickZoom: false,
+            draggable: true,
+            keyboardShortcuts: true,
+            mapTypeControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            fullscreenControl: false
+        });
+
+        for (i = 0; i < markers.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(+markers[i]['LAT'], +markers[i]['LON']),
+                map: modalMap,
+                title: markers[i]['TEXT'],
+                icon: {
+                    url: 'local/templates/main/img/marker.svg',
+                    scaledSize: new google.maps.Size(26, 35),
+                    origin: new google.maps.Point(0, 0),
+                    //anchor: new google.maps.Point(25, 25)
+                }
+            });
+        }
+
+        $('#show-on-map').addClass('modal');
+    }
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjfvwzPf8o8bp32KjSHlz8JQRy0ybauCo&callback=initMap"
+        async defer></script>
 <script src="local/templates/main/libs/jqueryUI/jquery-ui.min.js"></script>
 <script src="https://use.fontawesome.com/35f65baac5.js"></script>
 <script src="local/templates/main/libs/slick/slick.min.js"></script>
