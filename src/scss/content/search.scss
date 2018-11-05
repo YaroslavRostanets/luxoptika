@@ -177,4 +177,98 @@
   .prod-viewed {
     border-top: none;
   }
+  .news-search-result {
+    .slick-arrow {
+      width: 65px;
+      height: 65px;
+      background: rgba(234,237,241,0.5);
+      border-radius: 50%;
+      font-size: 0;
+      position: absolute;
+      top: 38%;
+      border: none;
+      z-index: 2;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        background: rgba(234,237,241,1);
+      }
+      &:after {
+        content: "";
+        width: 24px;
+        height: 11px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .slick-next {
+      right: 0;
+      transform: translate(50%,-50%);
+      &:after {
+        background-image: url('../img/icons/gray-right-arrow.svg');
+      }
+    }
+    .slick-prev {
+      left: 0;
+      transform: translate(-50%,-50%);
+      &:after {
+        background-image: url('../img/icons/gray-left-arrow.svg');
+      }
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: absolute;
+      left: 50%;
+      bottom: -47px;
+      transform: translate(-50%,-50%);
+      li {
+        border: 1px solid #7B7B7B;
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-right: 20px;
+        cursor: pointer;
+        &.slick-active {
+          border: 1px solid #0DAC49;
+          background: #0DAC49;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      button {
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  .search-news-cont {
+    margin-top: 55px;
+    .news-search-query {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 22px;
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    .one-news {
+      .title {
+        margin: 0 0 0 0;
+      }
+    }
+  }
 }

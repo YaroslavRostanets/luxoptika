@@ -651,7 +651,30 @@ $(document).ready(function(){
             $('.acc-item.show').removeClass('show');
             edited.find('.acc-cont').slideDown(300);
         });
+    });
 
+
+    $('.js-news-search-result').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    speed: 100
+                }
+            }
+        ]
+    });
+
+    $('.js-news-search-result').wrap('<div class="news-search-slider-wrap" />');
+
+    $('.js-news-slider .slick-arrow').each(function(i, item){
+        $(item).appendTo($(this).closest('.news-search-slider-wrap'));
     });
 
 });

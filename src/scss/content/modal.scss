@@ -415,7 +415,9 @@
       align-items: center;
       width: 100%;
       cursor: pointer;
-      height: 19px;
+      //height: 19px;
+      min-height: 19px;
+      height: auto;
       input {
         display: none;
       }
