@@ -650,6 +650,15 @@
     .prod-cont {
       margin-top: 15px;
     }
+    .computer-lenses {
+      width: 400px;
+      padding-left: 14px;
+      padding-bottom: 10px;
+      .comp-price {
+        padding-right: 18px;
+        justify-content: flex-end;
+      }
+    }
     .tablet-back {
       color: #0dac49;
       font-size: 13px;
