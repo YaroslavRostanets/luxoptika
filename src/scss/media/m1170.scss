@@ -487,4 +487,81 @@
       width: 220px;
     }
   }
+  .checkout-main {
+    .auth-flex {
+      flex-direction: column;
+      .left-part {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .right-part {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    #regular-customer {
+      .delim {
+        padding: 0 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        &:after {
+          width: 130px;
+          height: 1px;
+          top: 50%;
+          right: 100%;
+          left: auto;
+          transform: translateX(0);
+        }
+        &:before {
+          top: 50%;
+          width: 130px;
+          height: 1px;
+          left: 100%;
+          transform: translateX(0);
+        }
+      }
+    }
+    .form-hint {
+      padding-left: 12px;
+      margin-top: 2px;
+    }
+    .form-group-wrap {
+      flex-wrap: wrap;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .check-filling-cont {
+      padding: 0 20px;
+    }
+    .acc-label {
+      padding-left: 0;
+    }
+    .acc-item {
+      .acc-cont {
+        padding-left: 0;
+      }
+    }
+    #new-buyer {
+      .btn {
+        margin-left: 105px;
+      }
+    }
+    .del-width {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pay-method {
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+    }
+    .checkout-detail {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 }

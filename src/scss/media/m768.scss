@@ -762,6 +762,60 @@
       }
     }
   }
+  .checkout-main {
+    & > .container {
+      max-width: 540px;
+    }
+    .checkout-flex {
+      flex-wrap: wrap;
+    }
+    .check-filling {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .check-info {
+      width: 100%;
+    }
+    .acc-cont {
+      .tabs-nav {
+        justify-content: flex-start;
+        li {
+          margin-right: 25px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        a {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      .btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    #delivery-courier {
+      .textarea-form-group {
+        padding-right: 0;
+      }
+    }
+    #new-buyer {
+      .btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    #regular-customer {
+      .btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .acc-cont {
+
+    }
+  }
 }
 @media (max-width: 690px) {
   header {

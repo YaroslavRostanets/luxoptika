@@ -1,4 +1,11 @@
 .checkout-main {
+  overflow-x: hidden;
+  .tablet-back {
+    display: none;
+  }
+  .tablet-txt {
+    display: none;
+  }
   .check-title {
     font-size: 22px;
     margin: 0 0 0 0;
@@ -6,6 +13,7 @@
   .checkout-flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
   .check-filling {
     width: calc( 100% - 400px );
@@ -39,6 +47,8 @@
   }
   .check-info-cont {
     border: 1px solid #E5E5E5;
+  }
+  .products-wrap {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -82,6 +92,9 @@
       font-size: 12px;
       line-height: 18px;
       color: #747474;
+      span {
+        display: block;
+      }
     }
     .img-cont {
       width: 110px;
@@ -99,8 +112,47 @@
         max-height: 100%;
       }
     }
-    &:last-child {
-      border-bottom: none;
+  }
+  .total-table-wrap {
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
+  .total-table {
+    width: 100%;
+    font-size: 14px;
+    line-height: 23px;
+    .total {
+      font-weight: 700;
+      font-size: 16px;
+    }
+    td {
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+  .info-text {
+    background: #F7F8F9;
+    padding: 25px 25px 30px 25px;
+    h5 {
+      font-weight: 700;
+      color: #252525;
+      font-size: 14px;
+      margin: 0 0 10px 0;
+      &:before {
+        content: "\f05a";
+        font-family: 'FontAwesome';
+        color: #0DAC49;
+        margin-right: 13px;
+        font-size: 17px;
+      }
+    }
+    .text {
+      font-size: 13px;
+      line-height: 20px;
+      color: #252525;
     }
   }
   .acc-item {
@@ -120,7 +172,24 @@
           color: #FFFFFF;
         }
       }
-      .acc-cont {
+    }
+    &.is-filled {
+      .num {
+        font-size: 0;
+        position: relative;
+        background: #0DAC49;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          background-image: url(../img/checked.svg);
+        }
+      }
+      .edit {
         display: block;
       }
     }
@@ -129,8 +198,25 @@
     font-size: 18px;
     font-weight: 700;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 0 20px 18px;
+    .left-group {
+      display: flex;
+      align-items: center;
+    }
+    .edit {
+      font-weight: 400;
+      border-bottom: 1px dashed #0dac49;
+      font-size: 13px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      margin-right: 10px;
+      display: none;
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
+    }
     .num {
       width: 31px;
       height: 31px;
@@ -143,6 +229,7 @@
       color: #262626;
       background: #DADBDC;
       border-radius: 16px;
+      transition: all 0.3s ease;
     }
   }
   .acc-cont {
@@ -325,6 +412,9 @@
     .jq-selectbox {
       width: 100%;
     }
+  }
+  .jq-selectbox__dropdown {
+    top: 100% !important;
   }
   #delivery-np {
     padding-top: 35px;

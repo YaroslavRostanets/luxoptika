@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Люксоптика | Корзина</title>
+    <title>Люксоптика | Оформление заказа</title>
     <link rel="stylesheet" href="local/templates/main/font/stylesheet.css">
     <link rel="stylesheet" href="local/templates/main/libs/slick/slick.css">
     <link rel="stylesheet" href="local/templates/main/libs/formstyler/jquery.formstyler.css">
@@ -226,6 +226,9 @@
 <main>
     <div class="page checkout-main">
         <div class="container">
+            <a href="#" class="tablet-back">
+                назад
+            </a>
             <div class="checkout-flex">
                 <div class="check-filling">
                     <div class="check-title-wrap">
@@ -234,22 +237,27 @@
                         </h4>
                     </div>
                     <div class="check-filling-cont">
-                        <div class="acc-item">
+                        <div class="acc-item show">
                             <div class="acc-label">
-                                <span class="num">
+                                <span class="left-group">
+                                    <span class="num">
                                     1
                                 </span>
                                 Личные данные
+                                </span>
+                                <a href="#" class="edit js-check-edit">
+                                    Редактировать
+                                </a>
                             </div>
-                            <div class="acc-cont">
+                            <div class="acc-cont" style="display: block;">
                                 <div class="tabs-wrap">
                                     <ul class="tabs-nav">
-                                        <li>
+                                        <li class="active">
                                             <a href="#new-buyer">
                                                 новый покупатель
                                             </a>
                                         </li>
-                                        <li class="active">
+                                        <li>
                                             <a href="#regular-customer">
                                                 постоянный клиент
                                             </a>
@@ -267,7 +275,7 @@
                                                         <div class="help-block"></div>
                                                     </div>
                                                     <div class="form-hint">
-                                                        На эти имя и фамилию будет оформлен заказ
+                                                        На это имя будет оформлен заказ
                                                     </div>
                                                 </div>
 
@@ -277,6 +285,9 @@
                                                                placeholder="Фамилия"
                                                                class="form-control">
                                                         <div class="help-block"></div>
+                                                    </div>
+                                                    <div class="form-hint">
+                                                        На эту фамилию будет оформлен заказ
                                                     </div>
                                                 </div>
 
@@ -313,7 +324,7 @@
                                                     </label>
                                                 </div>
 
-                                                <a href="#" class="btn ripple ">
+                                                <a href="#" class="btn ripple js-next-item">
                                                     Далее
                                                 </a>
                                             </form>
@@ -341,7 +352,7 @@
                                                             Забыли пароль?
                                                             <a href="#">Восстановить</a>
                                                         </div>
-                                                        <a href="#" class="btn ripple">
+                                                        <a href="#" class="btn ripple js-next-item">
                                                             Далее
                                                         </a>
                                                     </div>
@@ -371,25 +382,35 @@
                         </div>
                         <div class="acc-item">
                             <div class="acc-label">
-                                <span class="num">
+                                <span class="left-group">
+                                    <span class="num">
                                     2
                                 </span>
                                 Доставка
+                                </span>
+                                <a href="#" class="edit js-check-edit">
+                                    Редактировать
+                                </a>
                             </div>
                             <div class="acc-cont">
                                 <div class="tabs-wrap">
                                     <ul class="tabs-nav">
-                                        <li>
+                                        <li class="active">
                                             <a href="#delivery-courier">
                                                 курьером
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#delivery-np">
-                                                на склад новой почты
+                                                <span class="desctop-txt">
+                                                    на склад новой почты
+                                                </span>
+                                                <span class="tablet-txt">
+                                                    новой почтой
+                                                </span>
                                             </a>
                                         </li>
-                                        <li class="active">
+                                        <li>
                                             <a href="#delivery-sam">
                                                 самовывоз
                                             </a>
@@ -441,12 +462,12 @@
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>
-                                                <div class="form-group">
+                                                <div class="form-group textarea-form-group">
                                                     <label>Комментарий к доставке</label>
                                                     <textarea class="form-control"></textarea>
                                                     <div class="help-block"></div>
                                                 </div>
-                                                <a href="#" class="btn ripple">
+                                                <a href="#" class="btn ripple js-next-item">
                                                     Далее
                                                 </a>
                                             </div>
@@ -560,7 +581,7 @@
                                                     Выбрать оптику на карте
                                                 </a>
 
-                                                <a href="#" class="btn ripple">
+                                                <a href="#" class="btn ripple js-next-item">
                                                     Далее
                                                 </a>
 
@@ -572,10 +593,15 @@
                         </div>
                         <div class="acc-item">
                             <div class="acc-label">
-                                <span class="num">
+                                <span class="left-group">
+                                    <span class="num">
                                     3
                                 </span>
                                 Оплата
+                                </span>
+                                <a href="#" class="edit js-check-edit">
+                                    Редактировать
+                                </a>
                             </div>
                             <div class="acc-cont">
                                 <div class="pay-method">
@@ -598,18 +624,23 @@
                                         </span>
                                         </label>
                                     </div>
-                                    <div class="btn ripple">
+                                    <div class="btn ripple js-next-item">
                                         Далее
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="acc-item show">
+                        <div class="acc-item">
                             <div class="acc-label">
-                                <span class="num">
+                                <span class="left-group">
+                                    <span class="num">
                                     4
                                 </span>
                                 Подтверждение
+                                </span>
+                                <a href="#" class="edit js-check-edit">
+                                    Редактировать
+                                </a>
                             </div>
                             <div class="acc-cont">
                                 <div class="checkout-detail">
@@ -700,31 +731,43 @@
                                 <span class="prod-info">
                                     <span class="prod-name">Casta F 412 MBKGUN</span>
                                     <span class="gray-info">
-                                        <p>Упаковок: 2</p>
-                                        <p>Pадиус кривизны (BC): 8.7</p>
-                                        <p>Оптическая сила (PWR): -0.7</p>
+                                        <span>Упаковок: 2</span>
+                                        <span>Pадиус кривизны (BC): 8.7</span>
+                                        <span>Оптическая сила (PWR): -0.7</span>
                                     </span>
                                     <span class="prod-price">
-                                        <span class="old-price">297 грн</span>
-                                        <span class="new-price">197 грн</span>
+                                        <span class="price">599 грн</span>
                                     </span>
                                 </span>
                             </a>
                         </div>
-                        <table class="total-table">
-                            <tr>
-                                <td>Сумма заказа</td>
-                                <td>1 797 грн</td>
-                            </tr>
-                            <tr>
-                                <td>Доставка</td>
-                                <td>Бесплатно</td>
-                            </tr>
-                            <tr>
-                                <td>Итого</td>
-                                <td>1 797 грн</td>
-                            </tr>
-                        </table>
+                        <div class="total-table-wrap">
+                            <table class="total-table">
+                                <tr>
+                                    <td>Сумма заказа</td>
+                                    <td>1 797 грн</td>
+                                </tr>
+                                <tr>
+                                    <td>Доставка</td>
+                                    <td>Бесплатно</td>
+                                </tr>
+                                <tr class="total">
+                                    <td>Итого</td>
+                                    <td>1 797 грн</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="info-text">
+                            <h5>Информация о заказе</h5>
+                            <div class="text">
+                                В связи с особенностью работы курьерских
+                                служб, мы разделим Ваш заказ на два.
+                                Чтобы в случае, если Вам не подойдет оправа
+                                или очки, Вы могли их вернуть, а остальные
+                                товары оставить себе. При этом условия
+                                и стоимость доставки не меняются.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
