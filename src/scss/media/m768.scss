@@ -548,6 +548,8 @@
         font-size: inherit;
         .more {
           font-size: inherit;
+          white-space: nowrap;
+          border-bottom: 1px dashed #0dac49;
           &:after {
             display: none;
           }
@@ -556,6 +558,14 @@
       .slick-dots {
         top: auto;
         bottom: -20px;
+      }
+    }
+    .brand-slider {
+      .slick-list {
+        &:before {
+          width: calc(50vw - 200px);
+          left: calc(199px - 50vw);
+        }
       }
     }
   }

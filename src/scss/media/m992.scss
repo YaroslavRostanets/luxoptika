@@ -1225,6 +1225,14 @@
         h4 {
           line-height: 25px;
         }
+        br {
+          display: none;
+        }
+        strong {
+          background: #FCAB36;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
         .half {
           width: 70%;
           padding-top: 25px;
@@ -1365,10 +1373,13 @@
       .fa-angle-right {
         display: none !important;
       }
+      .fa-angle-left {
+        display: none !important;
+      }
       .slick-list {
         &:before {
           width: calc(50vw - 350px);
-          left: calc(350px - 50vw);
+          left: calc(349px - 50vw);
         }
       }
     }

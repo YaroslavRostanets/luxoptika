@@ -302,16 +302,10 @@
       .ico {
         height: 40px;
         width: 32px;
-        margin-right: 12px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        &:first-child {
-          margin-right: 8px;
-        }
-        &:last-child {
-          margin-right: 8px;
-        }
+        justify-content: flex-start;
+        margin-right: 6px;
         img {
           display: block;
           max-width: 100%;
@@ -421,6 +415,7 @@
       &:hover {
         border: 1px solid transparent;
         box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+        transform: scale(1.01);
       }
     }
     .price {
@@ -487,7 +482,11 @@
       }
     }
     .fa-angle-left {
-      display: none !important;
+      right: 0;
+      transform: translate(50%,-50%);
+      &:after {
+        background-image: url('../img/icons/gray-right-arrow.svg');
+      }
     }
     .slick-dots {
       display: flex;
@@ -574,6 +573,7 @@
       padding: 38px 30px 30px 30px;
       margin: 15px 15px;
       background: #FFFFFF;
+      outline: none;
       .rate {
         display: flex;
         margin-bottom: 10px;
@@ -617,7 +617,7 @@
       position: absolute;
       top: 130px;
       border: none;
-      z-index: 2;
+      z-index: 3;
       transition: all 0.2s ease-out;
       cursor: pointer;
       outline: none;
